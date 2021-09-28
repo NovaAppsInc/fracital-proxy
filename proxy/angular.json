@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/highlight.js",
+              "src/js/hover.js"
+            ]
           },
           "configurations": {
             "production": {
