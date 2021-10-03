@@ -1,84 +1,84 @@
-// rangy.init();
+rangy.init();
 
-// var editor = $('#editor');
+var editor = $('#editor');
 
-// var format = function () {
+var format = function () {
 
-//     var before = -1;
-//     var html = $.trim(editor.text())
-//     .split("\n")
-//     .reverse()
-//     .map(function (line) {
+    var before = -1;
+    var html = $.trim(editor.text())
+    .split("\n")
+    .reverse()
+    .map(function (line) {
 
-//         var a = line.length === before ? 'merge-end' : '';
-//         before = line.length;
+        var a = line.length === before ? 'merge-end' : '';
+        before = line.length;
 
-//         return '<pre class="' + a + '"><span>' + line.split('').join('</span><span>') + '</span></pre>';
-//     })
-//     .reverse()
-//     .join('');
+        return '<pre class="' + a + '"><span>' + line.split('').join('</span><span>') + '</span></pre>';
+    })
+    .reverse()
+    .join('');
 
-//     editor.html(html);
-// };
+    editor.html(html);
+};
 
-// var getSelectedNodes = function () {
+var getSelectedNodes = function () {
 
-//     var i;
-//     var nodes = [];
-//     var selection = rangy.getSelection();
+    var i;
+    var nodes = [];
+    var selection = rangy.getSelection();
 
-//     for (i = 0; i < selection.rangeCount; ++i) {
+    for (i = 0; i < selection.rangeCount; ++i) {
 
-//         selection
-//         .getRangeAt(i)
-//         .getNodes()
-//         .forEach(function (node) {
+        selection
+        .getRangeAt(i)
+        .getNodes()
+        .forEach(function (node) {
 
-//             if ($(node).is('span')) {
+            if ($(node).is('span')) {
 
-//                 nodes.push(node);
-//             }
-//         });
-//     }
+                nodes.push(node);
+            }
+        });
+    }
 
-//     return nodes;
-// };
+    return nodes;
+};
 
-// var highlight = function (nodes, beforeNode) {
+var highlight = function (nodes, beforeNode) {
 
-//     var currentNode = $(nodes.shift()).addClass('highlight');
-//     var currentParent = currentNode.parent();
+    var currentNode = $(nodes.shift()).addClass('highlight');
+    var currentParent = currentNode.parent();
 
-//     if (beforeNode) {
+    if (beforeNode) {
 
-//         var beforeParent = beforeNode.parent();
+        var beforeParent = beforeNode.parent();
 
-//         if (currentParent.get(0) !== beforeParent.get(0)) {
+        if (currentParent.get(0) !== beforeParent.get(0)) {
 
-//             currentNode.addClass('begin');
-//             beforeNode.addClass('end');
-//             beforeParent.addClass('merge-begin');
-//         }
+            currentNode.addClass('begin');
+            beforeNode.addClass('end');
+            beforeParent.addClass('merge-begin');
+        }
 
-//     } else {
+    } else {
 
-//         currentNode.addClass('begin');
-//     }
+        currentNode.addClass('begin');
+    }
 
-//     if (nodes.length) {
+    if (nodes.length) {
 
-//         highlight(nodes, currentNode);
+        highlight(nodes, currentNode);
 
-//     } else {
+    } else {
 
-//         currentNode.addClass('end');
-//     }
-// };
+        currentNode.addClass('end');
+    }
+};
 
-// format();
+format();
 
-// $(document).on('mouseup', function () {
+$(document).on('mouseup', function () {
 
-//     $('.highlight').removeClass('highlight begin end');
-//     highlight(getSelectedNodes());
-// });
+    $('.highlight').removeClass('highlight begin end');
+    highlight(getSelectedNodes());
+});
