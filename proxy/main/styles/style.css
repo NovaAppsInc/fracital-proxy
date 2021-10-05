@@ -294,7 +294,9 @@ pre.merge-begin + pre > span:first-child {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 4rem;
+  top: 3.8rem;
+  width: 100vw;
+  height: 88.7vh;
 }
 
 .infoTitl {
