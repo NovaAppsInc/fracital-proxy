@@ -9,8 +9,18 @@ class xor {
 
 function go(link) {
     if (!link.contains("http://")) {
-        link = "http://" + location.host + "kb" + link;
+        link = "http://" + location.host + "/kb/" + link;
     };
-    document.getElementById("home").style.visibility = "collapse";
-    document.getElementById("frame").src=xor.encode(link)
-}
+    document.getElementById("frame").src=xor.encode(location.host + "/kb/" + link);
+};
+let observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      if (mutation.type == "attributes") {
+        document.getElementById("frame").src=xor.decode(document.getElementById(id).contentWindow.location.href.split('/fetch/')[1]);
+        console.log("cum");
+      };
+    });
+  });
+  observer.observe(document.getElementById("frame"), {
+    attributes: true
+  });

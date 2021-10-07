@@ -291,3 +291,43 @@ h1.name {
     color: #f971e4;
     font-size: 4rem;
 }
+
+.links {
+    color: #fa15d8cc;
+    width: 8rem;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.home {
+    display: grid;
+    justify-items: center;
+}
+
+.link {
+    margin-right: 3rem;
+}
+
+.icon {
+    height: 46px;
+}
+
+.games:hover .icon {
+    stroke: #fa15d8cc;
+}
+
+.bug:hover .icon {
+    stroke: #f971e4;
+    stroke-width: 1px;
+    fill: #000000;
+}
+
+.git {
+	fill: #ffffff;
+	height: 46px;
+	width: 32px;
+}
