@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 h1,
@@ -299,8 +300,8 @@ pre.merge-begin + pre > span:first-child {
   right: 0;
   bottom: 0;
   top: 3.8rem;
-  width: 98.6vw;
-  height: 88.7vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .infoTitl {

@@ -221,7 +221,7 @@ pre.merge-begin+pre>span:first-child {
     position: absolute;
     background: #333333;
     width: 10rem;
-    height: 100vh;
+    height: 90vh;
     justify-items: center;
     display: grid;
 }
@@ -242,9 +242,9 @@ div.inf {
     color: #ff50e5;
     position: absolute;
     right: 0;
-    bottom: 0;
     top: 0;
-    width: 69.3rem;
+    height: 90.7vh;
+    width: 69.6rem;
 }
 
 a.linky {
