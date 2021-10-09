@@ -217,8 +217,9 @@ pre.merge-begin+pre>span:first-child {
 }
 
 .nav {
+    padding-top: 12px;
     position: absolute;
-    background: #222222;
+    background: #333333;
     width: 10rem;
     height: 100vh;
     justify-items: center;
@@ -235,10 +236,17 @@ a.linky:hover {
 }
 
 div.inf {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     color: #ff50e5;
     position: absolute;
     right: 0;
     bottom: 0;
     top: 0;
-    width: 68.2rem;
+    width: 69.3rem;
+}
+
+a.linky {
+    margin-top: 12px;
 }
