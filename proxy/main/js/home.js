@@ -2,6 +2,6 @@ function clig1() {
     window.open("./g.html", "_self");
 }
 
-// function clig1l() {
-//     document.getElementById("frameg").src = "./gainly/sm/index.html"
-// }
+function bug() {
+    window.open("https://github.com/NovaAppsInc/fractrial-proxy/issues", "_blank");
+}
