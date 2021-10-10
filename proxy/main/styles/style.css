@@ -45,7 +45,7 @@ p {
 }
 
 .toolbar img {
-  margin: 0 16px;
+  /*! margin: 0 16px; */
 }
 
 .content {
@@ -288,8 +288,22 @@ pre.merge-begin + pre > span:first-child {
 }
 
 .logo {
+  /*! position: absolute; */
+  /*! left: 0; */
+}
+
+.lg {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  float: left;
   position: absolute;
-  left: 0;
+  left: 16px;
+}
+
+.lg:hover {
+  cursor: pointer;
 }
 
 .frame {
