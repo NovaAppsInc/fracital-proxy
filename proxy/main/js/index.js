@@ -8,10 +8,12 @@ class xor {
 };
 
 function go(link) {
-    if (!link.contains("http://")) {
-        link = "http://" + location.host + "/kb/" + link;
+  if (link == '') {
+    alert('insert a url bruhv');
+  } else if (!link.contains("http://")) {
+        link = "http://" + link;
     };
-    document.getElementById("frame").src=xor.encode(location.host + "/kb/" + link);
+    document.getElementById("frame").src=location.host + "/kb/" +xor.encode(link);
 };
 let observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
@@ -24,3 +26,7 @@ let observer = new MutationObserver(mutations => {
   observer.observe(document.getElementById("frame"), {
     attributes: true
   });
+  document.querySelector('#urlbar').addEventListener('keyup', event => {
+      if (event.key !== 'Enter') return;
+      go(document.getElementById('urlbar').value)
+    });
