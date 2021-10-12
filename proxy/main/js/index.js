@@ -31,3 +31,6 @@ let observer = new MutationObserver(mutations => {
       go(document.getElementById('urlbar').value)
     });
 document.cookie="olds=sus";
+function reloadh() {
+  document.getElementById("frame").setAttribute('src', 'home.html');
+}
