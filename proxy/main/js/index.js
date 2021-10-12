@@ -10,7 +10,7 @@ class xor {
 function go(link) {
   if (link == '') {
     alert('insert a url bruhv');
-  } else if (!link.contains("http://")) {
+  } else if (!link.includes("http://")) {
         link = "http://" + link;
     };
     document.getElementById("frame").src=location.host + "/kb/" +xor.encode(link);
