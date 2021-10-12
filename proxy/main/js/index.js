@@ -18,7 +18,7 @@ function go(link) {
 let observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
       if (mutation.type == "attributes") {
-        document.getElementById("frame").src=xor.decode(document.getElementById(id).contentWindow.location.href.split('/fetch/')[1]);
+        document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/kb/')[1]);
         console.log("cum");
       };
     });
