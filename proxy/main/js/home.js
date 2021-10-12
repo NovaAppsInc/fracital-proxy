@@ -11,9 +11,3 @@ function bug() {
 function reloadh() {
     frame.setAttribute('src', 'home.html');
 }
-
-const isMobile = navigator.userAgentData.mobile;
-
-if(isMobile) {
-    frame.setAttribute("src", "what.html")
-}
