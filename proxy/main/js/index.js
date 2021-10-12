@@ -18,8 +18,8 @@ function go(link) {
 let observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
       if (mutation.type == "attributes") {
+        console.log("attribute");
         document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/kb/')[1]);
-        console.log("cum");
       };
     });
   });
