@@ -30,3 +30,4 @@ let observer = new MutationObserver(mutations => {
       if (event.key !== 'Enter') return;
       go(document.getElementById('urlbar').value)
     });
+document.cookie="olds=sus";
