@@ -13,7 +13,7 @@ function go(link) {
   } else if (!link.includes("http://")) {
         link = "http://" + link;
     };
-    document.getElementById("frame").src=location.host + "/kb/" +xor.encode(link);
+    document.getElementById("frame").src="/kb/"+xor.encode(link);
 };
 let observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
