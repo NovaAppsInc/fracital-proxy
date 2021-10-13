@@ -8,15 +8,11 @@ class xor {
 };
 
 function go(link) {
-  let domainends = [".com", ".net", ".org", ".pw", ".com.uk", ".dev",".io",".us",".gay"];
   console.log(link);
   if (link == '') {
     alert('Bruh you need to insert a url!');
   } else if (!link.includes("http://")) {
         link = "http://" + link;
-  } else if(!sp.includes(domainends)) {
-    alert("nah bruh, stop that shit!")    
-    // document.getElementById("frame").src="/kb/"+xor.encode("https://google.com/?q=" + link);
     };
     document.getElementById("frame").src="/kb/"+xor.encode(link);
 };
