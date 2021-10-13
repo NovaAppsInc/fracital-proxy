@@ -160,7 +160,8 @@ footer a {
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-  .card-container > *:not(.circle-link) ,
+
+  .card-container>*:not(.circle-link),
   .terminal {
     width: 100%;
   }
@@ -190,43 +191,43 @@ footer a {
 
 
 pre {
-    margin: 0;
-    font-size: 14px;
+  margin: 0;
+  font-size: 14px;
 }
 
 span {
-    display: inline-block;
-    line-height: 20px;
+  display: inline-block;
+  line-height: 20px;
 }
 
 span.highlight {
-    background: #ed67ffd8;
+  background: #ed67ffd8;
 }
 
 span.begin {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 span.end {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-pre.merge-end > span:last-child {
-    border-bottom-right-radius: 0;
+pre.merge-end>span:last-child {
+  border-bottom-right-radius: 0;
 }
 
-pre.merge-end + pre > span:last-child {
-    border-top-right-radius: 0;
+pre.merge-end+pre>span:last-child {
+  border-top-right-radius: 0;
 }
 
-pre.merge-begin > span:first-child {
-    border-bottom-left-radius: 0;
+pre.merge-begin>span:first-child {
+  border-bottom-left-radius: 0;
 }
 
-pre.merge-begin + pre > span:first-child {
-    border-top-left-radius: 0;
+pre.merge-begin+pre>span:first-child {
+  border-top-left-radius: 0;
 }
 
 /* .libdrw {
@@ -283,7 +284,7 @@ pre.merge-begin + pre > span:first-child {
   background: #353535;
 }
 
-.btnsrch:hover{
+.btnsrch:hover {
   background: #ff3beae0;
 }
 
@@ -315,7 +316,7 @@ pre.merge-begin + pre > span:first-child {
   bottom: 0;
   top: 3.8rem;
   width: 100vw;
-  height: 100vh;
+  height: 91vh;
 }
 
 .infoTitl {
@@ -332,4 +333,764 @@ p.info {
 h1.name {
   color: #f971e4;
   font-size: 4rem;
+}
+
+@media (max-width: 1124px) {
+  .searchwrap {
+    width: 58.4rem;
+  }
+
+  .urlbar {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 873.6px) {
+  .searchwrap {
+    width: 59rem;
+  }
+
+  .urlbar {
+    width: 54.6rem;
+  }
+}
+
+@media (max-width: 1190px) {
+  .searchwrap {
+    width: 62rem;
+  }
+
+  .urlbar {
+    width: 56rem;
+  }
+}
+
+@media (max-width: 1155px) {
+  .searchwrap {
+    width: 61rem;
+  }
+
+  .urlbar {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .searchwrap {
+    width: 49rem;
+  }
+
+  .urlbar {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 913px) {
+  .searchwrap {
+    width: 44rem;
+  }
+
+  .urlbar {
+    width: 39rem;
+  }
+}
+
+@media (max-width: 778px) {
+  .searchwrap {
+    width: 36rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 706px) {
+  .searchwrap {
+    width: 32rem;
+  }
+
+  .urlbar {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .searchwrap {
+    width: 24rem;
+  }
+
+  .urlbar {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .searchwrap {
+    width: 20rem;
+  }
+
+  .urlbar {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 454px) {
+  .searchwrap {
+    width: 15rem;
+  }
+
+  .urlbar {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1095px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchwrap {
+    width: 48rem;
+  }
+
+  .urlbar {
+    width: 43rem;
+  }
+}
+
+@media (max-width: 898px) {
+  .searchwrap {
+    width: 42rem;
+  }
+
+  .urlbar {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 789px) {
+  .searchwrap {
+    width: 37rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .searchwrap {
+    width: 30rem;
+  }
+
+  .urlbar {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 617px) {
+  .searchwrap {
+    width: 25rem;
+  }
+
+  .urlbar {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1124px) {
+  .searchwrap {
+    width: 58.4rem;
+  }
+
+  .urlbar {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 873.6px) {
+  .searchwrap {
+    width: 59rem;
+  }
+
+  .urlbar {
+    width: 54.6rem;
+  }
+}
+
+@media (max-width: 1190px) {
+  .searchwrap {
+    width: 62rem;
+  }
+
+  .urlbar {
+    width: 56rem;
+  }
+}
+
+@media (max-width: 1155px) {
+  .searchwrap {
+    width: 61rem;
+  }
+
+  .urlbar {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .searchwrap {
+    width: 49rem;
+  }
+
+  .urlbar {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 913px) {
+  .searchwrap {
+    width: 44rem;
+  }
+
+  .urlbar {
+    width: 39rem;
+  }
+}
+
+@media (max-width: 778px) {
+  .searchwrap {
+    width: 36rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 706px) {
+  .searchwrap {
+    width: 32rem;
+  }
+
+  .urlbar {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .searchwrap {
+    width: 24rem;
+  }
+
+  .urlbar {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .searchwrap {
+    width: 20rem;
+  }
+
+  .urlbar {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 454px) {
+  .searchwrap {
+    width: 15rem;
+  }
+
+  .urlbar {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1095px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchwrap {
+    width: 48rem;
+  }
+
+  .urlbar {
+    width: 43rem;
+  }
+}
+
+@media (max-width: 898px) {
+  .searchwrap {
+    width: 42rem;
+  }
+
+  .urlbar {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 789px) {
+  .searchwrap {
+    width: 37rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .searchwrap {
+    width: 30rem;
+  }
+
+  .urlbar {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 617px) {
+  .searchwrap {
+    width: 25rem;
+  }
+
+  .urlbar {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 793px) {
+  .searchwrap {
+    width: 37rem;
+  }
+
+  .urlbar {
+    width: 32rem;
+  }
+}
+
+@media (max-width: 1124px) {
+  .searchwrap {
+    width: 58.4rem;
+  }
+
+  .urlbar {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 873.6px) {
+  .searchwrap {
+    width: 59rem;
+  }
+
+  .urlbar {
+    width: 54.6rem;
+  }
+}
+
+@media (max-width: 1190px) {
+  .searchwrap {
+    width: 62rem;
+  }
+
+  .urlbar {
+    width: 56rem;
+  }
+}
+
+@media (max-width: 1155px) {
+  .searchwrap {
+    width: 61rem;
+  }
+
+  .urlbar {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .searchwrap {
+    width: 49rem;
+  }
+
+  .urlbar {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 913px) {
+  .searchwrap {
+    width: 44rem;
+  }
+
+  .urlbar {
+    width: 39rem;
+  }
+}
+
+@media (max-width: 778px) {
+  .searchwrap {
+    width: 36rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 706px) {
+  .searchwrap {
+    width: 32rem;
+  }
+
+  .urlbar {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .searchwrap {
+    width: 24rem;
+  }
+
+  .urlbar {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .searchwrap {
+    width: 20rem;
+  }
+
+  .urlbar {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 454px) {
+  .searchwrap {
+    width: 15rem;
+  }
+
+  .urlbar {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1095px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchwrap {
+    width: 48rem;
+  }
+
+  .urlbar {
+    width: 43rem;
+  }
+}
+
+@media (max-width: 898px) {
+  .searchwrap {
+    width: 42rem;
+  }
+
+  .urlbar {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 789px) {
+  .searchwrap {
+    width: 37rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .searchwrap {
+    width: 30rem;
+  }
+
+  .urlbar {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 617px) {
+  .searchwrap {
+    width: 25rem;
+  }
+
+  .urlbar {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 706px) {
+  .searchwrap {
+    width: 31rem;
+  }
+
+  .urlbar {
+    width: 26rem;
+  }
+}
+
+@media (max-width: 1124px) {
+  .searchwrap {
+    width: 58.4rem;
+  }
+
+  .urlbar {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 873.6px) {
+  .searchwrap {
+    width: 59rem;
+  }
+
+  .urlbar {
+    width: 54.6rem;
+  }
+}
+
+@media (max-width: 1190px) {
+  .searchwrap {
+    width: 62rem;
+  }
+
+  .urlbar {
+    width: 56rem;
+  }
+}
+
+@media (max-width: 1155px) {
+  .searchwrap {
+    width: 61rem;
+  }
+
+  .urlbar {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .searchwrap {
+    width: 49rem;
+  }
+
+  .urlbar {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 913px) {
+  .searchwrap {
+    width: 44rem;
+  }
+
+  .urlbar {
+    width: 39rem;
+  }
+}
+
+@media (max-width: 778px) {
+  .searchwrap {
+    width: 36rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 706px) {
+  .searchwrap {
+    width: 32rem;
+  }
+
+  .urlbar {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .searchwrap {
+    width: 24rem;
+  }
+
+  .urlbar {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .searchwrap {
+    width: 20rem;
+  }
+
+  .urlbar {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 454px) {
+  .searchwrap {
+    width: 15rem;
+  }
+
+  .urlbar {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1095px) {
+  .searchwrap {
+    width: 54rem;
+  }
+
+  .urlbar {
+    width: 49rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchwrap {
+    width: 48rem;
+  }
+
+  .urlbar {
+    width: 43rem;
+  }
+}
+
+@media (max-width: 898px) {
+  .searchwrap {
+    width: 42rem;
+  }
+
+  .urlbar {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 789px) {
+  .searchwrap {
+    width: 37rem;
+  }
+
+  .urlbar {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .searchwrap {
+    width: 30rem;
+  }
+
+  .urlbar {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 617px) {
+  .searchwrap {
+    width: 25rem;
+  }
+
+  .urlbar {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 558px) {
+  .searchwrap {
+    width: 22rem;
+  }
+
+  .urlbar {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .searchwrap {
+    width: 20rem;
+  }
+
+  .urlbar {
+    width: 15rem;
+  }
 }

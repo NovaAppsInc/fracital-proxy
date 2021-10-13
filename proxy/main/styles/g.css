@@ -8,7 +8,12 @@ body {
     display: grid;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 8px 0;
 }
 
@@ -145,16 +150,21 @@ footer a {
 /* Responsive Styles */
 
 @media screen and (max-width: 767px) {
-    .card-container>*:not(.circle-link), .terminal {
+
+    .card-container>*:not(.circle-link),
+    .terminal {
         width: 100%;
     }
+
     .card:not(.highlight-card) {
         height: 16px;
         margin: 8px 0;
     }
+
     .card.highlight-card span {
         margin-left: 72px;
     }
+
     svg#rocket-smoke {
         right: 120px;
         transform: rotate(-5deg);
@@ -221,7 +231,7 @@ pre.merge-begin+pre>span:first-child {
     position: absolute;
     background: #333333;
     width: 10rem;
-    height: 90vh;
+    height: 98vh;
     justify-items: center;
     display: grid;
 }
@@ -250,6 +260,17 @@ div.inf {
 a.linky {
     margin-top: 12px;
 }
+
+ul.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pxd {
+    margin-top: 12px;
+}
+
 /* screen 1080 x 1920 */
 /*  body { 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

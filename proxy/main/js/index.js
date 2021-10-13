@@ -8,10 +8,18 @@ class xor {
 };
 
 function go(link) {
+  var domainends = ["https://", "http://", ".com", ".net", ".org", ".pw", ".com.uk", ".dev"];
+  const sp = link.toString();
+  console.log(sp);
   if (link == '') {
-    alert('insert a url bruhv');
+    alert('Bruh you need to insert a url!');
+  }else if(link.includes("https://") || link.includes("http://")) {
+    alert('Bruh remove the https:// or http:// we take care of that for you.');
   } else if (!link.includes("http://")) {
         link = "http://" + link;
+  } else if(!sp.includes(domainends)) {
+    alert("nah bruh, stop that shit!")    
+    // document.getElementById("frame").src="/kb/"+xor.encode("https://google.com/?q=" + link);
     };
     document.getElementById("frame").src="/kb/"+xor.encode(link);
 };
