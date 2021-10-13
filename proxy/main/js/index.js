@@ -8,13 +8,10 @@ class xor {
 };
 
 function go(link) {
-  var domainends = ["https://", "http://", ".com", ".net", ".org", ".pw", ".com.uk", ".dev"];
-  const sp = link.toString();
-  console.log(sp);
+  var domainends = [".com", ".net", ".org", ".pw", ".com.uk", ".dev",".io",".us",".gay"];
+  console.log(link);
   if (link == '') {
     alert('Bruh you need to insert a url!');
-  }else if(link.includes("https://") || link.includes("http://")) {
-    alert('Bruh remove the https:// or http:// we take care of that for you.');
   } else if (!link.includes("http://")) {
         link = "http://" + link;
   } else if(!sp.includes(domainends)) {
