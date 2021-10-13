@@ -8,7 +8,7 @@ class xor {
 };
 
 function go(link) {
-  var domainends = [".com", ".net", ".org", ".pw", ".com.uk", ".dev",".io",".us",".gay"];
+  let domainends = [".com", ".net", ".org", ".pw", ".com.uk", ".dev",".io",".us",".gay"];
   console.log(link);
   if (link == '') {
     alert('Bruh you need to insert a url!');
