@@ -253,22 +253,26 @@ div.inf {
     position: absolute;
     right: 0;
     top: 0;
-    height: 90.7vh;
-    width: 69.6rem;
+    height: 100vh;
+    width: 88%;
 }
 
 a.linky {
-    margin-top: 12px;
+    display: grid;
+    margin-top: 9px;
 }
 
 ul.links {
+    display: grid;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 1px;
+    width: 113;
 }
 
-.pxd {
-    margin-top: 12px;
+.aft {
+    /* margin-top: 12px; */
 }
 
 /* screen 1080 x 1920 */

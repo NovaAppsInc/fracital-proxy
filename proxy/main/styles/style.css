@@ -1094,3 +1094,13 @@ h1.name {
     width: 15rem;
   }
 }
+
+@media (max-width: 1137px) {
+  .searchwrap {
+    width: 57rem;
+  }
+
+  .urlbar {
+    width: 52rem;
+  }
+}
