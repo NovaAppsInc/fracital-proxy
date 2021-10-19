@@ -1104,3 +1104,24 @@ h1.name {
     width: 52rem;
   }
 }
+
+.alertbtm {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  background: #eb51ff;
+  padding: 10px 10px 11px 18px;
+  width: 274px;
+  border-radius: 4px;
+}
+
+.alertbtmb {
+  background: #eeeeee;
+  height: 5px;
+  width: 110%;
+  left: -18px;
+  position: relative;
+  bottom: -11px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
