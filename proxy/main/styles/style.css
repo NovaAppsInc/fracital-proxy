@@ -1125,3 +1125,89 @@ h1.name {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
+div.qlbt {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  float: right;
+  align-items: center;
+  border-radius: 37px;
+  right: 1.3vw;
+  display: grid;
+  top: 1.6vh;
+  background: #666666;
+}
+
+.rocket {
+  margin: 3px 0 2px 6.4px;
+  width: 25px;
+  height: 25px;
+  fill: #f760ff;
+  stroke-width: 0;
+}
+
+.qlbt:hover {
+  background: #585858e1;
+  cursor: pointer;
+}
+
+.qlbt:hover .rocket {
+  fill: #ce50d4;
+}
+
+/* div.ql.t {
+  width: 147px;
+  height: min-content;
+  position: absolute;
+  right: 1.4vw;
+  top: 20vh;
+} */
+
+div.ql.hidden {
+  visibility: hidden;
+  width: 200px;
+  height: min-content;
+  padding: 0px 16px 12px 16px;
+  position: absolute;
+  right: 1.4vw;
+  top: 9vh;
+  background: #666666;
+  border-radius: 5px;
+}
+
+div.ql.open {
+  background: #666666;
+  position: absolute;
+  height: min-content;
+  width: 194px;
+  float: right;
+  right: 1.4vw;
+  top: 9vh;
+  border-radius: 5px;
+  padding: 0px 16px 12px 16px;
+}
+
+div.btnsql {
+  display: grid;
+  width: 100%;
+}
+
+.qlb {
+  outline: none;
+  border: none;
+  background: #f760ff;
+  color: #fbfbfb;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.qlb:hover {
+  cursor: pointer;
+  background: #cf4fd6;
+  color: #ffffff;
+}
+
+.last {
+  margin-bottom: 0;
+}
