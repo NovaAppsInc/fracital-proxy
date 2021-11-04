@@ -7,6 +7,8 @@ class xor {
     };
 };
 
+document.cookie="olds=sus";
+
 function go(link) {
   console.log(link);
   if (link == '') {
@@ -23,7 +25,6 @@ const ytmus = document.getElementById("ytmus");
 const yt = document.getElementById("yt");
 const cmg = document.getElementById("cmg");
 const appl = document.getElementById("appl");
-const spot = document.getElementById("spoti");
 const reddi = document.getElementById("reddi");
 // End //
 
@@ -53,13 +54,8 @@ appl.addEventListener("click", () => {
   document.body.style.background = "#e1e1e1";
 });
 
-spot.addEventListener("click", () => {
-  go("spotify.com");
-  document.body.style.background = "#222222";
-});
-
 reddi.addEventListener("click", () => {
-  go("reddit.com");
+  go("http://reddit.com");
   document.body.style.background = "#222222";
 });
 
@@ -80,7 +76,6 @@ let observer = new MutationObserver(mutations => {
       if (event.key !== 'Enter') return;
       go(document.getElementById('urlbar').value)
     });
-document.cookie="olds=sus";
 function reloadh() {
   document.getElementById("frame").setAttribute('src', 'home.html');
   document.body.style.backgroundColor = "#222222";
