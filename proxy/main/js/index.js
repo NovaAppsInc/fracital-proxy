@@ -31,34 +31,27 @@ const reddi = document.getElementById("reddi");
 // Quick Launch functions //
 ggl.addEventListener("click", () => {
   go("google.com");
-  document.body.style.background = "#222222";
 });
 
 ytmus.addEventListener("click", () => {
   go("music.youtube.com");
-  document.body.style.background = "#222222";
 });
 
 yt.addEventListener("click", () => {
   go("youtube.com");
-  document.body.style.background = "#222222";
 });
 
 cmg.addEventListener("click", () => {
   go("coolmathgames.com");
-  document.body.style.background = "#222222";
 });
 
 appl.addEventListener("click", () => {
   go("music.apple.com");
-  document.body.style.background = "#e1e1e1";
 });
 
 reddi.addEventListener("click", () => {
   go("http://reddit.com");
-  document.body.style.background = "#222222";
 });
-
 // End //
 
 let observer = new MutationObserver(mutations => {
@@ -78,5 +71,4 @@ let observer = new MutationObserver(mutations => {
     });
 function reloadh() {
   document.getElementById("frame").setAttribute('src', 'home.html');
-  document.body.style.backgroundColor = "#222222";
 }
