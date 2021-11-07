@@ -1135,7 +1135,7 @@ div.qlbt {
   border-radius: 37px;
   right: 1.3vw;
   display: grid;
-  top: 1.6vh;
+  top: 1%;
   background: #666666;
 }
 
@@ -1171,21 +1171,21 @@ div.ql.hidden {
   padding: 0px 16px 12px 16px;
   position: absolute;
   right: 1.4vw;
-  top: 9vh;
+  top: 6%;
   background: #666666;
   border-radius: 5px;
 }
 
 div.ql.open {
   background: #666666;
-  position: absolute;
-  height: min-content;
-  width: 194px;
-  float: right;
-  right: 1.4vw;
-  top: 9vh;
-  border-radius: 5px;
-  padding: 0px 16px 12px 16px;
+  position:absolute;
+  height:min-content;
+  width:194px;
+  float:right;
+  right:1.4vw;
+  top:6%;
+  border-radius:5px;
+  padding:0 16px 12px
 }
 
 div.btnsql {
