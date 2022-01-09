@@ -1,6 +1,8 @@
-# Fractrial Proxy
+# Fracital Proxy
 Another proxy website made with the corrosion proxy by TitaniumNetwork
 - https://fracital.org
+
+## !The name has been change from Fractrial to Fracital
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
