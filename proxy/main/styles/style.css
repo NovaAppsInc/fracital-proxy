@@ -1211,3 +1211,29 @@ div.btnsql {
 .last {
   margin-bottom: 0;
 }
+
+a.linkAl {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #e2e2e2;
+}
+
+.bug {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  right: 6em;
+}
+
+.bug:hover .icon {
+  stroke: #f971e4;
+  stroke-width: 1.5;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.git {
+fill: #ffffff;
+height: 100%;
+width: 100%;
+}

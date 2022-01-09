@@ -294,7 +294,7 @@ h1.name {
 
 .links {
     color: #fa15d8cc;
-    width: 8rem;
+    width: min-content;
     display: flex;
     margin-top: 1rem;
 }
@@ -308,12 +308,9 @@ h1.name {
     justify-items: center;
 }
 
-.link {
-    margin-right: 3rem;
-}
-
 .icon {
     height: 46px;
+    margin-left: 0.2em;
 }
 
 .games:hover .icon {
@@ -322,7 +319,7 @@ h1.name {
 
 .bug:hover .icon {
     stroke: #f971e4;
-    stroke-width: 1px;
+    stroke-width: 1.5;
     fill: #000000;
 }
 
