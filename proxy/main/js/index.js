@@ -29,7 +29,7 @@ const reddi = document.getElementById("reddi");
 // End //
 
 document.getElementById("bug").addEventListener("click", () => {
-  go("github.com/NovaAppsInc/fractrial-proxy/issues");
+  go("github.com/NovaAppsInc/fracital-proxy/issues");
 });
 
 // Quick Launch functions //

@@ -227,12 +227,17 @@ pre.merge-begin+pre>span:first-child {
 }
 
 .nav {
-    padding-top: 12px;
+    position: absolute;
+    padding: 12px 0 12px 0;
     float: left;
     background: #333333;
-    width: 10rem;
+    width: 12rem;
     justify-items: center;
     display: grid;
+    border-radius: 15px;
+    height: min-content;
+    margin: 5px 0 0 5px;
+    max-height: 28em;
 }
 
 a {
@@ -251,7 +256,7 @@ div.inf {
     color: #ff50e5;
     float: right;
     height: 100vh;
-    width: 89%;
+    width: 100%;
 }
 
 a.linky {
@@ -264,6 +269,10 @@ ul.links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 1px;
+    height: max-content;
     width: 113;
+}
+
+.sm {
+    margin: 0;
 }
