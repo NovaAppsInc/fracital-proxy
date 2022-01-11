@@ -1,5 +1,5 @@
-# Fracital Proxy
-Another proxy website made with the corrosion proxy by TitaniumNetwork
+# Fracital
+Another prox website made with the corrosion proxy by TitaniumNetwork
 - https://fracital.org
 
 ## !The name has been change from Fractrial to Fracital
