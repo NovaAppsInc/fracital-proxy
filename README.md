@@ -1,8 +1,20 @@
 # Fracital
-Another prox website made with the corrosion proxy by TitaniumNetwork
+Another proxy website made with the corrosion proxy by TitaniumNetwork.
 - https://fracital.org
 
-## !The name has been change from Fractrial to Fracital
+# Supports
+- Any static site
+- Discord
+- Youtube (Sometimes buggy)
+
+# Updates:
+- New UI Update!
+- Discord QR Support
+- New Devs on the Team
+- Added Arc.io widget
+
+# Join the Discord Server for support
+https://discord.gg/Nvuf6zDdWy
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
