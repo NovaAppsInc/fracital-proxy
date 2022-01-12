@@ -11,10 +11,7 @@ Another proxy website made with the corrosion proxy by TitaniumNetwork.
 - New UI Update!
 - Discord QR Support
 - New Devs on the Team
-- Added Arc.io widget
-
-# Join the Discord Server for support
-https://discord.gg/Nvuf6zDdWy
+- Added Arc.io widget.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
