@@ -31,12 +31,11 @@ p {
 }
 
 .toolbar {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  display: grid;
+  display: flex;
   align-items: center;
   background-color: #3d3d3d;
   color: white;
@@ -242,14 +241,14 @@ pre.merge-begin+pre>span:first-child {
 } */
 
 .urlbar {
-  color: #ffffff;
+  color: #fff;
   background: #1a1a1a;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 2.4rem;
-  width: 61.6rem;
-  padding: 6px 8px;
+  height: 100%;
+  width: 100%;
+  padding: 0px 8px;
   margin-bottom: 0;
 }
 
@@ -265,9 +264,10 @@ pre.merge-begin+pre>span:first-child {
 .searchwrap {
   display: flex;
   align-items: center;
-  width: 66rem;
-  height: 3.7rem;
+  width: 75.4em;
+  height: 3.6em;
   margin-bottom: 0;
+  z-index: 2;
 }
 
 .icon-tabler-search {
@@ -278,7 +278,7 @@ pre.merge-begin+pre>span:first-child {
 
 .btnsrch {
   padding: 0;
-  height: 50px;
+  height: 100%;
   width: 54px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -301,8 +301,9 @@ pre.merge-begin+pre>span:first-child {
   width: 40px;
   height: 40px;
   float: left;
-  position: absolute;
-  left: 16px;
+  margin-left: 16px;
+  z-index: 1;
+  margin-right: 6em;
 }
 
 .lg:hover {
@@ -337,776 +338,6 @@ h1.name {
   font-size: 4rem;
 }
 
-@media (max-width: 1124px) {
-  .searchwrap {
-    width: 58.4rem;
-  }
-
-  .urlbar {
-    width: 54rem;
-  }
-}
-
-@media (max-width: 873.6px) {
-  .searchwrap {
-    width: 59rem;
-  }
-
-  .urlbar {
-    width: 54.6rem;
-  }
-}
-
-@media (max-width: 1190px) {
-  .searchwrap {
-    width: 62rem;
-  }
-
-  .urlbar {
-    width: 56rem;
-  }
-}
-
-@media (max-width: 1155px) {
-  .searchwrap {
-    width: 61rem;
-  }
-
-  .urlbar {
-    width: 55rem;
-  }
-}
-
-@media (max-width: 1051px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 989px) {
-  .searchwrap {
-    width: 49rem;
-  }
-
-  .urlbar {
-    width: 44rem;
-  }
-}
-
-@media (max-width: 913px) {
-  .searchwrap {
-    width: 44rem;
-  }
-
-  .urlbar {
-    width: 39rem;
-  }
-}
-
-@media (max-width: 778px) {
-  .searchwrap {
-    width: 36rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 706px) {
-  .searchwrap {
-    width: 32rem;
-  }
-
-  .urlbar {
-    width: 27rem;
-  }
-}
-
-@media (max-width: 607px) {
-  .searchwrap {
-    width: 24rem;
-  }
-
-  .urlbar {
-    width: 19rem;
-  }
-}
-
-@media (max-width: 532px) {
-  .searchwrap {
-    width: 20rem;
-  }
-
-  .urlbar {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 454px) {
-  .searchwrap {
-    width: 15rem;
-  }
-
-  .urlbar {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 1095px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .searchwrap {
-    width: 48rem;
-  }
-
-  .urlbar {
-    width: 43rem;
-  }
-}
-
-@media (max-width: 898px) {
-  .searchwrap {
-    width: 42rem;
-  }
-
-  .urlbar {
-    width: 37rem;
-  }
-}
-
-@media (max-width: 789px) {
-  .searchwrap {
-    width: 37rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 702px) {
-  .searchwrap {
-    width: 30rem;
-  }
-
-  .urlbar {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 617px) {
-  .searchwrap {
-    width: 25rem;
-  }
-
-  .urlbar {
-    width: 20rem;
-  }
-}
-
-@media (max-width: 1124px) {
-  .searchwrap {
-    width: 58.4rem;
-  }
-
-  .urlbar {
-    width: 54rem;
-  }
-}
-
-@media (max-width: 873.6px) {
-  .searchwrap {
-    width: 59rem;
-  }
-
-  .urlbar {
-    width: 54.6rem;
-  }
-}
-
-@media (max-width: 1190px) {
-  .searchwrap {
-    width: 62rem;
-  }
-
-  .urlbar {
-    width: 56rem;
-  }
-}
-
-@media (max-width: 1155px) {
-  .searchwrap {
-    width: 61rem;
-  }
-
-  .urlbar {
-    width: 55rem;
-  }
-}
-
-@media (max-width: 1051px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 989px) {
-  .searchwrap {
-    width: 49rem;
-  }
-
-  .urlbar {
-    width: 44rem;
-  }
-}
-
-@media (max-width: 913px) {
-  .searchwrap {
-    width: 44rem;
-  }
-
-  .urlbar {
-    width: 39rem;
-  }
-}
-
-@media (max-width: 778px) {
-  .searchwrap {
-    width: 36rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 706px) {
-  .searchwrap {
-    width: 32rem;
-  }
-
-  .urlbar {
-    width: 27rem;
-  }
-}
-
-@media (max-width: 607px) {
-  .searchwrap {
-    width: 24rem;
-  }
-
-  .urlbar {
-    width: 19rem;
-  }
-}
-
-@media (max-width: 532px) {
-  .searchwrap {
-    width: 20rem;
-  }
-
-  .urlbar {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 454px) {
-  .searchwrap {
-    width: 15rem;
-  }
-
-  .urlbar {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 1095px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .searchwrap {
-    width: 48rem;
-  }
-
-  .urlbar {
-    width: 43rem;
-  }
-}
-
-@media (max-width: 898px) {
-  .searchwrap {
-    width: 42rem;
-  }
-
-  .urlbar {
-    width: 37rem;
-  }
-}
-
-@media (max-width: 789px) {
-  .searchwrap {
-    width: 37rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 702px) {
-  .searchwrap {
-    width: 30rem;
-  }
-
-  .urlbar {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 617px) {
-  .searchwrap {
-    width: 25rem;
-  }
-
-  .urlbar {
-    width: 20rem;
-  }
-}
-
-@media (max-width: 793px) {
-  .searchwrap {
-    width: 37rem;
-  }
-
-  .urlbar {
-    width: 32rem;
-  }
-}
-
-@media (max-width: 1124px) {
-  .searchwrap {
-    width: 58.4rem;
-  }
-
-  .urlbar {
-    width: 54rem;
-  }
-}
-
-@media (max-width: 873.6px) {
-  .searchwrap {
-    width: 59rem;
-  }
-
-  .urlbar {
-    width: 54.6rem;
-  }
-}
-
-@media (max-width: 1190px) {
-  .searchwrap {
-    width: 62rem;
-  }
-
-  .urlbar {
-    width: 56rem;
-  }
-}
-
-@media (max-width: 1155px) {
-  .searchwrap {
-    width: 61rem;
-  }
-
-  .urlbar {
-    width: 55rem;
-  }
-}
-
-@media (max-width: 1051px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 989px) {
-  .searchwrap {
-    width: 49rem;
-  }
-
-  .urlbar {
-    width: 44rem;
-  }
-}
-
-@media (max-width: 913px) {
-  .searchwrap {
-    width: 44rem;
-  }
-
-  .urlbar {
-    width: 39rem;
-  }
-}
-
-@media (max-width: 778px) {
-  .searchwrap {
-    width: 36rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 706px) {
-  .searchwrap {
-    width: 32rem;
-  }
-
-  .urlbar {
-    width: 27rem;
-  }
-}
-
-@media (max-width: 607px) {
-  .searchwrap {
-    width: 24rem;
-  }
-
-  .urlbar {
-    width: 19rem;
-  }
-}
-
-@media (max-width: 532px) {
-  .searchwrap {
-    width: 20rem;
-  }
-
-  .urlbar {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 454px) {
-  .searchwrap {
-    width: 15rem;
-  }
-
-  .urlbar {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 1095px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .searchwrap {
-    width: 48rem;
-  }
-
-  .urlbar {
-    width: 43rem;
-  }
-}
-
-@media (max-width: 898px) {
-  .searchwrap {
-    width: 42rem;
-  }
-
-  .urlbar {
-    width: 37rem;
-  }
-}
-
-@media (max-width: 789px) {
-  .searchwrap {
-    width: 37rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 702px) {
-  .searchwrap {
-    width: 30rem;
-  }
-
-  .urlbar {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 617px) {
-  .searchwrap {
-    width: 25rem;
-  }
-
-  .urlbar {
-    width: 20rem;
-  }
-}
-
-@media (max-width: 706px) {
-  .searchwrap {
-    width: 31rem;
-  }
-
-  .urlbar {
-    width: 26rem;
-  }
-}
-
-@media (max-width: 1124px) {
-  .searchwrap {
-    width: 58.4rem;
-  }
-
-  .urlbar {
-    width: 54rem;
-  }
-}
-
-@media (max-width: 873.6px) {
-  .searchwrap {
-    width: 59rem;
-  }
-
-  .urlbar {
-    width: 54.6rem;
-  }
-}
-
-@media (max-width: 1190px) {
-  .searchwrap {
-    width: 62rem;
-  }
-
-  .urlbar {
-    width: 56rem;
-  }
-}
-
-@media (max-width: 1155px) {
-  .searchwrap {
-    width: 61rem;
-  }
-
-  .urlbar {
-    width: 55rem;
-  }
-}
-
-@media (max-width: 1051px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 989px) {
-  .searchwrap {
-    width: 49rem;
-  }
-
-  .urlbar {
-    width: 44rem;
-  }
-}
-
-@media (max-width: 913px) {
-  .searchwrap {
-    width: 44rem;
-  }
-
-  .urlbar {
-    width: 39rem;
-  }
-}
-
-@media (max-width: 778px) {
-  .searchwrap {
-    width: 36rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 706px) {
-  .searchwrap {
-    width: 32rem;
-  }
-
-  .urlbar {
-    width: 27rem;
-  }
-}
-
-@media (max-width: 607px) {
-  .searchwrap {
-    width: 24rem;
-  }
-
-  .urlbar {
-    width: 19rem;
-  }
-}
-
-@media (max-width: 532px) {
-  .searchwrap {
-    width: 20rem;
-  }
-
-  .urlbar {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 454px) {
-  .searchwrap {
-    width: 15rem;
-  }
-
-  .urlbar {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 1095px) {
-  .searchwrap {
-    width: 54rem;
-  }
-
-  .urlbar {
-    width: 49rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .searchwrap {
-    width: 48rem;
-  }
-
-  .urlbar {
-    width: 43rem;
-  }
-}
-
-@media (max-width: 898px) {
-  .searchwrap {
-    width: 42rem;
-  }
-
-  .urlbar {
-    width: 37rem;
-  }
-}
-
-@media (max-width: 789px) {
-  .searchwrap {
-    width: 37rem;
-  }
-
-  .urlbar {
-    width: 31rem;
-  }
-}
-
-@media (max-width: 702px) {
-  .searchwrap {
-    width: 30rem;
-  }
-
-  .urlbar {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 617px) {
-  .searchwrap {
-    width: 25rem;
-  }
-
-  .urlbar {
-    width: 20rem;
-  }
-}
-
-@media (max-width: 558px) {
-  .searchwrap {
-    width: 22rem;
-  }
-
-  .urlbar {
-    width: 17rem;
-  }
-}
-
-@media (max-width: 535px) {
-  .searchwrap {
-    width: 20rem;
-  }
-
-  .urlbar {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 1137px) {
-  .searchwrap {
-    width: 57rem;
-  }
-
-  .urlbar {
-    width: 52rem;
-  }
-}
-
 .alertbtm {
   position: absolute;
   bottom: 1%;
@@ -1129,16 +360,15 @@ h1.name {
 }
 
 div.qlbt {
-  position: absolute;
   height: 40px;
   width: 40px;
   float: right;
   align-items: center;
   border-radius: 37px;
-  right: 1.3vw;
+  margin-right: 1em;
   display: grid;
-  /* top: 1.6vh; */
   background: #666666;
+  z-index: 3;
 }
 
 .rocket {
@@ -1223,8 +453,8 @@ a.linkAl {
 .bug {
   height: 34px;
   width: 34px;
-  position: absolute;
-  right: 6em;
+  margin-right: 2em;
+  margin-top: 3px;
 }
 
 .bug:hover .icon {
@@ -1238,4 +468,31 @@ a.linkAl {
 fill: #ffffff;
 height: 100%;
 width: 100%;
+}
+
+.toolbar > .searchwrap {
+  width: 77.3%;
+  height: 3.6em;
+}
+
+.leftc {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  float: right;
+  margin: 0 auto 0 5em;
+  z-index: 3;
+}
+
+.expand {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  z-index: 4;
+}
+
+.expandbel {
+  border-radius: 0;
+  z-index: 4;
 }
