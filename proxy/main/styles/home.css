@@ -3,9 +3,9 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 88.7vh;
     position: absolute;
-    height: 82vh;
+    height: 100vh;
+    background: #222222;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,12 +39,12 @@ p {
 }
 
 .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
+    display: grid;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 svg.material-icons {
@@ -282,8 +282,7 @@ pre.merge-begin+pre>span:first-child {
 }
 
 p.info {
-    width: 41rem;
-    text-align: center;
+    width: 100%;
     color: #ffffff;
 }
 
@@ -294,7 +293,7 @@ h1.name {
 
 .links {
     color: #fa15d8cc;
-    width: 8rem;
+    width: min-content;
     display: flex;
     margin-top: 1rem;
 }
@@ -306,14 +305,12 @@ h1.name {
 .home {
     display: grid;
     justify-items: center;
-}
-
-.link {
-    margin-right: 3rem;
+    width: 100%;
 }
 
 .icon {
     height: 46px;
+    margin-left: 0.2em;
 }
 
 .games:hover .icon {
@@ -322,7 +319,7 @@ h1.name {
 
 .bug:hover .icon {
     stroke: #f971e4;
-    stroke-width: 1px;
+    stroke-width: 1.5;
     fill: #000000;
 }
 
@@ -330,4 +327,15 @@ h1.name {
 	fill: #ffffff;
 	height: 46px;
 	width: 32px;
+}
+
+body > p.info {
+    width: 100%;
+}
+
+.infoBd {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    min-width: 46%;
 }

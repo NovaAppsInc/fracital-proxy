@@ -28,6 +28,10 @@ const appl = document.getElementById("appl");
 const reddi = document.getElementById("reddi");
 // End //
 
+document.getElementById("bug").addEventListener("click", () => {
+  go("github.com/NovaAppsInc/fracital-proxy/issues");
+});
+
 // Quick Launch functions //
 ggl.addEventListener("click", () => {
   go("google.com");
