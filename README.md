@@ -3,14 +3,14 @@ Another proxy website made with the corrosion proxy by TitaniumNetwork.
 - https://fracital.org
 
 # Supports
-- Any static site
-- Discord
-- Youtube (Sometimes buggy)
+- **Any static site**
+- **Discord (needs qr to sign in)**
+- **Youtube (Sometimes buggy)**
+- **Mobile browsing!**
 
 # Updates:
-- New UI Update!
-- Discord QR Support
-- New Devs on the Team
+- **New UI Update!**
+- **Support for mobile devices and better displayment for smaller screen like laptops!**
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
