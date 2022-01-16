@@ -306,21 +306,22 @@ h1.name {
     display: grid;
     justify-items: center;
     width: 100%;
+    align-items: center;
 }
 
 .icon {
     height: 46px;
-    margin-left: 0.2em;
 }
 
 .games:hover .icon {
-    stroke: #fa15d8cc;
+    stroke: #ff59e6cc;
+    stroke-width: 1.3px;
 }
 
 .bug:hover .icon {
     stroke: #f971e4;
     stroke-width: 1.5;
-    fill: #000000;
+    fill: #f971e4;
 }
 
 .git {
@@ -338,4 +339,30 @@ body > p.info {
     text-align: center;
     color: #fff;
     min-width: 46%;
+}
+
+.com {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.disc {
+    fill: #ffffff;
+    width: 37px;
+    height: 44px;
+}
+
+.com:hover .icon {
+    fill: #ff59e6cc;
+}
+
+.link {
+    margin: 0 14px 0 0;
+    display: grid;
+    justify-items: center;
+}
+
+.home > .links {
+    margin-left: 2.9%;
 }
