@@ -302,7 +302,7 @@ pre.merge-begin+pre>span:first-child {
   bottom: 0;
   top: 3.8rem;
   width: 100vw;
-  height: 91vh;
+  height: 100vh;
   border-radius: 8px;
 }
 
@@ -447,7 +447,7 @@ a.linkAl {
 }
 
 .toolbar>.searchwrap {
-  width: 77.3%;
+  width: 80%;
   height: 3.6em
 }
 
@@ -456,7 +456,7 @@ a.linkAl {
   height: min-content;
   display: flex;
   float: right;
-  margin: 0 1em 0 8.7%;
+  margin: 0 1em 0 6%;
   z-index: 3;
   min-width: 114px;
 }
