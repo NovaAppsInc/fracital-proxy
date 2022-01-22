@@ -234,9 +234,12 @@ pre.merge-begin+pre>span:first-child {
     width: 12rem;
     justify-items: center;
     display: grid;
-    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 15px;
     height: min-content;
-    margin: 5px 0 0 5px;
+    margin: 0;
     max-height: 28em;
 }
 

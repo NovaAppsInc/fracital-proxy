@@ -369,19 +369,20 @@ div.qlbt {
 }
 
 div.ql.hidden {
-  visibility: hidden;
+  visibility: collapse;
   width: 200px;
   height: min-content;
   padding: 0 16px 12px;
   position: absolute;
   right: 1.4vw;
   top: 60px;
-  background: #666;
-  border-radius: 5px
+  background: #333;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 div.ql.open {
-  background: #666;
+  background: #333;
   position: absolute;
   height: min-content;
   width: 194px;
@@ -448,11 +449,11 @@ a.linkAl {
 }
 
 .leftc {
-  width: 114px;
+  width: 180px;
   height: min-content;
   display: flex;
   float: right;
-  margin: 0 1em 0 6%;
+  margin: 0 1em 0 4%;
   z-index: 3;
   min-width: 114px
 }
@@ -461,3 +462,104 @@ p.alert {
   margin:10px 0 11px 19px;
   width: 89%;
 }
+
+/* Game Nav thingy */
+
+.gamedropic {
+  stroke: #dfdf79;
+  fill: #000000;
+}
+
+.gamedrop {
+  width: 34px;
+  height: 34px;
+  margin-right: 2em;
+  margin-top: 3.5px;
+}
+
+.gamedrop:hover .gamedropic {
+  fill: #dfdf79;
+  stroke: #000000;
+}
+
+.navg {
+  position: absolute;
+  padding: 12px 0 12px 0;
+  background: #333333;
+  width: 12rem;
+  justify-items: center;
+  display: grid;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: min-content;
+  margin: 0;
+  max-height: 28em;
+  top: 4.3em;
+  right: 11em;
+}
+
+a.linky {
+  display: grid;
+  margin-top: 9px;
+}
+
+ul.links {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: max-content;
+  width: 113;
+}
+
+a {
+  height: min-content;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.linky:hover {
+  cursor: pointer;
+  color: #f971e4;
+}
+
+div.inf {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #ff50e5;
+  float: right;
+  height: 100vh;
+  width: 100%;
+}
+
+span {
+  display: inline-block;
+  line-height: 20px;
+}
+
+span.highlight {
+  background: #ed67ffd8;
+}
+
+.sm:hover {
+  cursor: pointer;
+  color: #f971e4;
+}
+
+div.gamedropthingy.hidden {
+  visibility: collapse;
+}
+
+div.gamedropthingy.open {
+  visibility: visible;
+}
+
+.mainten {
+  width: 9em;
+  margin: 0 0 0 0;
+}
+
+/* End */
