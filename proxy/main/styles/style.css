@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../resources/Poppins-Regular.ttf);
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -33,7 +38,7 @@ p {
 }
 
 .toolbar {
-  height: 60px;
+  height: 69px;
   display: flex;
   align-items: center;
   background-color: #3d3d3d;
@@ -44,8 +49,6 @@ p {
   width: 100vw;
   overflow: hidden
 }
-
-.toolbar img {}
 
 .content {
   display: flex;
@@ -228,23 +231,43 @@ pre.merge-begin+pre>span:first-child {
 
 .urlbar {
   color: #fff;
-  background: #1a1a1a;
+  background: #3d3d3d;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 2.4rem;
   width: 100%;
-  padding: 6px 8px;
-  margin-bottom: 0
+  padding: 6px 16px;
+  margin-bottom: 0;
+}
+
+.urlbarI {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 2.4rem;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 ::selection {
   background: #ed67ffd8;
-  border-radius: 3px
+  border-radius: 3px;
 }
 
-.urlbar:focus {
-  outline: 1px
+.urlbarI:focus {
+  outline: 1px;
+}
+
+.borderSY {
+  border: 1px solid #ed67ff;
+}
+
+.borderSN {
+  border: none;
 }
 
 .searchwrap {
@@ -253,30 +276,29 @@ pre.merge-begin+pre>span:first-child {
   width: 75.4em;
   height: 3.6em;
   margin-bottom: 0;
-  z-index: 2
+  z-index: 2;
+  box-shadow: 0px 0px 6px 1px #202020;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .icon-tabler-search {
   height: 22px;
   width: 22px;
-  stroke: #fff
+  stroke: #fff;
 }
 
 .btnsrch {
   padding: 0;
-  height: 50px;
+  height: 100%;
   width: 54px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   border: none;
-  background: #353535
+  background: transparent;
 }
 
 .btnsrch:hover {
-  background: #ff3beae0
+  background: #ff3beae0;
 }
-
-.logo {}
 
 .lg {
   margin: 0;
@@ -286,7 +308,7 @@ pre.merge-begin+pre>span:first-child {
   float: left;
   margin-left: 16px;
   z-index: 1;
-  margin-right: 6em
+  margin-right: 6em;
 }
 
 .lg:hover {
@@ -300,26 +322,26 @@ pre.merge-begin+pre>span:first-child {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 4.3em;
   width: 100vw;
-  height: calc(100% - 60px);
-  border-radius: 8px
+  height: calc(100% - 69px);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .infoTitl {
   display: grid;
   align-items: center;
-  justify-items: center
+  justify-items: center;
 }
 
 p.info {
   width: 41rem;
-  text-align: center
+  text-align: center;
 }
 
 h1.name {
   color: #f971e4;
-  font-size: 4rem
+  font-size: 4rem;
 }
 
 .alertbtm {
@@ -336,7 +358,7 @@ h1.name {
   height: 5px;
   width: 100%;
   border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px
+  border-bottom-right-radius: 4px;
 }
 
 div.qlbt {
@@ -348,7 +370,8 @@ div.qlbt {
   margin-right: 1em;
   display: grid;
   background: #666;
-  z-index: 3
+  z-index: 3;
+  min-width: 39px;
 }
 
 .rocket {
@@ -356,21 +379,21 @@ div.qlbt {
   width: 25px;
   height: 25px;
   fill: #f760ff;
-  stroke-width: 0
+  stroke-width: 0;
 }
 
 .qlbt:hover {
   background: #585858e1;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .qlbt:hover .rocket {
-  fill: #ce50d4
+  fill: #ce50d4;
 }
 
 div.ql.hidden {
   visibility: collapse;
-  width: 200px;
+  width: 194px;
   height: min-content;
   padding: 0 16px 12px;
   position: absolute;
@@ -383,19 +406,16 @@ div.ql.hidden {
 
 div.ql.open {
   background: #333;
-  position: absolute;
   height: min-content;
   width: 194px;
-  float: right;
-  right: 1.4vw;
-  top: 60px;
   border-radius: 10px;
-  padding: 0 16px 12px
+  padding: 0 16px 12px;
+  z-index: 0;
 }
 
 div.btnsql {
   display: grid;
-  width: 100%
+  width: 100%;
 }
 
 .qlb {
@@ -404,48 +424,49 @@ div.btnsql {
   background: #f760ff;
   color: #fbfbfb;
   margin-bottom: 5px;
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 .qlb:hover {
   cursor: pointer;
   background: #cf4fd6;
-  color: #fff
+  color: #fff;
 }
 
 .last {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 a.linkAl {
   font-weight: bolder;
   text-decoration: underline;
-  color: #e2e2e2
+  color: #e2e2e2;
 }
 
 .bug {
   height: 34px;
   width: 34px;
   margin-right: 2em;
-  margin-top: 3px
+  margin-top: 3px;
+  min-width: 34px;
 }
 
 .bug:hover .icon {
   stroke: #f971e4;
   stroke-width: 1.5;
   fill: #f971e4;
-  cursor: pointer
+  cursor: pointer'
 }
 
 .git {
   fill: #fff;
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 .toolbar>.searchwrap {
-  width: 80%;
-  height: 3.6em
+  width: 79%;
+  height: 3.6em;
 }
 
 .leftc {
@@ -455,7 +476,7 @@ a.linkAl {
   float: right;
   margin: 0 1em 0 4%;
   z-index: 3;
-  min-width: 114px
+  min-width: 180px;
 }
 
 p.alert {
@@ -475,15 +496,24 @@ p.alert {
   height: 34px;
   margin-right: 2em;
   margin-top: 3.5px;
+  min-width: 34px;
 }
 
 .gamedrop:hover .gamedropic {
-  fill: #dfdf79;
-  stroke: #000000;
+  cursor: pointer;
+}
+
+.dialogsL {
+  display: grid;
+  width: 16.2em;
+  float: right;
+  margin-right: 1em;
+  justify-items: center;
+  height: max-content;
 }
 
 .navg {
-  position: absolute;
+  position: relative;
   padding: 12px 0 12px 0;
   background: #333333;
   width: 12rem;
@@ -496,8 +526,7 @@ p.alert {
   height: min-content;
   margin: 0;
   max-height: 28em;
-  top: 4.3em;
-  right: 11em;
+  z-index: 5;
 }
 
 a.linky {

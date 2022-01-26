@@ -4,6 +4,21 @@ const qlbtm = document.getElementById("qlbtm");
 const qlbti = document.getElementById("qlbti");
 const dropgame = document.getElementById("dropgame");
 const gdt = document.getElementById("dropgamethingy");
+const urlbar = document.getElementById("urlbar");
+const search = document.getElementById("search");
+
+function serLF() {
+    search.classList.remove("borderSY");
+    search.classList.add("borderSN");
+}
+
+function serGF() {
+    search.classList.remove("borderSN");
+    search.classList.add("borderSY");
+}
+
+urlbar.onfocus = serGF;
+urlbar.onblur = serLF;
 
 qld.addEventListener("mouseleave", () => {
     qld.style.visibility = "collapse";
