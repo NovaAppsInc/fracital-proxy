@@ -1,0 +1,313 @@
+body {
+    background: #212121 ;
+    font-family: 'Aldrich', sans-serif;
+    color: #0277bd;
+    height: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    font-size: 2em;
+    color: black;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 8em;
+    text-align: center;
+    /*color: white;*/
+}
+
+h3,
+h4 {
+    text-align: center;
+    /*margin-top: 2%;*/
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+section {
+     position: absolute;
+     bottom: 0;
+}
+
+.header {
+animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+   0% {color: #1565c0;}
+     30% {color: #f44336;}
+     60% {color: #2e7d32;}
+    100% {color: #fff176;}
+
+}
+
+/*simon board*/
+.container {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    border: 5px solid #757575;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5em auto;
+    /*flex: 1;*/
+}
+
+/*spins simon in nightmare mode*/
+.spinSimon {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 15000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 15000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
+}
+
+.box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 2px solid #757575;
+    opacity: 0.7;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.yellow {
+    /*border-radius: 100% 10% 10% 10%;*/
+    border-top-left-radius: 100%;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#fff176, #fbc02d);
+}
+
+.red {
+    /*border-radius: 10% 100% 10% 10%;*/
+    border-top-right-radius: 100%;
+    top: 10px;
+    right: 10px;
+    background: radial-gradient(#f44336, #b71c1c);
+}
+
+.blue {
+    border-bottom-left-radius: 100%;
+    bottom: 10px;
+    left: 10px;
+    background: radial-gradient(#42a5f5, #1565c0);
+
+}
+
+.green {
+    /*border-radius: 10% 10% 100% 10%;*/
+    border-bottom-right-radius: 100%;
+    right: 10px;
+    bottom: 10px;
+    background: radial-gradient(#66bb6a, #2e7d32);
+}
+
+.center {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    top: 135px;
+    left: 135px;
+    border: 3px solid #424242;
+    background: radial-gradient(#eceff1, #78909c);
+/*margin: 20px;*/
+    /*width: 100px; */
+    /*height: 100px;    */
+    /*background: #f00;*/
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.board {
+    position: relative;
+    width: 65%;
+    margin: 0 auto 25px;
+    margin-top: 2em;
+    color: white;
+}
+
+.score {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+}
+
+.score:first-child {
+    font-size: 2em;
+    padding-left: 2%;
+}
+
+#quit {
+    width: 1em;
+}
+
+#quit:hover {
+    color: red;
+    cursor: pointer;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.level,
+.highscore {
+    text-align: right;
+    font-size: 20px;
+    /*margin-bottom: 50px;*/
+}
+
+#play,
+#end1 {
+    color: white;
+    font-size: 4em;
+    margin: 0.5em auto;
+    width: 3em;
+}
+
+#play:hover,
+#end1:hover {
+    color: #2e7d32;
+    cursor: pointer;
+}
+
+.light {
+    opacity: 1;
+}
+
+.endMsg {
+    font-size: 1.5em;
+    border: 1px dashed #0277bd;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mode {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#easy,
+#medium,
+#nightmare {
+    display: inline-block;
+    padding: 10px;
+    background: white;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+#easy {
+    color: #2e7d32;
+}
+
+#medium {
+    color: #fbc02d;
+}
+
+#nightmare {
+    color: #b71c1c;
+}
+
+#easy:hover,
+#medium:hover,
+#nightmare:hover {
+    cursor: pointer;
+    background: #bbdefb;
+    transform: scale(1.15);
+}
+
+footer {
+    height: 20px;
+    background: grey;
+    border: 1px solid black;
+    padding: 5px 0;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 5em;
+    color: black;
+}
+
+a:last-child {
+    margin-right: 0;
+}
+
+a:hover {
+    color: #01579b;
+}
+
+/* zocial */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+@media only and screen and (min-width: 500px) {
+    footer {
+        /*position: absolute;*/
+
+    }
+}
+

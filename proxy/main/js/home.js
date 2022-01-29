@@ -17,9 +17,9 @@ function go(link) {
     window.open("/kb/"+xor.encode(link), "_self");
 };
 
-function clig1() {
+document.getElementById('clig').addEventListener("click", () => {
     window.open("./g.html", "_self");
-}
+});
 
 function clig2() {
     go("http://discord.gg/WzNvquznfw");

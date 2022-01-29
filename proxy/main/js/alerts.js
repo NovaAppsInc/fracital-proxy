@@ -6,6 +6,26 @@ const dropgame = document.getElementById("dropgame");
 const gdt = document.getElementById("dropgamethingy");
 const urlbar = document.getElementById("urlbar");
 const search = document.getElementById("search");
+const droppiebtn = document.getElementById("droppiebtn");
+const droppies = document.getElementById("droppies");
+
+droppiebtn.addEventListener("click", () => {
+    if(droppies.classList.contains("hide")) {
+        droppies.classList.remove("hide");
+        droppies.classList.add("show");
+    } else if(droppies.classList.contains("show")) {
+        droppies.classList.remove("show");
+        droppies.classList.add("hide");
+        if (gdt.classList.contains("open")) {
+            gdt.classList.remove("open");
+            gdt.classList.add("hidden");
+        }
+        if (qld.classList.contains("open")) {
+            qld.classList.remove("open");
+            qld.classList.add("hidden");
+        }
+    }
+});
 
 function serLF() {
     search.classList.remove("borderSY");
@@ -20,25 +40,11 @@ function serGF() {
 urlbar.onfocus = serGF;
 urlbar.onblur = serLF;
 
-qld.addEventListener("mouseleave", () => {
-    qld.style.visibility = "collapse";
-    qld.classList.remove("open");
-    qld.classList.add("hidden");
-});
-
 qlbtm.addEventListener("click", () => {
     if (qld.classList.contains("hidden")) {
-        // if(gdt.classList.contains("open")) {
-        //     let bong = 1;
-        //     let bongp = bong += 1;
-        //     let bongs = bongp.toString();
-        //     gdt.style.zIndex = bongs;
-        // }
-        qld.style.visibility = "visible";
         qld.classList.remove("hidden");
         qld.classList.add("open");
     } else if (qld.classList.contains("open")) {
-        qld.style.visibility = "collapse";
         qld.classList.remove("open");
         qld.classList.add("hidden");
     }
@@ -46,12 +52,6 @@ qlbtm.addEventListener("click", () => {
 
 dropgame.addEventListener("click", () => {
     if (gdt.classList.contains("hidden")) {
-        // if(qld.classList.contains("open")) {
-        //     let bongo = 1;
-        //     let bongop = bongo += 1;
-        //     let bongos = bongop.toString();
-        //     gdt.style.zIndex = bongos;
-        // }
         gdt.classList.remove("hidden");
         gdt.classList.add("open");
     } else if (gdt.classList.contains("open")) {

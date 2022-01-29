@@ -1,50 +1,73 @@
-// class xor {
-//     static encode(str) {
-//         return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
-//     };
-//     static decode(str) {
-//         return decodeURIComponent(str.slice(0, -1)).split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('');
-//     };
-// };
+const g2048 = document.getElementById("g2048");
+const clumsy = document.getElementById("clumsy");
+// const astray = document.getElementById("astray");
+const hextris = document.getElementById("hextris");
+const tower = document.getElementById("tower");
+const simon = document.getElementById("simon");
+const jsracer = document.getElementById("jsracer");
 
-// function go(link) {
-//   console.log(link);
-//   if (link == '') {
-//     alert('Bruh you need to insert a url!');
-//   } else if (!link.includes("http://")) {
-//         link = "http://" + link;
-//     };
-//     document.getElementById("frame").src="/kb/"+xor.encode(link);
-// };
+document.getElementById("g2048").addEventListener("click", () => {
+    window.open("/gainly/2048/index.html", "_self");
+});
 
-// document.cookie="olds=sus";
+clumsy.addEventListener("click", () => {
+    window.open("/gainly/clumsy-bird/index.html", "_self")
+});
 
-// // Game External buttons //
-// const dls = document.getElementById("dls");
-// const mcmr = document.getElementById("mcmr");
-// const slith = document.getElementById("slith");
-// const strv = document.getElementById("starve");
-// const zomb = document.getElementById("zomb");
-// // End //
-
-// // Game External functions //
-// dls.addEventListener("click", (e) => {
-//   go("https://mathplayground.com/duck5/index.html");
+// astray.addEventListener("click", () => {
+//   frame.src = "/gainly/astray/index.html";
+//   frame.focus();
 // });
 
-// mcmr.addEventListener("click", (e) => {
-//   go("https://www.madalingames.com/madalingames/wp-content/uploads/games/webgl/M/MCM-files/01/002/mcm-webgl/index.html");
+hextris.addEventListener("click", () => {
+    window.open("/gainly/hextris/index.html", "_self")
+});
+
+tower.addEventListener("click", () => {
+    window.open("/gainly/tower-building/index.html", "_self")
+});
+
+simon.addEventListener("click", () => {
+    window.open("/gainly/simon-says/index.html", "_self")
+});
+
+jsracer.addEventListener("click", () => {
+    window.open("/gainly/javascript-racer/v4.final.html", "_self")
+});
+
+const g2048t = document.getElementById("g2048t");
+const clumsyt = document.getElementById("clumsyt");
+// const astray = document.getElementById("astray");
+const hextrist = document.getElementById("hextrist");
+const towert = document.getElementById("towert");
+const simont = document.getElementById("simont");
+const jsracert = document.getElementById("jsracert");
+
+g2048t.addEventListener("click", () => {
+    window.open("/gainly/2048/index.html", "_self");
+});
+
+clumsyt.addEventListener("click", () => {
+    window.open("/gainly/clumsy-bird/index.html", "_self")
+});
+
+// astray.addEventListener("click", () => {
+//   frame.src = "/gainly/astray/index.html";
+//   frame.focus();
 // });
 
-// slith.addEventListener("click", (e) => {
-//   go("slither.io");
-// });
+hextrist.addEventListener("click", () => {
+    window.open("/gainly/hextris/index.html", "_self")
+});
 
-// strv.addEventListener("click", (e) => {
-//   go("starve.io");
-// });
+towert.addEventListener("click", () => {
+    window.open("/gainly/tower-building/index.html", "_self")
+});
 
-// zomb.addEventListener("click", (e) => {
-//   go("zombsroyale.io");
-// })
-// // End //
+simont.addEventListener("click", () => {
+    window.open("/gainly/simon-says/index.html", "_self")
+});
+
+jsracert.addEventListener("click", () => {
+    window.open("/gainly/javascript-racer/v4.final.html", "_self")
+});

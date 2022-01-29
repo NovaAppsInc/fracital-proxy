@@ -19,6 +19,10 @@ function go(link) {
     document.getElementById("frame").src="/kb/"+xor.encode(link);
 };
 
+document.getElementById("btnsrch").addEventListener("click", () => {
+  go(document.getElementById('urlbar').value);
+});
+
 // Quick Launch buttons //
 const ggl = document.getElementById("ggl");
 const ytmus = document.getElementById("ytmus");
@@ -56,6 +60,53 @@ appl.addEventListener("click", () => {
 reddi.addEventListener("click", () => {
   go("http://reddit.com");
 });
+// End //
+
+// Games //
+const frame = document.getElementById("frame");
+const g2048 = document.getElementById("g2048");
+const clumsy = document.getElementById("clumsy");
+// const astray = document.getElementById("astray");
+const hextris = document.getElementById("hextris");
+const tower = document.getElementById("tower");
+const simon = document.getElementById("simon");
+const jsracer = document.getElementById("jsracer");
+
+g2048.addEventListener("click", () => {
+  frame.src = "/gainly/2048/index.html";
+  frame.focus();
+});
+
+clumsy.addEventListener("click", () => {
+  frame.src = "/gainly/clumsy-bird/index.html";
+  frame.focus();
+});
+
+// astray.addEventListener("click", () => {
+//   frame.src = "/gainly/astray/index.html";
+//   frame.focus();
+// });
+
+hextris.addEventListener("click", () => {
+  frame.src = "/gainly/hextris/index.html";
+  frame.focus();
+});
+
+tower.addEventListener("click", () => {
+  frame.src = "/gainly/tower-building/index.html";
+  frame.focus();
+});
+
+simon.addEventListener("click", () => {
+  frame.src = "/gainly/simon-says/index.html";
+  frame.focus();
+});
+
+jsracer.addEventListener("click", () => {
+  frame.src = "/gainly/javascript-racer/v4.final.html";
+  frame.focus();
+});
+
 // End //
 
 let observer = new MutationObserver(mutations => {

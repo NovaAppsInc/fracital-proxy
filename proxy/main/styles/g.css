@@ -6,6 +6,7 @@ body {
     position: absolute;
     height: 100vh;
     display: flex;
+    background: #222222;
 }
 
 h1,
@@ -247,7 +248,7 @@ a {
     height: min-content;
 }
 
-a.linky:hover {
+/* a.linky:hover {
     cursor: pointer;
     color: #f971e4;
 }
@@ -278,4 +279,45 @@ ul.links {
 
 .sm {
     margin: 0;
+} */
+
+.gamesL {
+    background: #222222;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.gcard {
+    width: 13em;
+    height: 17em;
+    background: #2b2b2b;
+    margin: 0 1em 3em 1em;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gimg {
+    height: 74%;
+    width: 100%;
+    background: #333;
+    border-radius: 10px;
+}
+
+.gtext {
+    color: #f28bff;
+    margin-top: 0.7em;
+}
+
+.gtext:hover {
+    color: #ee6fff;
+    margin-top: 0.7em;
+    cursor: pointer;
+}
+
+.gimg:hover {
+    cursor: pointer;
 }
