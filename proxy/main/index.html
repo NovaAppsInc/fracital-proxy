@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
   <script async src="https://arc.io/widget.min.js#upwQmViS"></script>
+  <link rel="stylesheet" href="./styles/scrollbars.css">
 </head>
   <body>
     <div class="toolbar" role="banner">
@@ -17,14 +18,14 @@
       <div class="searchwrap" id="search">
         <div class="urlbar" name="search" id="searchwrap">
           <input type="search" name="url" id="urlbar" class="urlbarI" placeholder="Type a URL address">
+          <button  class="btnsrch" id="btnsrch" for="search">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" id="icon-search" width="100" height="100" viewBox="0 0 24 24" stroke-width="2.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </button>
         </div>
-        <button  class="btnsrch" id="btnsrch" for="search">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" id="icon-search" width="100" height="100" viewBox="0 0 24 24" stroke-width="2.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="10" cy="10" r="7" />
-            <line x1="21" y1="21" x2="15" y2="15" />
-          </svg>
-        </button>
       </div>
       <a class="droppiebtn" id="droppiebtn">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon droppieic icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -34,6 +35,10 @@
           <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       </a>
+    </div>
+    <div class="suggestbar">
+      <div id="results" class="results hideRES">
+      </div>
     </div>
     <div class="droppies hide" id="droppies">
       <div class="leftc">
@@ -61,19 +66,21 @@
           <h2 class="qlText">Quick Launch</h2>
         </div>
       </div>
-      <div class="dialogsL">
+      <div class="dialogsL" id="dialogsL">
         <div class="ql hidden" id="qld">
           <h3 class="infql">Quick Launch sites</h3>
-          <div class="btnsql">
+          <div class="btnsql scroller">
             <button class="qlb ggl" id="ggl">Google</button>
-            <button class="qlb yt" id="yt">Youtube</button>
-            <button class="qlb ytmus" id="ytmus">Youtube Music</button>
+            <button class="qlb yt" id="yt">YouTube</button>
+            <button class="qlb ytmus" id="ytmus">YouTube Music</button>
             <button class="qlb appl" id="appl">Apple Music</button>
             <button class="qlb reddi" id="reddi">Reddit</button>
-            <button class="qlb cmg last" id="cmg">Cool Math Games</button>
+            <button class="qlb twt" id="twt">Twitter</button>
+            <button class="qlb twtch" id="twtch">Twitch</button>
+            <button class="qlb inst" id="inst">Instagram</button>
           </div>
         </div>
-        <div class="games navg gamedropthingy hidden" id="dropgamethingy">
+        <div class="games navg gamedropthingy hidden scroller" id="dropgamethingy">
           <ul class="links">
             <!-- <p class="mainten">Still in maintenance</p> -->
               <li class="sm linky">
@@ -97,11 +104,14 @@
               <li class="aft linky">
                   <a class="sm linky" id="jsracer">JavaScript Racer</a>
               </li>
+              <li class="aft linky">
+                  <a class="sm linky" id="retro">Retro Bowl</a>
+              </li>
           </ul>
         </div>
       </div>
     </div>
-    <iframe src="home.html" frameborder="0" class="frame" id="frame"></iframe>
+    <iframe src="home.html" frameborder="0" onload="bing();" class="frame" id="frame"></iframe>
     <div class="alertbtm" id="alert">
       <p class="alert">Games are back! You can browse games through the drop downs from the top right along with the games list page!</p>
       <span class="alertbtmb" id="alertbtm"></span>
@@ -110,4 +120,5 @@
   <script src="./js/alerts.js"></script>
   <script src="./js/agent.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/custo.js"></script>
 </html>

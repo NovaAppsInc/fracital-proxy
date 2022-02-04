@@ -1,10 +1,16 @@
+/* Fonts */
+
 @font-face {
-  font-family: 'Poppins';
-  src: url(../resources/Poppins-Regular.ttf);
+  font-family: poppins;
+  src: url(../resources/Poppins-Regular.ttf)
 }
 
+/* Fonts end*/
+
+/* Basics */
+
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 body {
@@ -12,7 +18,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   font-size: 14px;
   color: #fff;
   background: #222;
@@ -20,21 +26,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 8px 0
 }
 
 p {
   margin: 8px 0 8px 23px;
-  width: 88%;
+  width: 88%
 }
 
 .spacer {
@@ -51,7 +52,6 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 100vw;
-  overflow: hidden
 }
 
 .content {
@@ -115,7 +115,7 @@ svg.material-icons:not(:last-child) {
 
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(0, 0, 0, .35)
+  box-shadow: 0 4px 17px rgba(0,0,0,.35)
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -136,9 +136,7 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px
 }
 
-a,
-a:visited,
-a:hover {
+a,a:visited,a:hover {
   color: #1976d2;
   text-decoration: none
 }
@@ -149,7 +147,7 @@ a:hover {
 
 .circle-link:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0 3px 15px rgba(0, 0, 0, .2)
+  box-shadow: 0 3px 15px rgba(0,0,0,.2)
 }
 
 footer {
@@ -164,32 +162,30 @@ footer a {
   align-items: center
 }
 
-@media screen and (max-width:767px) {
-
-  .card-container>*:not(.circle-link),
-  .terminal {
-    width: 100%
+@media screen and (max-width: 767px) {
+  .card-container>*:not(.circle-link),.terminal {
+      width:100%
   }
 
   .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0
+      height: 16px;
+      margin: 8px 0
   }
 
   .card.highlight-card span {
-    margin-left: 72px
+      margin-left: 72px
   }
 
   svg#rocket-smoke {
-    right: 120px;
-    transform: rotate(-5deg)
+      right: 120px;
+      transform: rotate(-5deg)
   }
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width: 575px) {
   svg#rocket-smoke {
-    display: none;
-    visibility: hidden
+      display:none;
+      visibility: hidden
   }
 }
 
@@ -233,28 +229,85 @@ pre.merge-begin+pre>span:first-child {
   border-top-left-radius: 0
 }
 
+a.linky {
+  display: grid;
+  margin-top: 9px
+}
+
+ul.links {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: min-content;
+  width: 5.8em;
+  text-align: center;
+  margin-top: 5.8em;
+}
+
+a {
+  height: min-content;
+  text-decoration: none;
+  color: #fff
+}
+
+a.linky:hover {
+  cursor: pointer;
+  color: #f971e4
+}
+
+.sm:hover {
+  cursor: pointer;
+  color: #f971e4
+}
+
+.hide {
+  visibility: collapse
+}
+
+.show {
+  visibility: visible
+}
+
+/* Basics end */
+
+/* Search Input */
+
 .urlbar {
+  display: flex;
   color: #fff;
   background: #3d3d3d;
   border: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  height: 2.4rem;
+  height: 100%;
   width: 100%;
-  padding: 6px 16px;
   margin-bottom: 0;
 }
 
-.urlbarI {
-  font-family: 'Poppins', sans-serif;
+.urlbarI.resOp {
+  display: flex;
   color: #fff;
-  background: transparent;
+  background: #3d3d3d;
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #606060;
+  z-index: 4;
+  font-size: 23px;
+  border: none;
+}
+
+.urlbarI {
+  font-family: poppins,sans-serif;
+  color: #fff;
+  background: 0 0;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 2.4rem;
+  height: 100%;
   width: 100%;
   margin-bottom: 0;
+  padding: 6px 18px;
 }
 
 ::selection {
@@ -263,34 +316,55 @@ pre.merge-begin+pre>span:first-child {
 }
 
 .urlbarI:focus {
-  outline: 1px;
+  outline: 1px
 }
 
 .borderSY {
-  border: 1px solid #ed67ff;
+  box-shadow: 0 0 6px 1px #ed67ff !important;
 }
 
 .borderSN {
-  border: none;
+  box-shadow: 0 0 6px 1px #202020;
+}
+
+.searchwrap.resOp {
+  display: grid;
+  align-items: center;
+  width: 75.4em;
+  height: 5em;
+  margin-bottom: 0;
+  z-index: 9;
+  box-shadow: 0 0 6px 1px #ed67ff !important;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 8em;
+  margin-top: 1em;
+  min-width: 238.609px;
+  position: relative;
 }
 
 .searchwrap {
-  display: flex;
+  display: grid;
   align-items: center;
   width: 75.4em;
   height: 3.6em;
   margin-bottom: 0;
   z-index: 2;
-  box-shadow: 0px 0px 6px 1px #202020;
+  box-shadow: 0 0 6px 1px #202020;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 8em;
+  min-width: 238.609px;
+}
+
+.toolbar > .searchwrap {
+  width: 84%;
 }
 
 .icon-tabler-search {
   height: 22px;
   width: 22px;
-  stroke: #fff;
+  stroke: #fff
 }
 
 .btnsrch {
@@ -298,12 +372,67 @@ pre.merge-begin+pre>span:first-child {
   height: 100%;
   width: 54px;
   border: none;
-  background: transparent;
+  background: 0 0;
+}
+
+.btnsrch.resOp {
+  padding: 0;
+  height: 100%;
+  width: 77px;
+  border: none;
+  background: 0 0;
 }
 
 .btnsrch:hover {
-  background: #ff3beae0;
+  background: #ff3beae0
 }
+
+div.results {
+  background: #3d3d3d;
+  display: none;
+}
+
+div.results.open {
+  background: #3d3d3d;
+  display: grid;
+  margin-bottom: -21px;
+  width: 65%;
+  height: 100%;
+  margin-left: 0em;
+  box-shadow: 0 0 6px 1px #f084ff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Search Input End */
+
+/* Suggest bar */
+
+.suggestbar {
+  height: min-content;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100vw;
+  z-index: 9;
+  position: relative;
+  justify-content: center;
+  margin-top: 0.7em;
+}
+.suggs {
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px;
+  max-height: 16.76em;
+  overflow: auto;
+}
+
+/* Suggest bar end */
+
+/* Logo */
 
 .lg {
   margin: 0;
@@ -314,12 +443,16 @@ pre.merge-begin+pre>span:first-child {
   margin-left: 16px;
   z-index: 1;
   margin-right: 6em;
-  user-select: none;
+  user-select: none
 }
 
 .lg:hover {
   cursor: pointer
 }
+
+/* Logo end */
+
+/* Browsing */
 
 .frame {
   border: none;
@@ -332,29 +465,17 @@ pre.merge-begin+pre>span:first-child {
   height: calc(100% - 69px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  user-select: none;
+  user-select: none
 }
 
-.infoTitl {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
+/* Browsing end */
 
-p.info {
-  width: 41rem;
-  text-align: center;
-}
-
-h1.name {
-  color: #f971e4;
-  font-size: 4rem;
-}
+/* Alert box */
 
 .alertbtm {
   position: absolute;
   bottom: 1%;
-  right: 0.5%;
+  right: .5%;
   background: #eb51ff;
   width: 22em;
   border-radius: 4px;
@@ -365,7 +486,30 @@ h1.name {
   height: 5px;
   width: 100%;
   border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px
+}
+
+/* Alert box end */
+
+/* Quick launch */
+
+.rocket {
+  width: 45px;
+  height: 31px;
+  fill: #fff;
+  stroke-width: 0
+}
+
+.dialogsL {
+  display: grid;
+  width: min-content;
+  justify-items: center;
+  height: max-content;
+  margin: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 div.qlbt {
@@ -378,44 +522,30 @@ div.qlbt {
   z-index: 3;
   min-width: 39px;
   display: flex;
-  padding: 5px 14px 5px 0px;
+  padding: 5px 14px 5px 0;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.rocket {
-  width: 45px;
-  height: 31px;
-  fill: #ffffff;
-  stroke-width: 0;
+  text-align: center
 }
 
 .qlbt:hover {
   background: #363636;
   cursor: pointer;
-  color: #f28bff;
+  color: #f28bff
 }
 
 .qlbt:hover .rocket {
-  fill: #f28bff;
+  fill: #f28bff
 }
 
 .qlText {
-  margin: 0 0 3px 2px;
+  margin: 0 0 3px 2px
 }
 
 div.ql.hidden {
   visibility: collapse;
-  width: 194px;
-  height: min-content;
-  padding: 0 16px 12px;
   position: absolute;
-  right: 1.4vw;
-  top: 60px;
-  background: #333;
-  border-radius: 5px;
-  z-index: 1;
+
 }
 
 div.ql.open {
@@ -424,15 +554,20 @@ div.ql.open {
   width: 180px;
   border-radius: 10px;
   padding: 0 16px 12px;
-  z-index: 1;
   display: grid;
   justify-items: center;
-  /*! margin-left: -13px; */
+  box-shadow: 0 0 6px 1px #363636;
+  z-index: 3;
+  position: absolute;
 }
 
 div.btnsql {
   display: grid;
-  width: 103%;
+  width: 108%;
+  overflow: auto;
+  height: 9.5em;
+  border-radius: 2px;
+  margin-left: 0.7em;
 }
 
 .qlb {
@@ -441,28 +576,32 @@ div.btnsql {
   background: #f760ff;
   color: #fbfbfb;
   margin-bottom: 5px;
-  border-radius: 3px;
+  border-radius: 3px
 }
 
 .qlb:hover {
   cursor: pointer;
   background: #f01dfb;
-  color: #fff;
+  color: #fff
 }
 
 .infql {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .last {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 a.linkAl {
   font-weight: bolder;
   text-decoration: underline;
-  color: #e2e2e2;
+  color: #e2e2e2
 }
+
+/* Quick launch end */
+
+/* bug launch */
 
 .bug {
   height: min-content;
@@ -474,61 +613,54 @@ a.linkAl {
   margin-bottom: 5px;
   background: #4a4a4a;
   border-radius: 25px;
-  padding: 4px 3px 4px 9px;
+  padding: 4px 3px 4px 9px
 }
 
 .bug:hover .icon {
   stroke: #f28bff;
   stroke-width: 1.5;
-  fill: #f28bff;
+  fill: #f28bff
 }
 
 .bug:hover {
   cursor: pointer;
   color: #f28bff;
-  background: #363636;
+  background: #363636
 }
 
 .bugsText {
-  margin: 0 0 3px 0;
+  margin: 0 0 3px
 }
 
 .git {
   fill: #fff;
   height: 34px;
   width: 34px;
-  margin-right: 6px;
+  margin-right: 6px
 }
 
-.toolbar>.searchwrap {
-  width: 84%;
-  height: 3.6em;
-}
+/* Bug launch end */
+
+/* Game drop */
 
 .leftc {
   width: min-content;
   height: min-content;
   display: grid;
   min-width: 180px;
-  background: #5B5B5B;
-  z-index: 1;
+  background: #5b5b5b;
+  z-index: 4;
   padding: 14px 23px 14px 11px;
   border-radius: 10px;
+  box-shadow: 0 0 3px 1px #5e5e5e;
 }
-
-p.alert {
-  margin:10px 0 11px 19px;
-  width: 89%;
-}
-
-/* Game Nav thingy */
 
 .gamedropic {
-  stroke: #ffffff;
-  fill: #ffffff;
+  stroke: #fff;
+  fill: #fff;
   width: 34px;
   height: 34px;
-  margin-right: 5px;
+  margin-right: 5px
 }
 
 .gamedrop {
@@ -541,31 +673,23 @@ p.alert {
   margin-bottom: 5px;
   background: #4a4a4a;
   padding: 4px 1px 4px 9px;
-  border-radius: 26px;
+  border-radius: 26px
 }
 
 .gamedrop:hover {
   cursor: pointer;
   color: #f28bff;
-  background: #363636;
+  background: #363636
 }
 
 .gamedrop:hover .gamedropic {
   stroke: #f28bff;
-  fill: #f28bff;
-}
-
-.dialogsL {
-  display: grid;
-  width: min-content;
-  justify-items: center;
-  height: max-content;
-  margin: 0;
+  fill: #f28bff
 }
 
 .navg {
-  padding: 12px 0 12px 0;
-  background: #333333;
+  padding: 12px 0;
+  background: #333;
   width: 12rem;
   justify-items: center;
   display: grid;
@@ -576,78 +700,25 @@ p.alert {
   height: min-content;
   max-height: 28em;
   z-index: 5;
-  margin-left: 1.3px;
   align-content: center;
-  font-weight: bold;
+  font-weight: 700;
   max-height: 189px;
-  /*! overflow: auto; */
-}
-
-a.linky {
-  display: grid;
-  margin-top: 9px;
-}
-
-ul.links {
-  display: grid;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: min-content;
-  width: 5.8em;
-  text-align: center;
-  /*! margin-top: 3em; */
-}
-
-a {
-  height: min-content;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a.linky:hover {
-  cursor: pointer;
-  color: #f971e4;
-}
-
-div.inf {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  color: #ff50e5;
-  float: right;
-  height: 100vh;
-  width: 100%;
-}
-
-span {
-  display: inline-block;
-  line-height: 20px;
-}
-
-span.highlight {
-  background: #ed67ffd8;
-}
-
-.sm:hover {
-  cursor: pointer;
-  color: #f971e4;
+  box-shadow: 0 0 6px 1px #363636;
+  overflow: auto;
 }
 
 div.gamedropthingy.hidden {
-  visibility: collapse;
+  visibility: collapse
 }
 
 div.gamedropthingy.open {
-  visibility: visible;
+  visibility: visible
 }
 
 .mainten {
   width: 9em;
-  margin: 0 0 0 0;
+  margin: 0
 }
-
-/* End */
 
 .droppies {
   display: grid;
@@ -656,53 +727,28 @@ div.gamedropthingy.open {
   height: min-content;
   justify-items: center;
   user-select: none;
-}
-
-.hide {
-  visibility: collapse;
-}
-
-.show {
-  visibility: visible;
+  margin-top: -0.7em;
 }
 
 .droppiebtn {
   height: min-content;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   margin-right: 1.6em;
+  z-index: 999;
 }
 
 .droppiebtn:hover {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .droppiebtn:hover .droppieic {
-  stroke: #ff7aeb;
+  stroke: #ff7aeb
 }
 
 .droppieic {
   width: 32px;
-  height: 32px;
+  height: 32px
 }
 
- /* width */
- ::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #222222;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} 
+/* Game drop end */
