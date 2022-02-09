@@ -45,13 +45,23 @@ p {
 .toolbar {
   height: 69px;
   display: flex;
-  align-items: center;
   background-color: #3d3d3d;
   color: #fff;
   font-weight: 600;
-  border-bottom-left-radius: 10px;
+  width: 100%;
+  align-items: center;
   border-bottom-right-radius: 10px;
-  width: 100vw;
+  border-bottom-left-radius: 10px;
+}
+
+.toolwrap {
+  height: 69px;
+  display: flex;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-weight: 600;
+  width: 75%;
+  align-items: center;
 }
 
 .content {
@@ -439,7 +449,7 @@ div.results.open {
   padding: 0;
   width: 40px;
   height: 40px;
-  float: left;
+  /*! float: left; */
   margin-left: 16px;
   z-index: 1;
   margin-right: 6em;
@@ -465,7 +475,7 @@ div.results.open {
   height: calc(100% - 69px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  user-select: none
+  user-select: none;
 }
 
 /* Browsing end */
