@@ -46,12 +46,43 @@ subsir.addEventListener("click", () => {
 });
 
 subsirc.addEventListener("click", () => {
+    let ballsc = site.value.toLowerCase();
     if(!site.value) {
         alert("if you wish to cloak, please type in a name in the input!")
         return
     }
-    relvc.setAttribute("value", site.value);
-    parent.document.title = relvc.getAttribute("value");
+    if(ballsc.includes("class")) {
+        parent.document.title = "Classes"
+        link.href = "./classes.png";
+        return;
+    } else if(ballsc.includes("classroom")) {
+        parent.document.title = "Classes"
+        link.href = "./classes.png";
+        return;
+    } else if(ballsc.includes("google")) {
+        parent.document.title = "Google"
+        link.href = "./google.png";
+        return;
+    } else if(ballsc.includes("slides")) {
+        parent.document.title = "Google Slides"
+        link.href = "./slides.png";
+        return;
+    } else if(ballsc.includes("slide")) {
+        parent.document.title = "Google Slides"
+        link.href = "./slides.png";
+        return;
+    } else if(ballsc.includes("docs")) {
+        parent.document.title = "Google Docs"
+        link.href = "./docs.png";
+        return;
+    } else if(ballsc.includes("doc")) {
+        parent.document.title = "Google Docs"
+        link.href = "./docs.png";
+        return;
+    } else {
+        relvc.setAttribute("value", site.value);
+        parent.document.title = relvc.getAttribute("value");
+    }
 });
 
 subsirci.addEventListener("click", () => {
@@ -70,11 +101,20 @@ subsirci.addEventListener("click", () => {
         if(balls.includes("google")) {
             link.href = "./google.png";
             return;
-        } else if(balls.includes("classroom")) {
+        } else if(balls.includes("classroom") || balls.includes("class")) {
+            parent.document.title = "Classes"
             link.href = "./classes.png";
         } else if(balls.includes("docs")) {
+            parent.document.title = "Google Docs"
+            link.href = "./docs.png";
+        } else if(balls.includes("doc")) {
+            parent.document.title = "Google Docs"
             link.href = "./docs.png";
         } else if(balls.includes("slides")) {
+            parent.document.title = "Google Slides"
+            link.href = "./slides.png";
+        } else if(balls.includes("slide")) {
+            parent.document.title = "Google Slides"
             link.href = "./slides.png";
         }
     }
