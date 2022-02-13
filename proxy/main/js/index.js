@@ -7,6 +7,12 @@ class xor {
     };
 };
 
+const settb = document.getElementById("settb");
+
+settb.addEventListener("click", () => {
+  frame.src = "settings.html"
+})
+
 document.cookie="olds=sus";
 
 function go(link) {
@@ -170,3 +176,18 @@ function bing() {
     };
   }
 }
+
+const commands = document.getElementById("commands");
+
+document.addEventListener("keydown", e => {
+  if(e.shiftKey && e.keyCode == "67") {
+    e.preventDefault();
+    if(commands.classList.contains("hide")) {
+      commands.classList.remove("hide");
+      commands.classList.add("show");
+    } else if(commands.classList.contains("show")) {
+      commands.classList.remove("show");
+      commands.classList.add("hide");
+    }
+  }
+})

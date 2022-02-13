@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body {
+    background: #222222;
+    height: 100%;
+    margin: 0;
+    width: 24em;
+    font-family: 'Segoe UI';
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+}
+
+.settings {
+    color: #f971e4;
+    display: grid;
+    justify-content: center;
+}
+
+.titles {
+    text-align: center;
+    border-bottom: 2px solid #373737;
+    width: 100%;
+}
+
+::placeholder {
+    color: white;
+}
+
+input {
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 6px;
+    color: #f5a9ff;
+}
+
+select {
+    background: #333333;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+
+select:hover {
+    background: #3f3f3f;
+}
+
+option {
+    color: #f28bff;
+}
+
+.subsir {
+    color: white;
+}
+
+.subsir:hover {
+    background: #3f3f3f;
+    cursor: pointer;
+}
+
+.siteC {
+    margin-right: 2px;
+}
+
+.faviC {
+    width: 14em;
+}
+
+/* themes */ 
+.reformT {
+    display: grid;
+    margin-top: 5px;
+}
+
+.themeCSS {
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 6px 6px;
+    color: #f5a9ff;
+    resize: none;
+    width: 100%;
+    height: 21em;
+}
+
+.customT {
+    display: grid;
+}
+
+.custom {
+    /*! display: flex; */
+}
+
+.subthr {
+    color: white;
+    float: right;
+    margin-top: 4px;
+}
+
+.subsirc {
+    color: white;
+    width: min-content;
+    float: left;
+    margin-top: 3px;
+}
+
+.subsirc:hover {
+    background: #3f3f3f;
+    cursor: pointer;
+}
+
+.subsirci {
+    color: white;
+    width: min-content;
+    float: right;
+    margin-top: 3px;
+}
+
+.subsirci:hover {
+    background: #3f3f3f;
+    cursor: pointer;
+}
+
+.themes {
+    margin-top: 31px;
+}

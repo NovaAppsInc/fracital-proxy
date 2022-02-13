@@ -1,0 +1,118 @@
+const stylesheet = document.getElementById("style");
+let relv = document.getElementById("relv");
+let relvc = document.getElementById("relvc");
+let relvci = document.getElementById("relvci");
+let classroom = document.getElementById("classroom");
+let google = document.getElementById("google");
+let docs = document.getElementById("docs");
+let slides = document.getElementById("slides");
+let subsir = document.getElementById("subsir");
+let subsirc = document.getElementById("subsirc");
+let subsirci = document.getElementById("subsirci");
+let link = parent.document.getElementById("relt");
+let site = document.getElementById("site");
+let sitei = document.getElementById("sitei");
+
+classroom.addEventListener("click", () => {
+    relv.setAttribute("value", "Classes");
+});
+
+google.addEventListener("click", () => {
+    relv.setAttribute("value", "Google");
+});
+
+docs.addEventListener("click", () => {
+    relv.setAttribute("value", "Docs");
+});
+
+slides.addEventListener("click", () => {
+    relv.setAttribute("value", "Slides");
+});
+
+subsir.addEventListener("click", () => {
+    let atrrv = relv.getAttribute("value");
+    if(atrrv === "Docs") {
+        parent.document.title = "Google Docs";
+        link.href = "./docs.png";
+        return;
+    }
+    if(atrrv === "Slides") {
+        parent.document.title = "Google Slides";
+        link.href = "./slides.png";
+        return;
+    }
+    parent.document.title = relv.getAttribute("value");
+    link.href = "./" + relv.getAttribute("value").toLowerCase() + ".png";
+});
+
+subsirc.addEventListener("click", () => {
+    if(!site.value) {
+        alert("if you wish to cloak, please type in a name in the input!")
+        return
+    }
+    relvc.setAttribute("value", site.value);
+    parent.document.title = relvc.getAttribute("value");
+});
+
+subsirci.addEventListener("click", () => {
+    let balls = sitei.value.toLowerCase();
+    if(!sitei.value) {
+        alert("if you wish to cloak, please type in a name in the input!")
+        return;
+    }
+    if(sitei.value.includes("https://")) {
+        relvci.setAttribute("value", sitei.value);
+        link.href = relvci.getAttribute("value");
+    } else if(sitei.value.includes("http://")) {
+        relvci.setAttribute("value", sitei.value);
+        link.href = relvci.getAttribute("value");
+    } else if(!sitei.value.includes("https://") || !sitei.value.includes("http://")) {
+        if(balls.includes("google")) {
+            link.href = "./google.png";
+            return;
+        } else if(balls.includes("classroom")) {
+            link.href = "./classes.png";
+        } else if(balls.includes("docs")) {
+            link.href = "./docs.png";
+        } else if(balls.includes("slides")) {
+            link.href = "./slides.png";
+        }
+    }
+});
+
+/* custom css theme code for later */
+
+// const themeCSS = document.getElementById("themeCSS");
+
+// themeCSS.addEventListener("keydown", e => {
+//     // if(e.keyCode == "9") {
+//     //     e.preventDefault();
+//     //     console.log("fuck");
+//     // }
+//     if (e.key == 'Tab') {
+//         e.preventDefault();
+//         var start = this.selectionStart;
+//         var end = this.selectionEnd;
+    
+//         // set textarea value to: text before caret + tab + text after caret
+//         this.value = this.value.substring(0, start) +
+//           "\t" + this.value.substring(end);
+    
+//         // put caret at right position again
+//         this.selectionStart =
+//           this.selectionEnd = start + 1;
+//       }
+// })
+
+// var textareas = document.getElementsByTagName('textarea');
+// var count = textareas.length;
+// for(var i=0;i<count;i++){
+//     textareas[i].onkeydown = function(e){
+//         if(e.keyCode==9 || e.which==9){
+//             e.preventDefault();
+//             var s = this.selectionStart;
+//             this.value = this.value.substring(0,this.selectionStart) + "\t" + this.value.substring(this.selectionEnd);
+//             this.selectionEnd = s+4; 
+//         }
+//     }
+// }

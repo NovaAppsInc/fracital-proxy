@@ -5,7 +5,6 @@ const qlbti = document.getElementById("qlbti");
 const dropgame = document.getElementById("dropgame");
 const gdt = document.getElementById("dropgamethingy");
 const urlbar = document.getElementById("urlbar");
-const search = document.getElementById("search");
 const droppiebtn = document.getElementById("droppiebtn");
 const droppies = document.getElementById("droppies");
 const dialogsL = document.getElementById("dialogsL");
@@ -20,6 +19,7 @@ droppiebtn.addEventListener("click", () => {
         if (gdt.classList.contains("open")) {
             gdt.classList.remove("open");
             gdt.classList.add("hidden");
+            dialogsL.classList.remove("sha");
         }
         if (qld.classList.contains("open")) {
             qld.classList.remove("open");
@@ -48,16 +48,16 @@ qlbtm.addEventListener("click", () => {
             gdt.classList.add("hidden");
             qld.classList.remove("hidden");
             qld.classList.add("open");
-            dialogsL.style.boxShadow = "none";
+            dialogsL.classList.remove("sha");
         } else {
             qld.classList.remove("hidden");
             qld.classList.add("open");
-            dialogsL.style.boxShadow = "none";
+            dialogsL.classList.remove("sha");
         }
     } else if (qld.classList.contains("open")) {
         qld.classList.remove("open");
         qld.classList.add("hidden");
-        dialogsL.style.boxShadow = "none";
+        dialogsL.classList.remove("sha");
     }
 });
 
@@ -68,19 +68,22 @@ dropgame.addEventListener("click", () => {
             qld.classList.add("hidden");
             gdt.classList.remove("hidden");
             gdt.classList.add("open");
-            dialogsL.style.boxShadow = "0 0 6px 1px #363636";
+            dialogsL.classList.add("sha")
         } else {
             gdt.classList.remove("hidden");
             gdt.classList.add("open");
-            dialogsL.style.boxShadow = "0 0 6px 1px #363636";
+            dialogsL.classList.add("sha")
         }
     } else if (gdt.classList.contains("open")) {
         gdt.classList.remove("open");
         gdt.classList.add("hidden");
-        dialogsL.style.boxShadow = "none";
+        dialogsL.classList.remove("sha");
     }
 });
 
+settb.addEventListener("click", () => {
+    frames.src = "settings.html"
+});
 
 // qlbti.addEventListener("click", (e) => {
 //     console.log("fuck!")
