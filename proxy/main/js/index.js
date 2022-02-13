@@ -182,12 +182,6 @@ const commands = document.getElementById("commands");
 document.addEventListener("keydown", e => {
   if(e.shiftKey && e.keyCode == "67") {
     e.preventDefault();
-    if(commands.classList.contains("hide")) {
-      commands.classList.remove("hide");
-      commands.classList.add("show");
-    } else if(commands.classList.contains("show")) {
-      commands.classList.remove("show");
-      commands.classList.add("hide");
-    }
+    go("https://github.com/NovaAppsInc/fracital-proxy/blob/main/keywords.md")
   }
 })
