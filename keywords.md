@@ -9,3 +9,5 @@ these are for fast tab icon and title cloaking for some sites (***expanding list
 ![image](https://user-images.githubusercontent.com/49733954/153741509-d9bdc105-c9e0-4683-a897-e8e1cc0fd1eb.png)
 
 **these keywords aren't case sensitive, will work with capital letters**
+
+![image](https://user-images.githubusercontent.com/49733954/153742466-1fb72940-3eb0-4a28-a825-b7e1809e9d01.png)
