@@ -505,6 +505,18 @@ div.results.open {
   margin-bottom: -4px;
 }
 
+a.alertb {
+  text-decoration: underline;
+  color: white;
+  background: transparent;
+}
+
+a.alertb:hover {
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 /* Alert box end */
 
 /* Quick launch */

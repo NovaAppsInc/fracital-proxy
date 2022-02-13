@@ -182,6 +182,6 @@ const commands = document.getElementById("commands");
 document.addEventListener("keydown", e => {
   if(e.shiftKey && e.keyCode == "67") {
     e.preventDefault();
-    go("https://github.com/NovaAppsInc/fracital-proxy/blob/main/keywords.md")
+    go("https://github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
   }
 })

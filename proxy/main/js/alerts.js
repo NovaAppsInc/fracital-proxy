@@ -89,6 +89,6 @@ settb.addEventListener("click", () => {
 //     console.log("fuck!")
 // })
 
-setInterval(function () {
-    alerting.style.visibility = "collapse";
-}, 10000);
+// setInterval(function () {
+//     alerting.style.visibility = "collapse";
+// }, 10000);
