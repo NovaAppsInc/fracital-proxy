@@ -133,11 +133,6 @@ jsracer.addEventListener("click", () => {
   frame.focus();
 });
 
-// cookie.addEventListener("click", () => {
-//   go("https://trixter9994.github.io/Cookie-Clicker-Source-Code/");
-//   frame.focus();
-// });
-
 retro.addEventListener("click", () => {
   frame.src = "/gainly/retro-bowl/index.html";
   frame.focus();
@@ -182,10 +177,10 @@ const alertb = document.getElementById("alertb");
 document.addEventListener("keydown", e => {
   if(e.shiftKey && e.keyCode == "67") {
     e.preventDefault();
-    go("https://github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
+    go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
   }
 });
 
 alertb.addEventListener("click", () => {
-  go("https://github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
+  go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
 })

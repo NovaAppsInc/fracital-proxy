@@ -1,11 +1,3 @@
-const g2048 = document.getElementById("g2048");
-const clumsy = document.getElementById("clumsy");
-// const astray = document.getElementById("astray");
-const hextris = document.getElementById("hextris");
-const tower = document.getElementById("tower");
-const simon = document.getElementById("simon");
-const jsracer = document.getElementById("jsracer");
-
 document.getElementById("g2048").addEventListener("click", () => {
     window.open("/gainly/2048/index.html", "_self");
 });
