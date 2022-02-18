@@ -5,7 +5,7 @@ body {
     width: 100vw;
     position: absolute;
     height: 100vh;
-    background: #222222;
+    background: #97fd97;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -196,16 +196,16 @@ pre.merge-begin+pre>span:first-child {
 
 p.info {
     width: 100%;
-    color: #ffffff;
+    color: #679560;
 }
 
 h1.name {
-    color: #f971e4;
+    color: #679560;
     font-size: 4rem;
 }
 
 .links {
-    color: #fa15d8cc;
+    color: #679560;
     width: min-content;
     display: flex;
     margin-top: 1rem;
@@ -228,7 +228,7 @@ h1.name {
 }
 
 .games:hover .icon {
-    stroke: #ff59e6cc;
+    stroke: #679560;
     stroke-width: 1.3px;
 }
 
@@ -255,6 +255,10 @@ body > p.info {
     min-width: 46%;
 }
 
+::selection {
+    background: #6bff72;
+}
+
 .com {
     display: grid;
     justify-items: center;
@@ -268,7 +272,7 @@ body > p.info {
 }
 
 .com:hover .icon {
-    fill: #ff59e6cc;
+    fill: #679560;
 }
 
 .link {

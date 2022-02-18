@@ -1,3 +1,10 @@
+/* Fonts */
+
+@font-face {
+    font-family: poppins;
+    src: url(../resources/Poppins-Regular.ttf)
+}
+
 @font-face {
     font-family: segoeB;
     src: url(../resources/Segoe-UI-Bold.woff)
@@ -8,6 +15,35 @@
     src: url(../resources/Segoe-UI.ttf)
 }
 
+/* Fonts end*/
+
+/* Classic theme */
+
+/* Basics */
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: segoeB;
+    font-size: 14px;
+    color: #fff;
+    background: #97fd97;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    overflow-x: hidden;
+    display: grid;
+    justify-items: center;
+}
+
+/* settings start */
 html {
     height: 100%;
     width: 100%;
@@ -19,23 +55,16 @@ html {
     overflow: hidden;
 }
 
-body {
-    background: #222222;
-    height: 100%;
-    margin: 0;
-    width: 24em;
-    font-family: 'Segoe UI';
-    overflow: auto;
-}
-
-* {
-    margin: 0;
-}
-
 .settings {
     color: #f971e4;
+    font-size: 16px;
+    font-family: segoeB;
+    font-weight: bold;
     display: grid;
-    justify-content: center;
+    width: min-content;
+    justify-items: center;
+    height: min-content;
+    margin-top: 0px;
 }
 
 .settingsT {
@@ -48,23 +77,29 @@ body {
     text-align: center;
     border-bottom: 2px solid #373737;
     width: 100%;
+    margin: 0;
 }
 
 ::placeholder {
     color: white;
 }
 
+header {
+    height: 2em;
+    width: min-content;
+}
+
 input {
-    background: #333333;
+    background: #638e63;
     outline: none;
     border: none;
     border-radius: 3px;
     padding: 6px 6px;
-    color: #f5a9ff;
+    color: white;
 }
 
 select {
-    background: #333333;
+    background: #638e63;
     outline: none;
     border: none;
     color: white;
@@ -74,7 +109,7 @@ select {
 }
 
 select:hover {
-    background: #3f3f3f;
+    background: #406240;
 }
 
 option {
@@ -82,11 +117,12 @@ option {
 }
 
 .subsir {
+    background: #638e63;
     color: white;
 }
 
 .subsir:hover {
-    background: #3f3f3f;
+    background: #68a468;
     cursor: pointer;
 }
 
@@ -98,7 +134,7 @@ option {
     width: 14em;
 }
 
-/* themes */ 
+/* themes */
 .reformT {
     display: grid;
     margin-top: 5px;
@@ -138,7 +174,7 @@ option {
 }
 
 .subsirc:hover {
-    background: #3f3f3f;
+    background: #6daa6d;
     cursor: pointer;
 }
 
@@ -150,7 +186,7 @@ option {
 }
 
 .subsirci:hover {
-    background: #3f3f3f;
+    background: #68a468;
     cursor: pointer;
 }
 

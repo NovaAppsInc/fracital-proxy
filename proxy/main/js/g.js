@@ -96,3 +96,11 @@ retro.addEventListener("click", () => {
 retrot.addEventListener("click", () => {
     window.open("/gainly/retro-bowl/index.html", "_self")
 });
+
+if (localStorage.getItem("theme") === "lime") {
+    document.getElementById("rels").href = "../styles/limeg.css";
+} else if (localStorage.getItem("theme") === "amoled") {
+    document.getElementById("rels").href = "../styles/amoledg.css";
+} else if(localStorage.getItem("theme") === "classic") {
+    document.getElementById("rels").href = "../styles/g.css";
+}

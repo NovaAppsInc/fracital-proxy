@@ -1,0 +1,108 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    background: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
+p.info {
+    width: 100%;
+    color: #fff;
+}
+
+h1.name {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.links {
+    color: #fff;
+    width: min-content;
+    display: flex;
+    margin-top: 1rem;
+}
+
+::selection {
+    background: #ed67ffd8;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.home {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25%;
+}
+
+.icon {
+    height: 46px;
+}
+
+.games:hover .icon {
+    stroke: #f971e4;
+    stroke-width: 1.3px;
+}
+
+.bug:hover .icon {
+    stroke: #f971e4;
+    stroke-width: 1.5;
+    fill: #f971e4;
+}
+
+.git {
+	fill: #ffffff;
+	height: 46px;
+	width: 32px;
+}
+
+body > p.info {
+    width: 100%;
+}
+
+.infoBd {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    min-width: 46%;
+}
+
+.com {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.disc {
+    fill: #ffffff;
+    width: 37px;
+    height: 44px;
+}
+
+.com:hover .icon {
+    fill: #f971e4;
+}
+
+.link {
+    margin: 0 14px 0 0;
+    display: grid;
+    justify-items: center;
+}
+
+.home > .links {
+    margin-left: 2.9%;
+}

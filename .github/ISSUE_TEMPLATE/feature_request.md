@@ -1,13 +1,13 @@
 ---
 name: Feature request
-about: Suggest an idea for this Fracital
+about: Suggest an idea for Fracital
 title: "[FEATURE]"
 labels: ''
 assignees: NovaAppsInc
 
 ---
 
-Please intelligent and actually give some ideas are cool and would be nice not shit here there thanks!
+Please make it intelligent and actually give some ideas that are cool and would be nice, not shit here and there thanks!
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is.

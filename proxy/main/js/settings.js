@@ -10,6 +10,8 @@ let subsir = document.getElementById("subsir");
 let subsirc = document.getElementById("subsirc");
 let subsirci = document.getElementById("subsirci");
 let link = parent.document.getElementById("relt");
+let linkSt = parent.document.getElementById("rels");
+let linkStSET = document.getElementById("relss")
 let site = document.getElementById("site");
 let sitei = document.getElementById("sitei");
 
@@ -119,6 +121,55 @@ subsirci.addEventListener("click", () => {
         }
     }
 });
+
+const themes = document.getElementById("themes");
+const subthrd = document.getElementById("subthrd");
+const reset = document.getElementById("reset");
+const classic = document.getElementById("classic");
+const classicD = document.getElementById("classicD");
+// const morning = document.getElementById("morning");
+const lime = document.getElementById("lime");
+
+classic.addEventListener("click", () => {
+    themes.setAttribute("value", "classic");
+});
+
+amoled.addEventListener("click", () => {
+    themes.setAttribute("value", "amoled");
+});
+
+// morning.addEventListener("click", () => {
+//     themes.setAttribute("value", "morning");
+// });
+
+lime.addEventListener("click", () => {
+    themes.setAttribute("value", "lime");
+});
+
+subthrd.addEventListener("click", () => {
+    localStorage.setItem("theme", themes.getAttribute("value"));
+    if(localStorage.getItem("theme") === "lime") {
+        linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
+        linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
+    } else if(localStorage.getItem("theme") === "amoled") {
+        linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
+        linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
+    } else if(localStorage.getItem("theme") === "classic") {
+        linkSt.href = "../styles/style.css";
+        linkStSET.href = "../styles/settings.css";
+    }
+});
+
+if(localStorage.getItem("theme") === "lime") {
+    linkSt.href = "../styles/lime.css";
+    linkStSET.href = "../styles/limes.css";
+} else if(localStorage.getItem("theme") === "amoled") {
+    linkSt.href = "../styles/amoled.css";
+    linkStSET.href = "../styles/amoleds.css";
+} else if(localStorage.getItem("theme") === "classic") {
+    linkSt.href = "../styles/style.css";
+    linkStSET.href = "../styles/settings.css";
+}
 
 /* custom css theme code for later */
 

@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background: #222222;
+    background: #000000;
     height: 100%;
     margin: 0;
     width: 24em;
@@ -55,7 +55,7 @@ body {
 }
 
 input {
-    background: #333333;
+    background: #222222;
     outline: none;
     border: none;
     border-radius: 3px;
@@ -64,7 +64,7 @@ input {
 }
 
 select {
-    background: #333333;
+    background: #222222;
     outline: none;
     border: none;
     color: white;
@@ -74,7 +74,7 @@ select {
 }
 
 select:hover {
-    background: #3f3f3f;
+    background: #171717;
 }
 
 option {
@@ -86,7 +86,7 @@ option {
 }
 
 .subsir:hover {
-    background: #3f3f3f;
+    background: #171717;
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ option {
 }
 
 .subsirc:hover {
-    background: #3f3f3f;
+    background: #171717;
     cursor: pointer;
 }
 
@@ -150,7 +150,7 @@ option {
 }
 
 .subsirci:hover {
-    background: #3f3f3f;
+    background: #171717;
     cursor: pointer;
 }
 

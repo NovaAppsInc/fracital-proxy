@@ -181,6 +181,39 @@ document.addEventListener("keydown", e => {
   }
 });
 
+document.addEventListener("keydown", ea => {
+  if(ea.keyCode == "9") {
+    ea.preventDefault();
+    urlbar.focus()
+  }
+});
+
+function ea() {
+  document.addEventListener("keydown", e => {
+    if(e.keyCode == "9") {
+      e.preventDefault();
+      urlbar.focus()
+    }
+  });
+}
+
+urlbar.addEventListener("focus", () => {
+  document.addEventListener("keydown", e => {
+    if(e.keyCode == "9") {
+      e.preventDefault();
+      return;
+    }
+  });
+})
+
 alertb.addEventListener("click", () => {
   go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
-})
+});
+
+if(localStorage.getItem("theme") === "lime") {
+  document.getElementById("rels").href = "../styles/lime.css";
+} else if(localStorage.getItem("theme") === "amoled") {
+  document.getElementById("rels").href = "../styles/amoled.css";
+} else if(localStorage.getItem("theme") === "classic") {
+  document.getElementById("rels").href = "../styles/style.css";
+}

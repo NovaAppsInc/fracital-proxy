@@ -1,5 +1,3 @@
-/* Fonts */
-
 @font-face {
   font-family: poppins;
   src: url(../resources/Poppins-Regular.ttf)
@@ -9,10 +7,6 @@
   font-family: segeo;
   src: url(../resources/Segoe-UI-Bold.woff)
 }
-
-/* Fonts end*/
-
-/* Basics */
 
 html {
   scroll-behavior: smooth
@@ -31,16 +25,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin: 0 0 3px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 3px
 }
 
 p {
   margin: 8px 0 -4px 23px;
-  width: 91%;
+  width: 91%
 }
 
 .spacer {
@@ -56,7 +55,7 @@ p {
   width: 100%;
   align-items: center;
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px
 }
 
 .toolwrap {
@@ -66,7 +65,7 @@ p {
   color: #fff;
   font-weight: 600;
   width: 75%;
-  align-items: center;
+  align-items: center
 }
 
 .content {
@@ -130,7 +129,7 @@ svg.material-icons:not(:last-child) {
 
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(0,0,0,.35)
+  box-shadow: 0 4px 17px rgba(0, 0, 0, .35)
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -151,18 +150,20 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px
 }
 
-a,a:visited,a:hover {
+a,
+a:visited,
+a:hover {
   color: #1976d2;
   text-decoration: none
 }
 
 a:hover {
-  color: #125699
+  color: white;
 }
 
 .circle-link:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0 3px 15px rgba(0,0,0,.2)
+  box-shadow: 0 3px 15px rgba(0, 0, 0, .2)
 }
 
 footer {
@@ -177,30 +178,32 @@ footer a {
   align-items: center
 }
 
-@media screen and (max-width: 767px) {
-  .card-container>*:not(.circle-link),.terminal {
-      width:100%
+@media screen and (max-width:767px) {
+
+  .card-container>*:not(.circle-link),
+  .terminal {
+    width: 100%
   }
 
   .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0
+    height: 16px;
+    margin: 8px 0
   }
 
   .card.highlight-card span {
-      margin-left: 72px
+    margin-left: 72px
   }
 
   svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg)
+    right: 120px;
+    transform: rotate(-5deg)
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width:575px) {
   svg#rocket-smoke {
-      display:none;
-      visibility: hidden
+    display: none;
+    visibility: hidden
   }
 }
 
@@ -257,7 +260,7 @@ ul.links {
   height: min-content;
   width: 5.8em;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 2em
 }
 
 a {
@@ -284,10 +287,6 @@ a.linky:hover {
   visibility: visible
 }
 
-/* Basics end */
-
-/* Search Input */
-
 .urlbar {
   display: flex;
   color: #fff;
@@ -295,7 +294,7 @@ a.linky:hover {
   border: none;
   height: 100%;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .urlbarI.resOp {
@@ -309,11 +308,11 @@ a.linky:hover {
   border-bottom: 1px solid #606060;
   z-index: 4;
   font-size: 23px;
-  border: none;
+  border: none
 }
 
 .urlbarI {
-  font-family: poppins,sans-serif;
+  font-family: poppins, sans-serif;
   color: #fff;
   background: 0 0;
   border: none;
@@ -322,12 +321,12 @@ a.linky:hover {
   height: 100%;
   width: 100%;
   margin-bottom: 0;
-  padding: 6px 18px;
+  padding: 6px 18px
 }
 
 ::selection {
   background: #ed67ffd8;
-  border-radius: 3px;
+  border-radius: 3px
 }
 
 .urlbarI:focus {
@@ -335,11 +334,11 @@ a.linky:hover {
 }
 
 .borderSY {
-  box-shadow: 0 0 6px 1px #ed67ff !important;
+  box-shadow: 0 0 6px 1px #ed67ff !important
 }
 
 .borderSN {
-  box-shadow: 0 0 6px 1px #202020;
+  box-shadow: 0 0 6px 1px #202020
 }
 
 .searchwrap.resOp {
@@ -355,7 +354,7 @@ a.linky:hover {
   margin-right: 8em;
   margin-top: 1em;
   min-width: 238.609px;
-  position: relative;
+  position: relative
 }
 
 .searchwrap {
@@ -369,11 +368,11 @@ a.linky:hover {
   border-radius: 10px;
   overflow: hidden;
   margin-right: 8em;
-  min-width: 238.609px;
+  min-width: 238.609px
 }
 
-.toolbar > .searchwrap {
-  width: 84%;
+.toolbar>.searchwrap {
+  width: 84%
 }
 
 .icon-tabler-search {
@@ -387,7 +386,7 @@ a.linky:hover {
   height: 100%;
   width: 54px;
   border: none;
-  background: 0 0;
+  background: 0 0
 }
 
 .btnsrch.resOp {
@@ -395,7 +394,7 @@ a.linky:hover {
   height: 100%;
   width: 77px;
   border: none;
-  background: 0 0;
+  background: 0 0
 }
 
 .btnsrch:hover {
@@ -404,7 +403,7 @@ a.linky:hover {
 
 div.results {
   background: #3d3d3d;
-  display: none;
+  display: none
 }
 
 div.results.open {
@@ -413,14 +412,10 @@ div.results.open {
   margin-bottom: -21px;
   width: 65%;
   height: 100%;
-  margin-left: 0em;
+  margin-left: 0;
   box-shadow: 0 0 6px 1px #f084ff;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px
 }
-
-/* Search Input End */
-
-/* Suggest bar */
 
 .suggestbar {
   height: min-content;
@@ -435,39 +430,31 @@ div.results.open {
   z-index: 9;
   position: relative;
   justify-content: center;
-  margin-top: 0.7em;
+  margin-top: .7em
 }
+
 .suggs {
   list-style: none;
   margin: 0;
   padding: 5px 10px;
   max-height: 16.76em;
-  overflow: auto;
+  overflow: auto
 }
-
-/* Suggest bar end */
-
-/* Logo */
 
 .lg {
   margin: 0;
   padding: 0;
   width: 40px;
   height: 40px;
-  /*! float: left; */
   margin-left: 16px;
   z-index: 1;
   margin-right: 6em;
-  user-select: none
+  user-select: none;
 }
 
 .lg:hover {
   cursor: pointer
 }
-
-/* Logo end */
-
-/* Browsing */
 
 .frame {
   border: none;
@@ -480,12 +467,8 @@ div.results.open {
   height: calc(100% - 69px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  user-select: none;
+  user-select: none
 }
-
-/* Browsing end */
-
-/* Alert box */
 
 .alertbtm {
   position: absolute;
@@ -493,7 +476,7 @@ div.results.open {
   right: .5%;
   background: #eb51ff;
   width: 22em;
-  border-radius: 4px;
+  border-radius: 4px
 }
 
 .alertbtmb {
@@ -502,31 +485,27 @@ div.results.open {
   width: 100%;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  margin-bottom: -4px;
+  margin-bottom: -4px
 }
 
 a.alertb {
   text-decoration: underline;
-  color: white;
-  background: transparent;
+  color: #fff;
+  background: 0 0
 }
 
 a.alertb:hover {
   text-decoration: none;
-  background: transparent;
-  cursor: pointer;
+  background: 0 0;
+  cursor: pointer
 }
-
-/* Alert box end */
-
-/* Quick launch */
 
 .rocket {
   width: 45px;
   height: 31px;
   fill: #fff;
   stroke-width: 0;
-  float: left;
+  float: left
 }
 
 .dialogsL {
@@ -538,11 +517,11 @@ a.alertb:hover {
   z-index: 1;
   overflow: hidden;
   border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px
 }
 
 .qlbtc {
-  width: 108%;
+  width: 108%
 }
 
 a.qlbt {
@@ -554,13 +533,13 @@ a.qlbt {
   z-index: 3;
   min-width: 39px;
   display: flex;
-  padding: 5px 0 5px 0;
+  padding: 5px 0;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 12.6px;
   margin-bottom: 5px;
-  font-family: segeo;
+  font-family: segeo
 }
 
 .qlbt:hover {
@@ -574,13 +553,12 @@ a.qlbt {
 }
 
 .qlText {
-  margin: 0 14px 2px 0px;
+  margin: 0 14px 2px 0
 }
 
 div.ql.hidden {
   visibility: collapse;
-  position: absolute;
-
+  position: absolute
 }
 
 div.ql.open {
@@ -593,7 +571,7 @@ div.ql.open {
   justify-items: center;
   box-shadow: 0 0 6px 1px #363636;
   z-index: 3;
-  position: absolute;
+  position: absolute
 }
 
 div.btnsql {
@@ -602,7 +580,7 @@ div.btnsql {
   overflow: auto;
   height: 9.5em;
   border-radius: 2px;
-  margin-left: 0.7em;
+  margin-left: .7em
 }
 
 .qlb {
@@ -621,7 +599,7 @@ div.btnsql {
 }
 
 .infql {
-  font-size: 18px;
+  font-size: 18px
 }
 
 .last {
@@ -633,10 +611,6 @@ a.linkAl {
   text-decoration: underline;
   color: #e2e2e2
 }
-
-/* Quick launch end */
-
-/* bug launch */
 
 .bug {
   height: min-content;
@@ -663,7 +637,7 @@ a.linkAl {
 }
 
 .bugsText {
-  margin: 0 0 3px;
+  margin: 0 0 3px
 }
 
 .git {
@@ -673,10 +647,6 @@ a.linkAl {
   margin-right: 6px
 }
 
-/* Bug launch end */
-
-/* Game drop */
-
 .leftc {
   width: 13em;
   height: min-content;
@@ -684,15 +654,15 @@ a.linkAl {
   min-width: 180px;
   background: #5b5b5b;
   z-index: 4;
-  padding: 14px 14px 14px 14px;
+  padding: 14px;
   border-radius: 10px;
-  box-shadow: 0 0 3px 1px #5e5e5e;
+  box-shadow: 0 0 3px 1px #5e5e5e
 }
 
 .btnsc {
   width: 102%;
   display: grid;
-  height: 100%;
+  height: 100%
 }
 
 .gamedropic {
@@ -743,7 +713,7 @@ a.linkAl {
   font-weight: 700;
   max-height: 189px;
   box-shadow: 0 0 6px 1px #363636;
-  overflow: auto;
+  overflow: auto
 }
 
 div.gamedropthingy.hidden {
@@ -766,7 +736,7 @@ div.gamedropthingy.open {
   height: min-content;
   justify-items: center;
   user-select: none;
-  margin-top: -0.7em;
+  margin-top: -.7em
 }
 
 .droppiebtn {
@@ -774,7 +744,7 @@ div.gamedropthingy.open {
   text-decoration: none;
   color: #fff;
   margin-right: 1.6em;
-  z-index: 999;
+  z-index: 999
 }
 
 .droppiebtn:hover {
@@ -790,19 +760,15 @@ div.gamedropthingy.open {
   height: 32px
 }
 
-/* Game drop end */
-
-/* Settings drop */
-
 .settic {
-  fill: white;
+  fill: #fff;
   height: 30px;
   width: 30px;
-  margin-right: 9px;
+  margin-right: 9px
 }
 
 .settT {
-  margin: 0 0 3px;
+  margin: 0 0 3px
 }
 
 .settb {
@@ -813,11 +779,11 @@ div.gamedropthingy.open {
   align-items: center;
   background: #4a4a4a;
   border-radius: 25px;
-  padding: 4px 3px 4px 11px;
+  padding: 4px 3px 4px 11px
 }
 
 .settb:hover .settic {
-  fill: #f28bff;
+  fill: #f28bff
 }
 
 .settb:hover {
@@ -827,5 +793,39 @@ div.gamedropthingy.open {
 }
 
 .sha {
-  box-shadow: 0 0 6px 1px #363636;
+  box-shadow: 0 0 6px 1px #363636
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  position: relative;
+  z-index: 15;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.scroller {
+  scrollbar-color: #888 transparent;
+  scrollbar-width: thin;
+}
+
+.scroller:hover {
+  scrollbar-color: #555 transparent;
+  scrollbar-width: thin;
 }

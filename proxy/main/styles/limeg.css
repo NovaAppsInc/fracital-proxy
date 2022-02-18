@@ -6,11 +6,11 @@ body.games {
     position: absolute;
     height: 100vh;
     display: flex;
-    background: #222222;
+    background: #97fd97;
 }
 
 .gamesL {
-    background: #222222;
+    background: #97fd97;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ body.games {
 .gcard {
     width: 13em;
     height: 17em;
-    background: #2b2b2b;
+    background: #598259;
     margin: 0 1em 3em 1em;
     border-radius: 10px;
     text-align: center;
@@ -36,7 +36,7 @@ body.games {
 }
 
 .gtext {
-    color: #f28bff;
+    color: white;
     margin-top: 0.7em;
 }
 
