@@ -1,6 +1,7 @@
 # Fracital
 Another proxy website made with the corrosion proxy by TitaniumNetwork.
 - https://fracital.org
+- Become a pateon https://patreon.com/fracital
 
 # Supports
 - **Any static site**
@@ -14,8 +15,6 @@ Another proxy website made with the corrosion proxy by TitaniumNetwork.
 - **Open a game from the drop down menu**
 - **Drop down menu to make the website more compact**
 - **New games page UI**
-
-![Become a patreon](https://patreon.com/fracital)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
