@@ -10,12 +10,7 @@
     <body>
         <div class="tabar">
           <div class="searchCONT">
-            <input type="search" name="url" id="gamesSEARCH" autocomplete="off" class="gamesSEARCH" placeholder="Search a game or type">
-            <svg onclick="alert('current types searchable are: html, and emulated (not case sensitive). more coming soon!')" xmlns="http://www.w3.org/2000/svg" class="icon help icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" stroke="#ff7ffd" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
-              <line x1="12" y1="19" x2="12" y2="19.01" />
-            </svg>
+            <input type="search" name="url" id="gamesSEARCH" autocomplete="off" class="gamesSEARCH" placeholder="Type a game">
           </div>
           <!-- <div class="tabcon">
             <div class="tab ultab" id="tab">
@@ -26,32 +21,26 @@
             </div>
           </div> -->
         </div>
-        <div class="results hardhide"></div>
         <div class="games" id="games">
-            <i class="gameLINK g1" href="./gainly/2048/index.html">
+          <div class="results hideRES"></div>
+          <div class="gamesL">
+            <i class="gameLINK emL">
               <img src="./game-imgs/retro-bowl.jpg" class="thumbnail">
               <h3 class="title">Retro Bowl</h3>
             </i>
-            <i class="gameLINK g2">
+            <i class="gameLINK emL">
               <img src="./game-imgs/clumsy.png" class="thumbnail">
               <h3 class="title">Clumsy Bird</h3>
             </i>
-            <i class="gameLINK g3">
+            <i class="gameLINK emL">
               <img src="./game-imgs/2048.png" class="thumbnail">
               <h3 class="title">2048</h3>
             </i>
-            <i class="gameLINK g4">
+            <i class="gameLINK html">
               <img src="./game-imgs/hextris.png" class="thumbnail">
               <h3 class="title">Hextris</h3>
             </i>
-            <i class="gameLINK g5">
-              <img src="./game-imgs/jsracer.png" class="thumbnail">
-              <h3 class="title">JavaScript Racer</h3>
-            </i>
-            <i class="gameLINK g6">
-              <img src="./game-imgs/tower.gif" class="thumbnail">
-              <h3 class="title">Tower Building</h3>
-            </i>
+          </div>
         </div>
         <script src="./js/g.js"></script>
         <script src="./games.json"></script>

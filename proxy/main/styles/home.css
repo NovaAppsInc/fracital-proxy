@@ -6,6 +6,9 @@ body {
     position: absolute;
     height: 100vh;
     background: #222222;
+   margin-left:auto;
+    margin-right:auto;
+  display: inline-block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +21,24 @@ p {
 
 .spacer {
     flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    background-color: #3d3d3d;
+    color: white;
+    font-weight: 600;
+    justify-items: center;
+}
+
+.toolbar img {
+    margin: 0 16px;
 }
 
 .content {
@@ -194,6 +215,76 @@ pre.merge-begin+pre>span:first-child {
     border-top-left-radius: 0;
 }
 
+/* .libdrw {
+    background: #3d4042;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 5rem;
+  } */
+
+.urlbar {
+    color: #ffffff;
+    background: #1a1a1a;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 2.4rem;
+    width: 61.6rem;
+    padding: 6px 8px;
+    margin-bottom: 0;
+  transition: 0.3s;
+}
+
+::selection {
+    background: #ed67ffd8;
+    border-radius: 3px;
+}
+
+.urlbar:focus {
+    outline: 1px;
+}
+
+.searchwrap {
+    display: flex;
+    align-items: center;
+    width: 66rem;
+    height: 3.7rem;
+    margin-bottom: 0;
+}
+
+.icon-tabler-search {
+    height: 22px;
+    width: 22px;
+    stroke: #ffffff;
+}
+
+.btnsrch {
+    padding: 0;
+    height: 50px;
+    width: 54px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    background: #353535;
+}
+
+.btnsrch:hover {
+    background: #ff3beae0;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+}
+
+.infoTitl {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
 p.info {
     width: 100%;
     color: #ffffff;
@@ -279,4 +370,20 @@ body > p.info {
 
 .home > .links {
     margin-left: 2.9%;
+}
+
+.focusLetter {
+color:#fa15d8cc;
+transition:0.3s;
+font-size:64px;
+  cursor: default;
+  overflow: hidden;
+  padding-botton: 1px;
+  
+  
+}
+
+.focusLetter:hover {
+  color:#fa15d8cc;
+  font-size:72px;
 }

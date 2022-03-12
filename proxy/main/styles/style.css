@@ -47,7 +47,7 @@ p {
 }
 
 .toolbar {
-  height: 69px;
+  height: 61px;
   display: flex;
   background-color: #3d3d3d;
   color: #fff;
@@ -55,7 +55,12 @@ p {
   width: 100%;
   align-items: center;
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px
+  border-bottom-left-radius: 10px;
+  transition: 0.5s;
+}
+
+.toolbarH {
+  height: 69px;
 }
 
 .toolwrap {
@@ -464,10 +469,16 @@ div.results.open {
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: calc(100% - 69px);
+  height: calc(100% - 61px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  user-select: none
+  user-select: none;
+  transition: 0.5s;
+}
+
+.frameTH {
+  height: calc(100% - 69px);
+  transition: 0.5s;
 }
 
 .alertbtm {
@@ -656,7 +667,8 @@ a.linkAl {
   z-index: 4;
   padding: 14px;
   border-radius: 10px;
-  box-shadow: 0 0 3px 1px #5e5e5e
+  box-shadow: 0 0 3px 1px #5e5e5e;
+  transition: 0.3s;
 }
 
 .btnsc {
@@ -749,6 +761,7 @@ div.gamedropthingy.open {
 
 .droppiebtn:hover {
   cursor: pointer
+  
 }
 
 .droppiebtn:hover .droppieic {
