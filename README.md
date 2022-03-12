@@ -1,5 +1,5 @@
 # Fracital
-Another proxy website made with the corrosion proxy by TitaniumNetwork.
+Another proxy website made with the [Ultra Violet](https://github.com/titaniumnetwork-dev/Ultraviolet) proxy by TitaniumNetwork.
 - https://fracital.org
 - Become a pateon https://patreon.com/fracital
 
