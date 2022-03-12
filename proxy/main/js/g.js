@@ -1,28 +1,24 @@
 const database = [
     {
         name: "Retro Bowl",
-        id: "retro",
         type: "em",
         icon: "./game-imgs/retro-bowl.jpg",
         path: "./gainly/retro-bowl/index.html"
     },
     {
         name: "Clumsy Bird",
-        id: "clumsy",
         type: "html",
         icon: "./game-imgs/clumsy.png",
         path: "./gainly/clumsy-bird/index.html"
     },
     {
         name: "2048",
-        id: "2048",
         type: "html",
         icon: "./game-imgs/2048.png",
         path: "./gainly/2048/index.html"
     },
     {
         name: "Hextris",
-        id: "hex",
         type: "html",
         icon: "./game-imgs/hextris.png",
         path: "./gainly/hextris/index.html"
