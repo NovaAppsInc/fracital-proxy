@@ -22,7 +22,7 @@ document.getElementById('clig').addEventListener("click", () => {
 });
 
 function clig2() {
-    go("http://discord.gg/WzNvquznfw");
+    go("https://discord.gg/vXVcNfqBzW");
 }
 
 document.addEventListener("keydown", ea => {
