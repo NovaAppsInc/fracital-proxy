@@ -14,24 +14,9 @@ let linkSt = parent.document.getElementById("rels");
 let linkStSET = document.getElementById("relss")
 let site = document.getElementById("site");
 let sitei = document.getElementById("sitei");
+let sites = document.getElementById("sites");
 
-classroom.addEventListener("click", () => {
-    relv.setAttribute("value", "Classes");
-});
-
-google.addEventListener("click", () => {
-    relv.setAttribute("value", "Google");
-});
-
-docs.addEventListener("click", () => {
-    relv.setAttribute("value", "Docs");
-});
-
-slides.addEventListener("click", () => {
-    relv.setAttribute("value", "Slides");
-});
-
-subsir.addEventListener("click", () => {
+function sub() {
     let atrrv = relv.getAttribute("value");
     if(atrrv === "Docs") {
         parent.document.title = "Google Docs";
@@ -45,6 +30,23 @@ subsir.addEventListener("click", () => {
     }
     parent.document.title = relv.getAttribute("value");
     link.href = "./" + relv.getAttribute("value").toLowerCase() + ".png";
+}
+
+document.getElementById("sites").addEventListener("change", () => {
+    let sitesVALUE = document.getElementById("sites").options[document.getElementById("sites").selectedIndex].value;
+    if(sitesVALUE == "classroom") {
+        relv.setAttribute("value", "Classes");
+        sub();
+    } else if(sitesVALUE == "google") {
+        relv.setAttribute("value", "Google");
+        sub();
+    } else if(sitesVALUE == "slides") {
+        relv.setAttribute("value", "Slides");
+        sub();
+    } else if(sitesVALUE == "docs") {
+        relv.setAttribute("value", "Docs");
+        sub();
+    }
 });
 
 subsirc.addEventListener("click", () => {
@@ -122,88 +124,51 @@ subsirci.addEventListener("click", () => {
     }
 });
 
-const themes = document.getElementById("themes");
-const subthrd = document.getElementById("subthrd");
-const reset = document.getElementById("reset");
-const classic = document.getElementById("classic");
-const classicD = document.getElementById("classicD");
-// const morning = document.getElementById("morning");
-const lime = document.getElementById("lime");
+// const themes = document.getElementById("themes");
+// const subthrd = document.getElementById("subthrd");
+// const reset = document.getElementById("reset");
+// const classic = document.getElementById("classic");
+// const classicD = document.getElementById("classicD");
+// // const morning = document.getElementById("morning");
+// const lime = document.getElementById("lime");
 
-classic.addEventListener("click", () => {
-    themes.setAttribute("value", "classic");
-});
-
-amoled.addEventListener("click", () => {
-    themes.setAttribute("value", "amoled");
-});
-
-// morning.addEventListener("click", () => {
-//     themes.setAttribute("value", "morning");
+// classic.addEventListener("click", () => {
+//     themes.setAttribute("value", "classic");
 // });
 
-lime.addEventListener("click", () => {
-    themes.setAttribute("value", "lime");
-});
+// amoled.addEventListener("click", () => {
+//     themes.setAttribute("value", "amoled");
+// });
 
-subthrd.addEventListener("click", () => {
-    localStorage.setItem("theme", themes.getAttribute("value"));
-    if(localStorage.getItem("theme") === "lime") {
-        linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
-        linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
-    } else if(localStorage.getItem("theme") === "amoled") {
-        linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
-        linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
-    } else if(localStorage.getItem("theme") === "classic") {
-        linkSt.href = "../styles/style.css";
-        linkStSET.href = "../styles/settings.css";
-    }
-});
+// // morning.addEventListener("click", () => {
+// //     themes.setAttribute("value", "morning");
+// // });
 
-if(localStorage.getItem("theme") === "lime") {
-    linkSt.href = "../styles/lime.css";
-    linkStSET.href = "../styles/limes.css";
-} else if(localStorage.getItem("theme") === "amoled") {
-    linkSt.href = "../styles/amoled.css";
-    linkStSET.href = "../styles/amoleds.css";
-} else if(localStorage.getItem("theme") === "classic") {
-    linkSt.href = "../styles/style.css";
-    linkStSET.href = "../styles/settings.css";
-}
+// lime.addEventListener("click", () => {
+//     themes.setAttribute("value", "lime");
+// });
 
-/* custom css theme code for later */
-
-// const themeCSS = document.getElementById("themeCSS");
-
-// themeCSS.addEventListener("keydown", e => {
-//     // if(e.keyCode == "9") {
-//     //     e.preventDefault();
-//     //     console.log("fuck");
-//     // }
-//     if (e.key == 'Tab') {
-//         e.preventDefault();
-//         var start = this.selectionStart;
-//         var end = this.selectionEnd;
-    
-//         // set textarea value to: text before caret + tab + text after caret
-//         this.value = this.value.substring(0, start) +
-//           "\t" + this.value.substring(end);
-    
-//         // put caret at right position again
-//         this.selectionStart =
-//           this.selectionEnd = start + 1;
-//       }
-// })
-
-// var textareas = document.getElementsByTagName('textarea');
-// var count = textareas.length;
-// for(var i=0;i<count;i++){
-//     textareas[i].onkeydown = function(e){
-//         if(e.keyCode==9 || e.which==9){
-//             e.preventDefault();
-//             var s = this.selectionStart;
-//             this.value = this.value.substring(0,this.selectionStart) + "\t" + this.value.substring(this.selectionEnd);
-//             this.selectionEnd = s+4; 
-//         }
+// subthrd.addEventListener("click", () => {
+//     localStorage.setItem("theme", themes.getAttribute("value"));
+//     if(localStorage.getItem("theme") === "lime") {
+//         linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
+//         linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
+//     } else if(localStorage.getItem("theme") === "amoled") {
+//         linkSt.href = "../styles/" + localStorage.getItem("theme") + ".css";
+//         linkStSET.href = "../styles/" + localStorage.getItem("theme") + "s" + ".css";
+//     } else if(localStorage.getItem("theme") === "classic") {
+//         linkSt.href = "../styles/style.css";
+//         linkStSET.href = "../styles/settings.css";
 //     }
+// });
+
+// if(localStorage.getItem("theme") === "lime") {
+//     linkSt.href = "../styles/lime.css";
+//     linkStSET.href = "../styles/limes.css";
+// } else if(localStorage.getItem("theme") === "amoled") {
+//     linkSt.href = "../styles/amoled.css";
+//     linkStSET.href = "../styles/amoleds.css";
+// } else if(localStorage.getItem("theme") === "classic") {
+//     linkSt.href = "../styles/style.css";
+//     linkStSET.href = "../styles/settings.css";
 // }

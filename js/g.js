@@ -1,7 +1,7 @@
 const database = [
     {
         name: "Retro Bowl",
-        type: "em",
+        type: "emulated",
         icon: "./game-imgs/retro-bowl.jpg",
         path: "./gainly/retro-bowl/index.html"
     },

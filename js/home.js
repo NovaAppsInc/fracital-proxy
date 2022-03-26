@@ -32,10 +32,10 @@ document.addEventListener("keydown", ea => {
     }
 });
 
-if (localStorage.getItem("theme") === "lime") {
-    document.getElementById("rells").href = "../styles/limeh.css";
-} else if (localStorage.getItem("theme") === "amoled") {
-    document.getElementById("rells").href = "../styles/amoledh.css";
-} else if(localStorage.getItem("theme") === "classic") {
-    document.getElementById("rels").href = "../styles/home.css";
-}
+// if (localStorage.getItem("theme") === "lime") {
+//     document.getElementById("rells").href = "../styles/limeh.css";
+// } else if (localStorage.getItem("theme") === "amoled") {
+//     document.getElementById("rells").href = "../styles/amoledh.css";
+// } else if(localStorage.getItem("theme") === "classic") {
+//     document.getElementById("rels").href = "../styles/home.css";
+// }

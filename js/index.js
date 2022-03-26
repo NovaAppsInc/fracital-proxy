@@ -25,7 +25,7 @@ console.log(link);
   } else if (!link.includes("http://")) {
       link = "http://" + link;
   };
-  document.getElementById("frame").src="/kb/"+xor.encode(link);
+  document.getElementById("frame").src="/sw/"+xor.encode(link);
 };
 
 document.getElementById("btnsrch").addEventListener("click", () => {
@@ -92,8 +92,10 @@ inst.addEventListener("click", () => {
 let observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
     if (mutation.type == "attributes") {
-      document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/kb/')[1]);
-    };
+	if(!document.getElementById("urlbar").src == "") {
+      document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/sw/')[1]);
+    }
+   };
   });
 });
 observer.observe(document.getElementById("frame"), {
@@ -177,10 +179,14 @@ alertb.addEventListener("click", () => {
   go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
 });
 
-// if(localStorage.getItem("theme") === "lime") {
-//   document.getElementById("rels").href = "../styles/lime.css";
-// } else if(localStorage.getItem("theme") === "amoled") {
-//   document.getElementById("rels").href = "../styles/amoled.css";
-// } else if(localStorage.getItem("theme") === "classic") {
-//   document.getElementById("rels").href = "../styles/style.css";
+// switch (localStorage.getItem("theme")) {
+//   case 'lime':
+//     document.getElementById("rels").href = "../styles/lime.css";
+//     break;
+//   case 'amoled':
+//     document.getElementById("rels").href = "../styles/amoled.css";
+//     break;
+//   case 'classic':
+//     document.getElementById("rels").href = "../styles/style.css";
+//     break;
 // }

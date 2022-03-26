@@ -1,3 +1,12 @@
+@keyframes fadeInAnimation {
+    0% {
+        transform: translateY(2em);
+    }
+    100% {
+        transform: translateY(0em);
+     }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
@@ -215,43 +224,9 @@ pre.merge-begin+pre>span:first-child {
     border-top-left-radius: 0;
 }
 
-/* .libdrw {
-    background: #3d4042;
-    color: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 5rem;
-  } */
-
-.urlbar {
-    color: #ffffff;
-    background: #1a1a1a;
-    border: none;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    height: 2.4rem;
-    width: 61.6rem;
-    padding: 6px 8px;
-    margin-bottom: 0;
-  transition: 0.3s;
-}
-
 ::selection {
     background: #ed67ffd8;
     border-radius: 3px;
-}
-
-.urlbar:focus {
-    outline: 1px;
-}
-
-.searchwrap {
-    display: flex;
-    align-items: center;
-    width: 66rem;
-    height: 3.7rem;
-    margin-bottom: 0;
 }
 
 .icon-tabler-search {
@@ -260,23 +235,13 @@ pre.merge-begin+pre>span:first-child {
     stroke: #ffffff;
 }
 
-.btnsrch {
-    padding: 0;
-    height: 50px;
-    width: 54px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border: none;
-    background: #353535;
-}
-
-.btnsrch:hover {
-    background: #ff3beae0;
-}
-
-.logo {
-    position: absolute;
-    left: 0;
+.contentinfo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #222222;
+    box-shadow: 0px -24px 29px #222222;
+    z-index: 55;
 }
 
 .infoTitl {
@@ -293,13 +258,18 @@ p.info {
 h1.name {
     color: #f971e4;
     font-size: 4rem;
+    animation: fadeInAnimation ease .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .links {
     color: #fa15d8cc;
-    width: min-content;
+    width: 100%;
     display: flex;
+    justify-content: center;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .link:hover {
@@ -316,6 +286,7 @@ h1.name {
 
 .icon {
     height: 46px;
+    z-index: 99;
 }
 
 .games:hover .icon {
@@ -347,9 +318,9 @@ body > p.info {
 }
 
 .com {
-    display: grid;
-    justify-items: center;
     align-items: center;
+    margin-top: 3px !important;
+    width: 92px !important;
 }
 
 .disc {
@@ -366,6 +337,8 @@ body > p.info {
     margin: 0 14px 0 0;
     display: grid;
     justify-items: center;
+    width: 70px;
+    font-weight: 500;
 }
 
 .home > .links {

@@ -372,8 +372,6 @@ a.linky:hover {
   box-shadow: 0 0 6px 1px #202020;
   border-radius: 10px;
   overflow: hidden;
-  margin-right: 8em;
-  min-width: 238.609px
 }
 
 .toolbar>.searchwrap {
@@ -756,6 +754,7 @@ div.gamedropthingy.open {
   text-decoration: none;
   color: #fff;
   margin-right: 1.6em;
+  margin-left: 8em;
   z-index: 999
 }
 
