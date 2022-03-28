@@ -83,6 +83,10 @@ option {
 
 .subsir {
     color: white;
+    background: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 8px;
 }
 
 .subsir:hover {
@@ -120,10 +124,6 @@ option {
     display: grid;
 }
 
-.custom {
-    /*! display: flex; */
-}
-
 .subthr {
     color: white;
     float: right;
@@ -131,6 +131,7 @@ option {
 }
 
 .subsirc {
+    background: #333333;
     color: white;
     width: min-content;
     float: left;

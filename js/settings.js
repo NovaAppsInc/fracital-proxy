@@ -16,6 +16,12 @@ let site = document.getElementById("site");
 let sitei = document.getElementById("sitei");
 let sites = document.getElementById("sites");
 
+function sitec() {
+    parent.document.title = "Fracital";
+    link.href = "./fractrial.png";
+    return;
+}
+
 function sub() {
     let atrrv = relv.getAttribute("value");
     if(atrrv === "Docs") {

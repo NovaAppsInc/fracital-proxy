@@ -1,2 +1,11 @@
 node_modules
 proxy/main/js/libs/
+calctemp.html
+js/calculator.js
+styles/calctemp.css
+styles/ff.css
+calc2.html
+js/calc.js
+js/calctemp.js
+calc.html
+styles/calc.css
