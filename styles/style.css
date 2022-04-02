@@ -582,9 +582,9 @@ div.ql.hidden {
 div.ql.open {
   background: #333;
   height: min-content;
-  width: 180px;
+  width: 167px;
   border-radius: 10px;
-  padding: 9px 16px 16px 12px;
+  padding: 4px 12px 16px 12px;
   display: grid;
   justify-items: center;
   z-index: 3;
@@ -592,7 +592,7 @@ div.ql.open {
 
 div.btnsql {
   display: grid;
-  width: 108%;
+  width: 100%;
   overflow: auto;
   height: 9.5em;
   border-radius: 2px;

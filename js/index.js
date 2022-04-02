@@ -205,9 +205,13 @@ urlbar.addEventListener("blur", () => {
 
 function lyric() {
   let query = prompt("song name and/or artist");
-  let conf = confirm(`is "${query}" what you want to search?`);
-  if(conf == true) {
-    go(`search.azlyrics.com/search.php?q=${query}`);
+  if(query == false) {
+    return;
+  } else if(query) {
+    let conf = confirm(`is "${query}" what you want to search?`);
+    if(conf == true) {
+      go(`search.azlyrics.com/search.php?q=${query}`);
+    }
   }
 }
 

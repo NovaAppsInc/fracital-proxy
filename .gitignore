@@ -9,3 +9,5 @@ js/calc.js
 js/calctemp.js
 calc.html
 styles/calc.css
+js/libs/cursor.js
+styles/cursor.css

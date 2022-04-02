@@ -5,37 +5,42 @@
 
 @keyframes fadeInAnimation {
     0% {
-        transform: translateY(2em);
+        transform: translateY(2em)
     }
 
     100% {
-        transform: translateY(0em);
+        transform: translateY(0em)
     }
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     margin: 0;
     padding: 0;
     width: 100vw;
     position: absolute;
     height: 100vh;
-    background: #222222;
+    background: #222;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
+    display: inline-block
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 8px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0
 }
 
 p {
-    margin: 0;
+    margin: 0
 }
 
 .spacer {
-    flex: 1;
+    flex: 1
 }
 
 .toolbar {
@@ -47,42 +52,42 @@ p {
     display: grid;
     align-items: center;
     background-color: #3d3d3d;
-    color: white;
+    color: #fff;
     font-weight: 600;
-    justify-items: center;
+    justify-items: center
 }
 
 .home>.enginesearchc {
     width: 80%;
-    z-index: 69;
+    z-index: 69
 }
 
 .enginesearchc {
-    box-shadow: 0px 0px 9px #111;
+    box-shadow: 0 0 9px #111;
     border-radius: 22px;
     overflow: hidden;
     height: 2em;
     margin-top: 22px;
-    padding: 0 12px;
+    padding: 0 12px
 }
 
 .es {
-    background: transparent;
+    background: 0 0;
     border: none;
     width: 100%;
     height: 100%;
     color: #f971e4;
     font-family: poppins, sans-serif;
-    font-size: 18px;
+    font-size: 18px
 }
 
 .es:focus-visible {
     border: none;
-    outline: none;
+    outline: none
 }
 
 .toolbar img {
-    margin: 0 16px;
+    margin: 0 16px
 }
 
 .content {
@@ -90,27 +95,27 @@ p {
     height: 100%;
     width: 100%;
     align-content: center;
-    justify-content: center;
+    justify-content: center
 }
 
 svg.material-icons {
     height: 24px;
-    width: auto;
+    width: auto
 }
 
 svg.material-icons:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 8px
 }
 
 .card svg.material-icons path {
-    fill: #888;
+    fill: #888
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 16px
 }
 
 .card {
@@ -126,178 +131,182 @@ svg.material-icons:not(:last-child) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
+    transition: all .2s ease-in-out;
+    line-height: 24px
 }
 
 .card-container .card:not(:last-child) {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .card.card-small {
     height: 16px;
-    width: 168px;
+    width: 168px
 }
 
 .card-container .card:not(.highlight-card) {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .35)
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
+    fill: #696767
 }
 
 .card.highlight-card {
     background-color: #1976d2;
-    color: white;
+    color: #fff;
     font-weight: 600;
     border: none;
     width: auto;
     min-width: 30%;
-    position: relative;
+    position: relative
 }
 
 .card.card.highlight-card span {
-    margin-left: 60px;
+    margin-left: 60px
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
     color: #1976d2;
-    text-decoration: none;
+    text-decoration: none
 }
 
 a:hover {
-    color: #125699;
+    color: #125699
 }
 
 .circle-link:hover {
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2)
 }
 
 footer {
     margin-top: 8px;
     display: flex;
     align-items: center;
-    line-height: 20px;
+    line-height: 20px
 }
 
 footer a {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
-/* Responsive Styles */
+@media screen and (max-width:767px) {
 
-@media screen and (max-width: 767px) {
-    .card-container>*:not(.circle-link), .terminal {
-        width: 100%;
+    .card-container>*:not(.circle-link),
+    .terminal {
+        width: 100%
     }
 
     .card:not(.highlight-card) {
         height: 16px;
-        margin: 8px 0;
+        margin: 8px 0
     }
 
     .card.highlight-card span {
-        margin-left: 72px;
+        margin-left: 72px
     }
 
     svg#rocket-smoke {
         right: 120px;
-        transform: rotate(-5deg);
+        transform: rotate(-5deg)
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width:575px) {
     svg#rocket-smoke {
         display: none;
-        visibility: hidden;
+        visibility: hidden
     }
 }
 
 pre {
     margin: 0;
-    font-size: 14px;
+    font-size: 14px
 }
 
 span {
     display: inline-block;
-    line-height: 20px;
+    line-height: 20px
 }
 
 span.highlight {
-    background: #ed67ffd8;
+    background: #ed67ffd8
 }
 
 span.begin {
     border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px
 }
 
 span.end {
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px
 }
 
 pre.merge-end>span:last-child {
-    border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0
 }
 
 pre.merge-end+pre>span:last-child {
-    border-top-right-radius: 0;
+    border-top-right-radius: 0
 }
 
 pre.merge-begin>span:first-child {
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0
 }
 
 pre.merge-begin+pre>span:first-child {
-    border-top-left-radius: 0;
+    border-top-left-radius: 0
 }
 
 ::selection {
     background: #ed67ffd8;
-    border-radius: 3px;
+    border-radius: 3px
 }
 
 .icon-tabler-search {
     height: 22px;
     width: 22px;
-    stroke: #ffffff;
+    stroke: #fff
 }
 
 .contentinfo {
     display: grid;
     justify-items: center;
     align-items: center;
-    background: #222222;
-    box-shadow: 0px -24px 29px #222222;
+    background: #222;
+    box-shadow: 0 -12px 18px #222;
     z-index: 55;
+    width: 22em;
+    margin-top: -19px
 }
 
 .infoTitl {
     display: grid;
     align-items: center;
-    justify-items: center;
+    justify-items: center
 }
 
 p.info {
     width: 100%;
-    color: #ffffff;
+    color: #fff
 }
 
 h1.name {
     color: #f971e4;
     font-size: 4rem;
-    animation: fadeInAnimation ease .8s;
+    animation: fadeInAnimation ease .9s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards
 }
 
 .links {
@@ -306,11 +315,11 @@ h1.name {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    align-items: center;
+    align-items: center
 }
 
 .link:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .home {
@@ -318,96 +327,91 @@ h1.name {
     justify-items: center;
     width: 100%;
     align-items: center;
-    margin-bottom: 25%;
+    margin-bottom: 4em
 }
 
 .icon {
     height: 46px;
-    z-index: 99;
+    z-index: 99
 }
 
 .games:hover .icon {
     stroke: #ff59e6cc;
-    stroke-width: 1.3px;
+    stroke-width: 1.3px
 }
 
 .bug:hover .icon {
     stroke: #f971e4;
     stroke-width: 1.5;
-    fill: #f971e4;
+    fill: #f971e4
 }
 
 .git {
-    fill: #ffffff;
+    fill: #fff;
     height: 46px;
-    width: 32px;
+    width: 32px
 }
 
 body>p.info {
-    width: 100%;
+    width: 100%
 }
 
 .infoBd {
     width: 100%;
     text-align: center;
     color: #fff;
-    min-width: 46%;
+    min-width: 46%
 }
 
 .com {
     align-items: center;
     margin-top: 3px !important;
-    width: 92px !important;
+    width: 92px !important
 }
 
 .disc {
-    fill: #ffffff;
+    fill: #fff;
     width: 37px;
-    height: 44px;
+    height: 44px
 }
 
 .com:hover .icon {
-    fill: #ff59e6cc;
+    fill: #ff59e6cc
 }
 
 .link {
-    margin: 0 14px 0 0;
     display: grid;
     justify-items: center;
     width: 70px;
-    font-weight: 500;
-}
-
-.home>.links {
-    margin-left: 2.9%;
+    font-weight: 500
 }
 
 .focusLetter {
     color: #fa15d8cc;
-    transition: 0.3s;
+    transition: .3s;
     font-size: 64px;
     cursor: default;
     overflow: hidden;
-    padding-bottom: 1px;
+    padding-bottom: 1px
 }
 
 .focusLetter:hover {
     color: #fa15d8cc;
-    font-size: 72px;
+    font-size: 72px
 }
 
 footer {
-    color: white;
+    color: #fff
 }
 
 .patlinkc {
     text-decoration: underline;
     color: #f084ff;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .patlinkc:hover {
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: #fff
 }
