@@ -1,6 +1,6 @@
 self.__uv$config = {
-    prefix: '/kb/',
-    bare: 'https://incog.dev/bare/',
+    prefix: '/sw/',
+    bare: '/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',

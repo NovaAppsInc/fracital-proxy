@@ -8,13 +8,12 @@ class xor {
 };
 
 function go(link) {
-    console.log(link);
     if (link == '') {
         alert('Bruh you need to insert a url!');
     } else if (!link.includes("http://")) {
         link = "http://" + link;
     };
-    window.open("/kb/" + xor.encode(link), "_self");
+    window.open("/sw/" + xor.encode(link), "_self");
 };
 
 document.getElementById('clig').addEventListener("click", () => {
@@ -22,7 +21,7 @@ document.getElementById('clig').addEventListener("click", () => {
 });
 
 function clig2() {
-    go("https://discord.gg/vXVcNfqBzW");
+    go("discord.gg/vXVcNfqBzW");
 }
 
 document.addEventListener("keydown", ea => {
@@ -31,6 +30,10 @@ document.addEventListener("keydown", ea => {
         parent.document.getElementById("urlbar").focus()
     }
 });
+
+function patr() {
+    go("patreon.com/fracital")
+}
 
 // if (localStorage.getItem("theme") === "lime") {
 //     document.getElementById("rells").href = "../styles/limeh.css";

@@ -11,7 +11,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     var supportsPassive = false;
     try {
       window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-        get: function () { supportsPassive = true; } 
+        get: function () { supportsPassive = true; }
       }));
     } catch(e) {}
     window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile

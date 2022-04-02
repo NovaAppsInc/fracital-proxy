@@ -160,6 +160,11 @@ code, pre {
     font-size: 18px;
 }
 
+.title.small {
+    font-size: 16.5px;
+    height: 2em;
+}
+
 .gamesTitle {
     margin: 0;
     display: flex;

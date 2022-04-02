@@ -7,8 +7,11 @@ class xor {
   };
 };
 
-const frame = document.getElementById("frame");
+function selectElement(selector) {
+  return document.querySelector(selector);
+}
 
+const frame = document.getElementById("frame");
 const settb = document.getElementById("settb");
 const toolb = document.getElementById("toolbar")
 
@@ -16,15 +19,21 @@ settb.addEventListener("click", () => {
   frame.src = "settings.html"
 })
 
+let tlds = [".com", ".net", ".org", ".co", ".lol", ".gg", ".fun", ".ga", ".xyz", ".to", ".cc", ".info", ".io", ".tv"];
+
 document.cookie="olds=sus";
 
 function go(link) {
-console.log(link);
   if (link == '') {
     alert('Bruh you need to insert a url!');
   } else if (!link.includes("http://")) {
       link = "http://" + link;
-  };
+  } 
+  if(!link.includes(".")) {
+    alert(`alright bro come on "${document.getElementById('urlbar').value}" ain't even a url!`)
+    return;
+    // go("bing.com/search?q=" + document.getElementById('urlbar').value);
+  }
   document.getElementById("frame").src="/sw/"+xor.encode(link);
 };
 
@@ -133,20 +142,10 @@ if(e.shiftKey && e.keyCode == "67") {
 });
 
 document.addEventListener("keydown", ea => {
-if(ea.keyCode == "9") {
-  ea.preventDefault();
-  urlbar.focus();
-}
-});
-
-toolb.addEventListener("mouseover", e => {
-  frame.classList.add("frameTH");
-  toolb.classList.add("toolbarH");
-});
-
-toolb.addEventListener("mouseleave", e => {
-  frame.classList.remove("frameTH");
-  toolb.classList.remove("toolbarH");
+  if(ea.keyCode == "9") {
+    ea.preventDefault();
+    urlbar.focus();
+  }
 });
 
 urlbar.addEventListener("focus", () => {
@@ -175,9 +174,52 @@ urlbar.addEventListener("blur", () => {
   toolb.classList.remove("toolbarH");
 });
 
-alertb.addEventListener("click", () => {
-  go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
-});
+// alertb.addEventListener("click", () => {
+//   go("github.com/NovaAppsInc/fracital-proxy/blob/main/cloaking.md")
+// });
+
+// let hovfull = selectElement(".hovfull");
+// let toolbg = selectElement(".toolbar");
+
+// hovfull.addEventListener("mouseover", function (event) {
+//   myTimeout = setTimeout(function() {
+//     if(toolbg.classList.contains("full")) {
+//       toolbg.classList.remove("full");
+//       toolbg.classList.add("fs");
+//     }
+//   }, 300);
+// })
+// hovfull.addEventListener("mouseleave", () => {
+//   toolbg.addEventListener("mouseover", () => {
+//     return;
+//   });
+//   toolbg.addEventListener("mouseleave", () => {
+//     if(toolbg.classList.contains("fc")) {
+//       return;
+//     } else if(!toolbg.classList.contains("fc")){
+//       toolbg.classList.add("full");
+//     }
+//     clearTimeout(myTimeout);
+//   });
+// });
+
+function lyric() {
+  let query = prompt("song name and/or artist");
+  let conf = confirm(`is "${query}" what you want to search?`);
+  if(conf == true) {
+    go(`search.azlyrics.com/search.php?q=${query}`);
+  }
+}
+
+// selectElement("#fullscreen").addEventListener("click", () => {
+// if(toolbg.classList.contains("fs")) {
+//     toolbg.classList.add("fc");
+//     toolb.classList.remove("fs");
+//     return;
+//   } else if(!toolbg.classList.contains("fs") || !toolbg.classList.contains("fc")) {
+//     toolbg.classList.add("full"); 
+//   }
+// });
 
 // switch (localStorage.getItem("theme")) {
 //   case 'lime':

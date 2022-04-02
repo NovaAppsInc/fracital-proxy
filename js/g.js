@@ -1,40 +1,86 @@
+class xor {
+    static encode(str) {
+        return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
+    };
+    static decode(str) {
+        return decodeURIComponent(str.slice(0, -1)).split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('');
+    };
+  };
+
+function go(link) {
+console.log(link);
+  if (link == '') {
+    alert('Bruh you need to insert a url!');
+  } else if (!link.includes("http://")) {
+      link = "http://" + link;
+  } 
+  // else if(!link.includes(".")) {
+  //   link = `searx.degenerate.info/search?q=` + link;
+  // }
+  parent.document.getElementById("frame").src="/sw/"+xor.encode(link);
+};
+
 const database = [
     {
         name: "Retro Bowl",
         type: "emulated",
         icon: "./game-imgs/retro-bowl.jpg",
-        path: "./gainly/retro-bowl/index.html"
+        path: "./g/retro-bowl/index.html"
     },
     {
         name: "Clumsy Bird",
         type: "html",
         icon: "./game-imgs/clumsy.png",
-        path: "./gainly/clumsy-bird/index.html"
+        path: "./g/clumsy-bird/index.html"
     },
     {
         name: "2048",
         type: "html",
         icon: "./game-imgs/2048.png",
-        path: "./gainly/2048/index.html"
+        path: "./g/2048/index.html"
     },
     {
         name: "Hextris",
         type: "html",
         icon: "./game-imgs/hextris.png",
-        path: "./gainly/hextris/index.html"
+        path: "./g/hextris/index.html"
     },
     {
         name: "JavaScript Racer",
         type: "html",
         icon: "./game-imgs/jsracer.png",
-        path: "./gainly/javascript-racer/v4.final.html"
+        path: "./g/javascript-racer/v4.final.html"
     },
     {
         name: "Tower Building",
         type: "html",
         icon: "./game-imgs/tower.gif",
-        path: "./gainly/tower-building/index.html"
-    }
+        path: "./g/tower-building/index.html"
+    },
+    {
+        name: "Simon Says",
+        type: "html",
+        icon: "./game-imgs/simon.png",
+        path: "./g/simon-shockers/index.html"
+    },
+    {
+        name: "Krunker",
+        type: "html",
+        icon: "./game-imgs/krk.png",
+        path: "krunker.io"
+    },
+    {
+        name: "1v1.lol",
+        type: "html",
+        icon: "./game-imgs/1v1-lol.jpg",
+        path: "1v1.lol"
+    },
+    {
+        name: "Shell Shockers",
+        type: "html",
+        icon: "./game-imgs/shellshockers.png",
+        path: "shellshock.io"
+    },
 ]
 
 function selectElement(selector) {
@@ -51,11 +97,11 @@ function getResults() {
     const search = selectElement('.gamesSEARCH').value;
 
     clearRES();
-    for(let i = 0; i < database.length; i++) {
-        if(database[i].name.toLowerCase().includes(search.toLowerCase()) || database[i].type.toLowerCase().includes(search.toLowerCase())) {
+    for (let i = 0; i < database.length; i++) {
+        if (database[i].name.toLowerCase().includes(search.toLowerCase()) || database[i].type.toLowerCase().includes(search.toLowerCase())) {
             selectElement(".results").innerHTML += `<i onclick="window.open('${database[i].path}', '_self')" class="gameLINK emL"><img src="${database[i].icon}" class="thumbnail"><h3 class="title">${database[i].name}</h3></i>`
             selectElement(".games").classList.add("hide");
-            if(selectElement(".results").classList.contains("hardhide")) {
+            if (selectElement(".results").classList.contains("hardhide")) {
                 selectElement(".results").classList.add("showRES");
                 selectElement(".results").classList.remove("hardhide");
                 selectElement(".gamesSEARCH").style.marginLeft = "0px";
@@ -63,8 +109,8 @@ function getResults() {
             } else {
                 selectElement(".results").classList.add("hardshow");
             }
-        } 
-        if(document.getElementById("gamesSEARCH").value == 0) {
+        }
+        if (document.getElementById("gamesSEARCH").value == 0) {
             selectElement(".results").innerHTML = '';
             selectElement(".results").classList.remove("showRES")
             selectElement(".results").classList.add("hardhide");
@@ -83,29 +129,65 @@ const g3 = selectElement(".g3");
 const g4 = selectElement(".g4");
 const g5 = selectElement(".g5");
 const g6 = selectElement(".g6");
+const g7 = selectElement(".g7");
+const g8 = selectElement(".g8");
+const g9 = selectElement(".g9");
+const g10 = selectElement(".g10");
+const g11 = selectElement(".g11");
 
 g1.addEventListener("click", () => {
-    window.open("./gainly/retro-bowl/index.html", "_self");
+    window.open("./g/retro-bowl/index.html", "_self");
+    parent.document.getElementById("frame").focus();
 });
 
 g2.addEventListener("click", () => {
-    window.open("./gainly/clumsy-bird/index.html", "_self");
+    window.open("./g/clumsy-bird/index.html", "_self");
+    parent.document.getElementById("frame").focus();
 });
 
 g3.addEventListener("click", () => {
-    window.open("./gainly/2048/index.html", "_self");
+    window.open("./g/2048/index.html", "_self");
+    parent.document.getElementById("frame").focus();
 });
 
 g4.addEventListener("click", () => {
-    window.open("./gainly/hextris/index.html", "_self");
+    window.open("./g/hextris/index.html", "_self");
+    parent.document.getElementById("frame").focus();
 });
 
 g5.addEventListener("click", () => {
-    window.open("./gainly/javascript-racer/v4.final.html", "_self");
+    window.open("./g/javascript-racer/v4.final.html", "_self");
+    parent.document.getElementById("frame").focus();
 });
 
 g6.addEventListener("click", () => {
-    window.open("./gainly/tower-building/index.html", "_self");
+    window.open("./g/tower-building/index.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g7.addEventListener("click", () => {
+    window.open("./g/simon-says/index.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g8.addEventListener("click", () => {
+    go("krunker.io");
+    parent.document.getElementById("frame").focus();
+});
+
+g9.addEventListener("click", () => {
+    go("1v1.lol");
+    parent.document.getElementById("frame").focus();
+});
+
+g10.addEventListener("click", () => {
+    go("storage.y8.com/y8-studio/unity_webgl/bitlaslt/slope_v_1_2_5/");
+    parent.document.getElementById("frame").focus();
+});
+
+g11.addEventListener("click", () => {
+    go("shellshock.io");
+    parent.document.getElementById("frame").focus();
 });
 
 // function setFFR() {
@@ -160,7 +242,7 @@ const gameGEN = document.createElement("i");
 //         active.classList.add("notact");
 //         active.classList.remove("active");
 //         tabALL.classList.add("active");
-    
+
 //     }
 // });
 
@@ -205,3 +287,10 @@ const gameGEN = document.createElement("i");
 // } else if(localStorage.getItem("theme") === "classic") {
 //     document.getElementById("rels").href = "../styles/g.css";
 // }
+
+document.addEventListener("keydown", ea => {
+    if (ea.keyCode == "9") {
+        ea.preventDefault();
+        parent.document.getElementById("urlbar").focus()
+    }
+});

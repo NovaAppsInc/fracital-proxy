@@ -1,10 +1,16 @@
+@font-face {
+    font-family: poppins;
+    src: url(../resources/Poppins-Regular.ttf)
+}
+
 @keyframes fadeInAnimation {
     0% {
         transform: translateY(2em);
     }
+
     100% {
         transform: translateY(0em);
-     }
+    }
 }
 
 body {
@@ -15,9 +21,9 @@ body {
     position: absolute;
     height: 100vh;
     background: #222222;
-   margin-left:auto;
-    margin-right:auto;
-  display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,6 +52,35 @@ p {
     justify-items: center;
 }
 
+.home>.enginesearchc {
+    width: 80%;
+    z-index: 69;
+}
+
+.enginesearchc {
+    box-shadow: 0px 0px 9px #111;
+    border-radius: 22px;
+    overflow: hidden;
+    height: 2em;
+    margin-top: 22px;
+    padding: 0 12px;
+}
+
+.es {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: #f971e4;
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+}
+
+.es:focus-visible {
+    border: none;
+    outline: none;
+}
+
 .toolbar img {
     margin: 0 16px;
 }
@@ -54,8 +89,7 @@ p {
     display: grid;
     height: 100%;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -164,13 +198,16 @@ footer a {
     .card-container>*:not(.circle-link), .terminal {
         width: 100%;
     }
+
     .card:not(.highlight-card) {
         height: 16px;
         margin: 8px 0;
     }
+
     .card.highlight-card span {
         margin-left: 72px;
     }
+
     svg#rocket-smoke {
         right: 120px;
         transform: rotate(-5deg);
@@ -301,12 +338,12 @@ h1.name {
 }
 
 .git {
-	fill: #ffffff;
-	height: 46px;
-	width: 32px;
+    fill: #ffffff;
+    height: 46px;
+    width: 32px;
 }
 
-body > p.info {
+body>p.info {
     width: 100%;
 }
 
@@ -341,22 +378,36 @@ body > p.info {
     font-weight: 500;
 }
 
-.home > .links {
+.home>.links {
     margin-left: 2.9%;
 }
 
 .focusLetter {
-color:#fa15d8cc;
-transition:0.3s;
-font-size:64px;
-  cursor: default;
-  overflow: hidden;
-  padding-botton: 1px;
-  
-  
+    color: #fa15d8cc;
+    transition: 0.3s;
+    font-size: 64px;
+    cursor: default;
+    overflow: hidden;
+    padding-bottom: 1px;
 }
 
 .focusLetter:hover {
-  color:#fa15d8cc;
-  font-size:72px;
+    color: #fa15d8cc;
+    font-size: 72px;
+}
+
+footer {
+    color: white;
+}
+
+.patlinkc {
+    text-decoration: underline;
+    color: #f084ff;
+    margin-left: 5px;
+}
+
+.patlinkc:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
 }
