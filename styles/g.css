@@ -175,7 +175,7 @@ code, pre {
 
 .searchCONT {
     display: flex;
-    height: 3em;
+    height: 100%;
     justify-content: center;
 }
 
@@ -226,7 +226,6 @@ code, pre {
     flex-wrap: wrap;
     padding: 0 18px;
     justify-content: center;
-    height: calc(100% - 3em);
     align-items: center;
 }
 
@@ -294,6 +293,20 @@ code, pre {
     text-rendering: optimizelegibility;
     transition: 0.3s;
     border: none;
+}
+
+.tabar {
+    height: 3em;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.spacerG {
+    height: 5em;
 }
 
 .tabcontent {

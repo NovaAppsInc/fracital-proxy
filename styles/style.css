@@ -13,6 +13,54 @@
   src: local('Segoe UI Regular'), url(../resources/Segoe-UI-Bold.woff);
 }
 
+@keyframes opacDown {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes opacUp {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes heightGrowDrop {
+  0% {
+    height: 16em;
+  }
+  100% {
+    height: 29em;
+  }
+}
+
+@keyframes heightShrinkDrop {
+  0% {
+    height: 29em;
+  }
+  100% {
+    height: 16em;
+  }
+}
+
+.animateDrop {
+  animation: heightGrowDrop ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animateDropUp {
+  animation: heightShrinkDrop ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 html {
   scroll-behavior: smooth
 }
@@ -579,6 +627,12 @@ div.ql.hidden {
   position: absolute
 }
 
+.hiddenOpac {
+  animation: opacDown ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 div.ql.open {
   background: #333;
   height: min-content;
@@ -588,7 +642,11 @@ div.ql.open {
   display: grid;
   justify-items: center;
   z-index: 3;
+  animation: opacUp ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 
 div.btnsql {
   display: grid;
@@ -678,7 +736,7 @@ a.linkAl {
 .btnsc {
   width: 100%;
   display: grid;
-  height: 100%;
+  height: min-content;
   justify-items: center;
 }
 
@@ -749,11 +807,11 @@ a.linkAl {
 }
 
 div.gamedropthingy.hidden {
-  visibility: collapse
+  visibility: collapse;
 }
 
 div.gamedropthingy.open {
-  visibility: visible
+  visibility: visible;
 }
 
 .mainten {
@@ -774,6 +832,7 @@ div.gamedropthingy.open {
   z-index: 1;
   position: relative;
   margin-right: 1px;
+  overflow: hidden;
 }
 
 .droppiebtn {

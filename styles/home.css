@@ -306,7 +306,7 @@ h1.name {
     font-size: 4rem;
     animation: fadeInAnimation ease .9s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
 }
 
 .links {

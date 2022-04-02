@@ -65,19 +65,19 @@ const database = [
     },
     {
         name: "Krunker",
-        type: "html",
+        type: "multiplayer",
         icon: "./game-imgs/krk.png",
         path: "krunker.io"
     },
     {
         name: "1v1.lol",
-        type: "html",
+        type: "multiplayer",
         icon: "./game-imgs/1v1-lol.jpg",
         path: "1v1.lol"
     },
     {
         name: "Shell Shockers",
-        type: "html",
+        type: "multiplayer",
         icon: "./game-imgs/shellshockers.png",
         path: "shellshock.io"
     },
