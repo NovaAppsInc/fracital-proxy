@@ -26,6 +26,12 @@ body {
     display: inline-block
 }
 
+canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -287,13 +293,15 @@ pre.merge-begin+pre>span:first-child {
     box-shadow: 0 -12px 18px #222;
     z-index: 55;
     width: 22em;
-    margin-top: -19px
+    margin-top: -19px;
+    border-radius: 10px;
 }
 
 .infoTitl {
     display: grid;
     align-items: center;
-    justify-items: center
+    justify-items: center;
+    z-index: 1;
 }
 
 p.info {
