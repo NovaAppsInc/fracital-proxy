@@ -8,6 +8,13 @@
     src: url(../resources/Segoe-UI.ttf)
 }
 
+#particles-js {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -23,9 +30,14 @@ body {
     background: #222;
     height: 100%;
     margin: 0;
-    width: 24em;
+    width: 100vw;
     font-family: segoe ui;
-    overflow: auto
+    overflow: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    padding: 0;
 }
 
 * {
@@ -36,7 +48,9 @@ body {
     color: #f971e4;
     display: grid;
     justify-content: center;
-    width: max-content
+    width: max-content;
+    position: relative;
+    z-index: 2;
 }
 
 .settingsT {
