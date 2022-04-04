@@ -5,11 +5,13 @@
 
 @keyframes fadeInAnimation {
     0% {
-        transform: translateY(2em)
+        opacity: 0%;
+        transform: translateY(0.3em);
     }
 
     100% {
-        transform: translateY(0em)
+        opacity: 100%;
+        transform: translateY(0em);
     }
 }
 
@@ -82,7 +84,6 @@ p {
     border: none;
     width: 100%;
     height: 100%;
-    color: ;
     font-family: poppins, sans-serif;
     font-size: 18px
 }
