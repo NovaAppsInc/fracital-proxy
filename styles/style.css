@@ -434,7 +434,7 @@ a.linky:hover {
   border-radius: 3px
 }
 
-.urlbarI:focus {
+.urlbarI:focus  {
   outline: 1px;
 }
 
@@ -556,7 +556,9 @@ div.results.open {
 }
 
 .lg:hover {
-  cursor: pointer
+  cursor: pointer;
+  width: 40px;
+  height: 41px;
 }
 
 .frame {
