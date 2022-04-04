@@ -51,22 +51,18 @@
 
 @keyframes pp {
   0% {
-    opacity: 0%;
     height: 0%;
   }
   100% {
-    opacity: 100%;
     height: 16em;
   }
 }
 
 @keyframes noppOpac {
   0% {
-    height: 16em;
     opacity: 100%;
   }
   100% {
-    height: 0em;
     opacity: 0%;
   }
 }
@@ -438,7 +434,7 @@ a.linky:hover {
   border-radius: 3px
 }
 
-.urlbarI:focus {
+.urlbarI:focus  {
   outline: 1px;
 }
 
@@ -559,15 +555,10 @@ div.results.open {
   user-select: none;
 }
 
-.logo {
-  opacity: 60%;
-  transition: ease-in-out 0.2s;
-}
-
-.lg:hover .logo {
+.lg:hover {
   cursor: pointer;
-  opacity: 100%;
-  margin-top: -4px;
+  width: 40px;
+  height: 41px;
 }
 
 .frame {
@@ -669,6 +660,10 @@ a.qlbt {
 
 .qlbt:hover .rocket {
   fill: #f28bff
+}
+
+.qlText {
+  /*! margin: 0 14px 2px 0; */
 }
 
 div.ql.hidden {
