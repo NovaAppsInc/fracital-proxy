@@ -11,13 +11,21 @@ const dialogsL = document.getElementById("dialogsL");
 droppiebtn.addEventListener("click", () => {
     if(droppies.classList.contains("hide")) {
         droppies.classList.remove("hide");
-        droppies.classList.add("show");
+        droppies.classList.add("showPP");
+        droppies.classList.add("animateDropPP");
+        if(droppies.classList.contains("noOpac")) {
+            droppies.classList.remove("noOpac")
+        }
         if(droppies.classList.contains("animateDrop")) {
             droppies.classList.remove("animateDrop");
         }
-    } else if(droppies.classList.contains("show")) {
-        droppies.classList.remove("show");
-        droppies.classList.add("hide");
+    } else if(droppies.classList.contains("showPP")) {
+        droppies.classList.remove("showPP");
+        droppies.classList.add("noOpac");
+        myTime = setTimeout(() =>{
+            droppies.classList.add("hide");
+            clearTimeout(myTime);
+        }, 500);
         if (qld.classList.contains("open")) {
             qld.classList.remove("open");
             qld.classList.add("hidden");
@@ -43,14 +51,20 @@ qlbtm.addEventListener("click", () => {
         qld.classList.remove("hidden");
         qld.classList.add("open");
         droppies.classList.add("animateDrop");
+        if(droppies.classList.contains("animateDropPP")) {
+            droppies.classList.remove("animateDropPP");
+        }
         if(droppies.classList.contains("animateDropUp")) {
             droppies.classList.remove("animateDropUp");
+            droppies.classList.add("animateDrop");
         }
     } else if (qld.classList.contains("open")) {
         qld.classList.remove("open");
         qld.classList.add("hidden");
-        droppies.classList.remove("animateDrop");
-        droppies.classList.add("animateDropUp");
+        if(droppies.classList.contains("animateDrop")) {
+            droppies.classList.remove("animateDrop");
+            droppies.classList.add("animateDropUp");   
+        }
     }
 });
 

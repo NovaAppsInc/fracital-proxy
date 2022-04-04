@@ -32,7 +32,10 @@ document.addEventListener("keydown", ea => {
 });
 
 function patr() {
-    go("patreon.com/fracital")
+    window.open('https://www.patreon.com/fracital?fan_landing=true')
+}
+function tik() {
+    window.open('https://tiktok.com/@fracital')
 }
 
 // if (localStorage.getItem("theme") === "lime") {

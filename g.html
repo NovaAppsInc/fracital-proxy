@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./styles/g.css">
 </head>
     <body>
+      <div id="particles-js"></div>
         <div class="tabar">
           <div class="searchCONT">
             <input type="search" name="url" id="gamesSEARCH" autocomplete="off" class="gamesSEARCH" placeholder="Search a game or type">
-            <svg onclick="alert('current types searchable are: html, emulated, and multiplayer (not case sensitive). more coming soon!')" xmlns="http://www.w3.org/2000/svg" class="icon help icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" stroke="#ff7ffd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg onclick="alert('current types searchable are: html, emulated, multiplayer, and flash (not case sensitive); though if any letter in the name of the game or type matches with your search query the results will return a corresponding game/type')" xmlns="http://www.w3.org/2000/svg" class="icon help icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" stroke="#ff7ffd" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
               <line x1="12" y1="19" x2="12" y2="19.01" />
@@ -66,8 +67,30 @@
                 <img src="./game-imgs/shellshockers.png" class="thumbnail">
                 <h3 class="title">Shell Shockers</h3>
               </i>
+              <i class="gameLINK g12">
+                <img src="./game-imgs/AlienHominid.png" class="thumbnail">
+                <h3 class="title">Alien Hominid</h3>
+              </i>
+              <i class="gameLINK g13">
+                <img src="./game-imgs/ducklife4.png" class="thumbnail">
+                <h3 class="title">Duck Life 4</h3>
+              </i>
+              <i class="gameLINK g14">
+                <img src="./game-imgs/bulletbill.png" class="thumbnail">
+                <h3 class="title">Bullet Bill</h3>
+              </i>
+              <i class="gameLINK g15">
+                <img src="./game-imgs/portal.png" class="thumbnail">
+                <h3 class="title">Portal 2D</h3>
+              </i>
+              <i class="gameLINK g16">
+                <img src="./game-imgs/paperio.png" class="thumbnail">
+                <h3 class="title">Paper.io</h3>
+              </i>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="particlesjs.js"></script>
         <script src="./js/g.js"></script>
     </body>
 </html>

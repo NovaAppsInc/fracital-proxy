@@ -21,12 +21,14 @@ console.log(link);
 };
 
 const database = [
+    //emulated games
     {
         name: "Retro Bowl",
         type: "emulated",
         icon: "./game-imgs/retro-bowl.jpg",
         path: "./g/retro-bowl/index.html"
     },
+    //html games
     {
         name: "Clumsy Bird",
         type: "html",
@@ -63,6 +65,7 @@ const database = [
         icon: "./game-imgs/simon.png",
         path: "./g/simon-shockers/index.html"
     },
+    //multiplayer games
     {
         name: "Krunker",
         type: "multiplayer",
@@ -80,6 +83,37 @@ const database = [
         type: "multiplayer",
         icon: "./game-imgs/shellshockers.png",
         path: "shellshock.io"
+    },
+    {
+        name: "paper.io",
+        type: "multiplayer",
+        icon: "./game-imgs/paperio.png",
+        path: "paper.io"
+    },
+    //flash games
+    {
+        name: "Duck Life 4",
+        type: "flash",
+        icon: "./game-imgs/ducklife4.png",
+        path: "./g/flash-ems/ducklife.html"
+    },
+    {
+        name: "Alien Hominid",
+        type: "flash",
+        icon: "./game-imgs/AlienHominid.png",
+        path: "./g/flash-ems/alienh.html"
+    },
+    {
+        name: "Bullet Bill",
+        type: "flash",
+        icon: "./game-imgs/bulletbill.png",
+        path: "./g/flash-ems/bulletb.html"
+    },
+    {
+        name: "Portal 2D",
+        type: "flash",
+        icon: "./game-imgs/portal.png",
+        path: "./g/flash-ems/portal2d.html"
     },
 ]
 
@@ -134,6 +168,11 @@ const g8 = selectElement(".g8");
 const g9 = selectElement(".g9");
 const g10 = selectElement(".g10");
 const g11 = selectElement(".g11");
+const g12 = selectElement(".g12");
+const g13 = selectElement(".g13");
+const g14 = selectElement(".g14");
+const g15 = selectElement(".g15");
+const g16 = selectElement(".g16");
 
 g1.addEventListener("click", () => {
     window.open("./g/retro-bowl/index.html", "_self");
@@ -187,6 +226,31 @@ g10.addEventListener("click", () => {
 
 g11.addEventListener("click", () => {
     go("shellshock.io");
+    parent.document.getElementById("frame").focus();
+});
+
+g12.addEventListener("click", () => {
+    window.open("./g/flash-ems/alienh.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g13.addEventListener("click", () => {
+    window.open("./g/flash-ems/ducklife.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g14.addEventListener("click", () => {
+    window.open("./g/flash-ems/bulletb.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g15.addEventListener("click", () => {
+    window.open("./g/flash-ems/portal2d.html", "_self");
+    parent.document.getElementById("frame").focus();
+});
+
+g16.addEventListener("click", () => {
+    go("paper.io");
     parent.document.getElementById("frame").focus();
 });
 
