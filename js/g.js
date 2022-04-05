@@ -19,16 +19,14 @@ console.log(link);
   // }
   parent.document.getElementById("frame").src="/sw/"+xor.encode(link);
 };
-
+ // THIS IS FOR SEARCH, NO DELETING
 const database = [
-    //emulated games
     {
         name: "Retro Bowl",
-        type: "emulated",
+        type: "html",
         icon: "./game-imgs/retro-bowl.jpg",
         path: "./g/retro-bowl/index.html"
     },
-    //html games
     {
         name: "Clumsy Bird",
         type: "html",
@@ -48,60 +46,10 @@ const database = [
         path: "./g/hextris/index.html"
     },
     {
-        name: "JavaScript Racer",
-        type: "html",
-        icon: "./game-imgs/jsracer.png",
-        path: "./g/javascript-racer/v4.final.html"
-    },
-    {
         name: "Tower Building",
         type: "html",
         icon: "./game-imgs/tower.gif",
         path: "./g/tower-building/index.html"
-    },
-    {
-        name: "Simon Says",
-        type: "html",
-        icon: "./game-imgs/simon.png",
-        path: "./g/simon-shockers/index.html"
-    },
-    //multiplayer games
-    {
-        name: "Krunker",
-        type: "multiplayer",
-        icon: "./game-imgs/krk.png",
-        path: "krunker.io"
-    },
-    {
-        name: "1v1.lol",
-        type: "multiplayer",
-        icon: "./game-imgs/1v1-lol.jpg",
-        path: "1v1.lol"
-    },
-    {
-        name: "Shell Shockers",
-        type: "multiplayer",
-        icon: "./game-imgs/shellshockers.png",
-        path: "shellshock.io"
-    },
-    {
-        name: "paper.io",
-        type: "multiplayer",
-        icon: "./game-imgs/paperio.png",
-        path: "paper.io"
-    },
-    //flash games
-    {
-        name: "Duck Life 4",
-        type: "flash",
-        icon: "./game-imgs/ducklife4.png",
-        path: "./g/flash-ems/ducklife.html"
-    },
-    {
-        name: "Alien Hominid",
-        type: "flash",
-        icon: "./game-imgs/AlienHominid.png",
-        path: "./g/flash-ems/alienh.html"
     },
     {
         name: "Bullet Bill",
@@ -133,7 +81,7 @@ function getResults() {
     clearRES();
     for (let i = 0; i < database.length; i++) {
         if (database[i].name.toLowerCase().includes(search.toLowerCase()) || database[i].type.toLowerCase().includes(search.toLowerCase())) {
-            selectElement(".results").innerHTML += `<i onclick="window.open('${database[i].path}', '_self')" class="gameLINK emL"><img src="${database[i].icon}" class="thumbnail"><h3 class="title">${database[i].name}</h3></i>`
+            selectElement(".results").innerHTML += `<i onclick="window.open('${database[i].path}', '_self')" class="game"><img src="${database[i].icon}" class="thumbnail"><h3 class="title">${database[i].name}</h3></i>`
             selectElement(".games").classList.add("hide");
             if (selectElement(".results").classList.contains("hardhide")) {
                 selectElement(".results").classList.add("showRES");
@@ -166,7 +114,7 @@ const gameGEN = document.createElement("i");
 // let tabALL = document.querySelector(".allL");
 // let tabHTML = document.querySelector(".htmlL");
 // let tabFLASH = document.querySelector(".flashL");
-// let all = document.querySelectorAll(".gameLINK")
+// let all = document.querySelectorAll(".game")
 
 // tabs.forEach((tab) => {
 //     tab.addEventListener("click", ()=>{

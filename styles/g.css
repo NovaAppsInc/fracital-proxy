@@ -127,7 +127,7 @@ code, pre {
     justify-content: center;
 }
 
-.gameLINK {
+.game {
     display: grid;
     justify-items: center;
     width: 14em;

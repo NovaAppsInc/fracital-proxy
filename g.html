@@ -11,8 +11,8 @@
       <div id="particles-js"></div>
         <div class="tabar">
           <div class="searchCONT">
-            <input type="search" name="url" id="gamesSEARCH" autocomplete="off" class="gamesSEARCH" placeholder="Search a game or type">
-            <svg onclick="alert('current types searchable are: html, emulated, multiplayer, and flash (not case sensitive); though if any letter in the name of the game or type matches with your search query the results will return a corresponding game/type')" xmlns="http://www.w3.org/2000/svg" class="icon help icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" stroke="#ff7ffd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <input type="search" name="url" id="gamesSEARCH" autocomplete="off" class="gamesSEARCH" placeholder="Search a game or category">
+            <svg onclick="alert('Current Categories: \n HTML \n Flash')" xmlns="http://www.w3.org/2000/svg" class="icon help icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" stroke="#ff7ffd" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
               <line x1="12" y1="19" x2="12" y2="19.01" />
@@ -23,70 +23,42 @@
         <div class="results hardhide"></div>
         <div class="games" id="games">
             <div style="display: flex;width: 100%;flex-wrap: wrap;justify-content: center;align-content: center;">
-              <i class="gameLINK g1" href="./g/retro-bowl/index.html">
+              <a class="game" href="./g/retro-bowl/index.html">
                 <img src="./game-imgs/retro-bowl.jpg" class="thumbnail">
                 <h3 class="title gmsTITLE">Retro Bowl</h3>
-              </i>
-              <i class="gameLINK g2" href="./g/clumsy-bird/index.html">
+              </a>
+              <a class="game" href="./g/clumsy-bird/index.html">
                 <img src="./game-imgs/clumsy.png" class="thumbnail">
                 <h3 class="title">Clumsy Bird</h3>
-              </i>
-              <i class="gameLINK g3" href="./g/2048/index.html">
+              </a>
+              <a class="game" href="./g/2048/index.html">
                 <img src="./game-imgs/2048.png" class="thumbnail">
                 <h3 class="title">2048</h3>
-              </i>
-              <i class="gameLINK g4" href="./g/hextris/index.html">
+              </a>
+              <a class="game" href="./g/hextris/index.html">
                 <img src="./game-imgs/hextris.png" class="thumbnail">
                 <h3 class="title">Hextris</h3>
-              </i>
-              <i class="gameLINK g5" href="./g/javascript-racer/v4.final.html">
-                <img src="./game-imgs/jsracer.png" class="thumbnail">
-                <h3 class="title">JavaScript Racer</h3>
-              </i>
-              <i class="gameLINK g6" href="./g/tower-building/index.html">
+              </a>
+              <a class="game" href="./g/tower-building/index.html">
                 <img src="./game-imgs/tower.gif" class="thumbnail">
                 <h3 class="title">Tower Building</h3>
-              </i>
-              <i class="gameLINK g7" href="./g/simon-says/index.html">
-                <img src="./game-imgs/simon.png" class="thumbnail">
-                <h3 class="title">Simon Says</h3>
-              </i>
-              <i class="gameLINK g8" onclick="go('krunker.io');">
-                <img src="./game-imgs/krk.png" class="thumbnail">
-                <h3 class="title">Krunker</h3>
-              </i>
-              <i class="gameLINK g9" onclick="go('1v1.io');">
-                <img src="./game-imgs/1v1-lol.jpg" class="thumbnail">
-                <h3 class="title">1v1.lol</h3>
-              </i>
-              <i class="gameLINK g10" onclick="go('storage.y8.com/y8-studio/unity_webgl/bitlaslt/slope_v_1_2_5/')">
+              </a>
+              <a class="game" onclick="go('storage.y8.com/y8-studio/unity_webgl/bitlaslt/slope_v_1_2_5/')">
                 <img src="./game-imgs/slope.jpg" class="thumbnail">
                 <h3 class="title">Slope</h3>
-              </i>
-              <i class="gameLINK g11" onclick="go('shellshock.io')">
-                <img src="./game-imgs/shellshockers.png" class="thumbnail">
-                <h3 class="title">Shell Shockers</h3>
-              </i>
-              <i class="gameLINK g12" href="./g/flash-ems/alienh.html">
-                <img src="./game-imgs/AlienHominid.png" class="thumbnail">
-                <h3 class="title">Alien Hominid</h3>
-              </i>
-              <i class="gameLINK g13" href="./g//flash-ems/ducklife.html">
-                <img src="./game-imgs/ducklife4.png" class="thumbnail">
-                <h3 class="title">Duck Life 4</h3>
-              </i>
-              <i class="gameLINK g14" href="./g/flash-ems/bulletb.html">
+              </a>
+              <a class="game" href="./g/swfs/#bullet_bill_26.swf">
                 <img src="./game-imgs/bulletbill.png" class="thumbnail">
                 <h3 class="title">Bullet Bill</h3>
-              </i>
-              <i class="gameLINK g15" href="./g/flash-ems/portal2d.html">
+              </a>
+              <a class="game" href="./g/swfs/#portal2d">
                 <img src="./game-imgs/portal.png" class="thumbnail">
                 <h3 class="title">Portal 2D</h3>
-              </i>
-              <i class="gameLINK g16" onclick="go('paper.io')">
-                <img src="./game-imgs/paperio.png" class="thumbnail">
-                <h3 class="title">Paper.io</h3>
-              </i>
+              </a>
+              <a class="game" href="./g/swfs/#zombocalypse">
+                <img src="./game-imgs/zomb.png" class="thumbnail">
+                <h3 class="title">Zombocalypse</h3>
+              </a>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
