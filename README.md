@@ -1,5 +1,5 @@
 # Fracital
-Another website made with the Ultraviolet backend by TitaniumNetwork.
+Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.js
 - https://fracital.org
 - Become a pateon https://patreon.com/fracital
 
