@@ -58,6 +58,10 @@ h1.name {
     animation: fadeInAnimation ease .9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    text-align: center;
 }
 
 .home {
@@ -87,9 +91,28 @@ body > p.info {
     font-size: 69px
 }
 
+.focusLetterS {
+    color: #ff85edcc;
+    transition: .3s;
+    font-size: 64px;
+    cursor: default;
+    overflow: hidden;
+    padding-bottom: 1px;
+}
+
+.focusLetterS:hover {
+    color: #fd72e8cc;
+    font-size: 69px
+}
+
+.linkstit {
+    width: max-content;
+    white-space: none;
+}
+
 .links {
     transition: ease 0.5s;
-    width: min-content;
+    width: 21em;
     color: #ffa8fa;
     font-family: Poppins;
     font-size: 17px;
@@ -98,19 +121,54 @@ body > p.info {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     text-align: center;
-    width: 100%;
+    display: grid;
+    height: 27em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .links li:hover {
-    font-size: 28px;
+    font-size: 18px;
     cursor: pointer;
+    color: #ff6bf8;
+}
+
+span {
+    display: grid;
+    visibility: collapse;
+    height: 2px;
+    width: 2em;
+}
+
+.links li:hover span {
+    visibility: visible;
+    background: white;
+    width: 100%;
 }
 
 ul {
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 20px;
+    width: 16em;
+    transition: ease 0.4s;
+}
+
+ul:hover {
+    margin: 0;
+    background-color: #383838;
+    padding: 40px;
+    border-radius: 20px;
 }
 
 ul li {
     list-style: none;
+    width: min-content;
+    text-align: center;
+}
+
+span {
+    transition: ease-in-out 0.4s;
 }
