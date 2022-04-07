@@ -1,3 +1,7 @@
+* {
+    user-select: none;
+}
+
 @font-face {
     font-family: Poppins;
     src: url(../resources/Poppins-Regular.ttf);
@@ -146,9 +150,14 @@ code, pre {
     z-index: 2;
 }
 
+.game:hover .thumbnail {
+    opacity: 50%;
+}
+
 .thumbnail {
     height: 14em;
     width: 14em;
+    transition: ease 0.4s;
 }
 
 .title {

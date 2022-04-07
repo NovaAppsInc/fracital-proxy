@@ -55,13 +55,25 @@ const database = [
         name: "Bullet Bill",
         type: "flash",
         icon: "./game-imgs/bulletbill.png",
-        path: "./g/flash-ems/bulletb.html"
+        path: "./g/flash/index.html?swf=bulletb.html"
     },
     {
         name: "Portal 2D",
         type: "flash",
         icon: "./game-imgs/portal.png",
-        path: "./g/flash-ems/portal2d.html"
+        path: "./g/flash/index.html?swf=portal2d.html"
+    },
+    {
+        name: "Portal 2D",
+        type: "flash",
+        icon: "./game-imgs/AlienHominid.png",
+        path: "./g/flash/index.html?swf=alienh.html"
+    },
+    {
+        name: "Zombocalypse",
+        type: "flash",
+        icon: "./game-imgs/zomb.png",
+        path: "./g/flash/index.html?swf=zombocalpyse.swf"
     },
 ]
 

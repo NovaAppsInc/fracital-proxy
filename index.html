@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="./resources/favicon.ico" id="relt" type="image/x-icon">
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
+  <script async src="https://arc.io/widget.min.js#9RNMA9a8"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js', {
@@ -61,7 +62,7 @@
     <div class="droppies animateDropUp hide" id="droppies">
       <div class="leftc">
         <div class="btnsc">
-          <a class="gamedrop" id="dropgame">
+          <a class="btndrop gamedrop" id="dropgame">
             <svg xmlns="http://www.w3.org/2000/svg" class="gamedropic icon-tabler icon-tabler-pacman" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="100%" height="100%">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M5.636 5.636a9 9 0 0 1 13.397 .747l-5.619 5.617l5.619 5.617a9 9 0 1 1 -13.397 -11.981z"></path>
@@ -69,28 +70,31 @@
             </svg>
             <h2 class="gamedropText">Games</h2>
           </a>
-          <a class="bug" id="bug">
+          <a class="btndrop bug" id="bug">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon git icon-tabler icon-tabler-brand-github" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
             </svg>
             <h2 class="bugsText">Bugs</h2>
           </a>
-          <a id="qlbtm" class="qlbt">
+          <a href="https://fracital.dev" class=" btndrop links">
+            <h2 class="linksText">Fracital Alts</h2>
+          </a>
+          <a id="qlbtm" class="btndrop qlbt">
             <svg xmlns="http://www.w3.org/2000/svg" class="rocket" viewBox="0 0 172 172">
               <path d="M0,172v-172h172v172z" fill="none"></path>
               <path d="M154.67683,17.32318c0,0 -51.47683,-0.12318 -91.61016,40.01016c-1.85295,1.85295 -3.46634,3.87014 -4.92708,5.95729c-7.11553,-0.56892 -18.0076,-0.38307 -23.58281,5.19583c-13.01467,13.01467 -17.35677,34.71354 -17.35677,34.71354l28.66667,-4.09844v9.83177l17.2,17.2h9.83177l-4.09844,28.66667c0,0 21.69888,-4.34211 34.71354,-17.35677c5.5789,-5.57521 5.76476,-16.46728 5.19583,-23.58281c2.08715,-1.46074 4.10434,-3.07413 5.95729,-4.92708c40.13333,-40.13333 40.01016,-91.61016 40.01016,-91.61016zM108.93333,51.6c6.33533,0 11.46667,5.13133 11.46667,11.46667c0,6.33533 -5.13133,11.46667 -11.46667,11.46667c-6.33533,0 -11.46667,-5.13133 -11.46667,-11.46667c0,-6.33533 5.13133,-11.46667 11.46667,-11.46667zM41.27552,114.64427c-2.17867,0.57333 -4.24329,1.66777 -5.94609,3.37057c-7.83173,7.83173 -6.58437,25.22891 -6.58437,25.22891c0,0 17.28277,1.35056 25.21771,-6.58437c1.7028,-1.70281 2.79724,-3.77863 3.37057,-5.95729l-2.62031,-2.62031c-0.258,0.36693 -0.41773,0.79299 -0.75026,1.11979c-5.59,5.59 -13.975,2.79948 -13.975,2.79948c0,0 -2.79625,-8.385 2.79948,-13.975c0.33253,-0.33253 0.74166,-0.48653 1.10859,-0.75026z"></path>
             </svg>
             <h2 class="qlText">Quick Sites</h2>
           </a>
-          <a class="settb" id="settb">
+          <a class="btndrop settb" id="settb">
             <svg xmlns="http://www.w3.org/2000/svg" class="settic icon-tabler icon-tabler-tool" viewBox="0 0 24 24" stroke="transparent" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
             </svg>
             <h2 class="settT">Settings</h2>
           </a>
-          <a class="dropbtn" onclick="lyric();">
+          <a class="btndrop dropbtn" onclick="lyric();">
             <h2 class="lyric">Lyrics Search</h2>
           </a>
         </div>
@@ -114,7 +118,6 @@
     <iframe src="home.html" frameborder="0" class="frame nonec" id="frame"></iframe>
     <div class="alertbtm" id="alert">
       <p class="alert">You can search lyrics from the drop down menu!</a></p>
-      <span class="alertbtmb" id="alertbtm"></span>
     </div>
   </body>
   <script src="./js/alerts.js"></script>
