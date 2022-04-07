@@ -1,3 +1,6 @@
+* {
+  user-select: none;
+}
 @font-face {
     font-family: poppins;
     src: url(../resources/Poppins-Regular.ttf)

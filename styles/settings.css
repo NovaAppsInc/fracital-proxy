@@ -1,3 +1,6 @@
+* {
+  user-select: none;
+}
 @font-face {
     font-family: segoeB;
     src: url(../resources/Segoe-UI-Bold.woff)
