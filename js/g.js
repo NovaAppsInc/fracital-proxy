@@ -55,25 +55,109 @@ const database = [
         name: "Bullet Bill",
         type: "flash",
         icon: "./game-imgs/bulletbill.png",
-        path: "./g/flash/index.html?swf=bulletb.html"
+        path: "/g/flash/index.html?swf=bullet_bill_26.swf"
     },
     {
         name: "Portal 2D",
         type: "flash",
         icon: "./game-imgs/portal.png",
-        path: "./g/flash/index.html?swf=portal2d.html"
+        path: "/g/flash/index.html?swf=portal2d.swf"
     },
     {
-        name: "Portal 2D",
+        name: "Alien Hominid",
         type: "flash",
         icon: "./game-imgs/AlienHominid.png",
-        path: "./g/flash/index.html?swf=alienh.html"
+        path: "/g/flash/index.html?swf=alien.swf"
     },
     {
-        name: "Zombocalypse",
+        name: "Achievement+",
         type: "flash",
-        icon: "./game-imgs/zomb.png",
-        path: "./g/flash/index.html?swf=zombocalpyse.swf"
+        icon: "./game-imgs/achievement.png",
+        path: "/g/flash/index.html?swf=achievement-unlocked.swf"
+    },
+    {
+        name: "Basketball Stars",
+        type: "html",
+        icon: "./game-imgs/bbstars.png",
+        path: "/g/basketball-stars/index.html"
+    },
+    {
+        name: "Cookie Clicker",
+        type: "html",
+        icon: "./game-imgs/cookie.png",
+        path: "/g/cookie/index.html"
+    },
+    {
+        name: "Moto X3M",
+        type: "html",
+        icon: "./game-imgs/moto.png",
+        path: "/g/moto/index.html"
+    },
+    {
+        name: "Vex 4",
+        type: "html",
+        icon: "./game-imgs/vex4.png",
+        path: "/g/vex4/index.html"
+    },
+    {
+        name: "Vex 5",
+        type: "html",
+        icon: "./game-imgs/vex5.png",
+        path: "/g/vex5/index.html"
+    },
+    {
+        name: "Rooftop Snipers",
+        type: "html",
+        icon: "./game-imgs/snipers.png",
+        path: "/g/rooftop-snipers/index.html"
+    },
+    {
+        name: "Slope",
+        type: "html",
+        icon: "./game-imgs/slope.jpg",
+        path: "/g/slope/index.html"
+    },
+    {
+        name: "Getaway Shootout",
+        type: "html",
+        icon: "./game-imgs/shootout.jpg",
+        path: "/g/getaway-shootout/index.html"
+    },
+    {
+        name: "A Dark Room",
+        type: "html",
+        icon: "./game-imgs/dark.png",
+        path: "/g/a-dark-room/index.html"
+    },
+    {
+        name: "Age Of War",
+        type: "flash",
+        icon: "./game-imgs/war.png",
+        path: "/g/flash/index.html?swf=age-of-war.swf"
+    },
+    {
+        name: "Binding of Isaac",
+        type: "flash",
+        icon: "./game-imgs/isaac.png",
+        path: "/g/flash/index.html?swf=isaac.swf"
+    },
+    {
+        name: "Impossible Quiz 2",
+        type: "flash",
+        icon: "./game-imgs/quiz2.png",
+        path: "/g/flash/index.html?swf=quiz2.swf"
+    },
+    {
+        name: "Real Estate Tycoon",
+        type: "flash",
+        icon: "./game-imgs/tycoon.png",
+        path: "/g/flash/index.html?swf=tycoon.swf"
+    },
+    {
+        name: "Warfare 1944",
+        type: "flash",
+        icon: "./game-imgs/warfare1944.png",
+        path: "/g/flash/index.html?swf=warfare1944.swf"
     },
 ]
 

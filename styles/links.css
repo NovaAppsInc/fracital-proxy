@@ -169,6 +169,11 @@ ul li {
     text-align: center;
 }
 
+li {
+    display: grid;
+    justify-items: center;
+}
+
 span {
     transition: ease-in-out 0.4s;
 }
