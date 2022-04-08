@@ -1,9 +1,35 @@
 * {
-  user-select: none;
+    user-select: none;
 }
+
+@font-face {
+    font-family: Metro;
+    src: url(../resources/metropolis-regular.otf);
+}
+
+@font-face {
+    font-family: MetroXBold;
+    src: url(../resources/metropolis-extra-bold.otf);
+}
+
 @font-face {
     font-family: poppins;
     src: url(../resources/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../resources/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: Whit;
+    src: url(../resources/Whitney-nGIF.ttf);
+}
+
+@font-face {
+    font-family: Fracital;
+    src: url(../resources/Fracital.ttf);
 }
 
 @keyframes fadeInAnimation {
@@ -198,7 +224,6 @@ a:hover {
 }
 
 footer {
-    margin-top: 8px;
     display: flex;
     align-items: center;
     line-height: 20px
@@ -321,6 +346,7 @@ h1.name {
     animation: fadeInAnimation ease .9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    margin-bottom: 11px;
 }
 
 .links {
@@ -329,7 +355,8 @@ h1.name {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    align-items: center
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .link:hover {
@@ -380,7 +407,7 @@ body>p.info {
 
 .com {
     align-items: center;
-    margin-top: 3px !important;
+    /*! margin-top: 3px !important; */
     width: 92px !important
 }
 
@@ -402,21 +429,28 @@ body>p.info {
 }
 
 .focusLetter {
+    font-family: Fracital;
     color: #fa15d8cc;
     transition: .3s;
-    font-size: 64px;
+    font-size: 63px;
     cursor: default;
     overflow: hidden;
-    padding-bottom: 1px
+    padding-bottom: 1px;
 }
 
 .focusLetter:hover {
     color: #fa15d8cc;
-    font-size: 69px
+    font-size: 69px;
 }
 
 footer {
     color: #fff
+}
+
+.patlink {
+    color: #ffffff;
+    font-weight: normal;
+    margin: 4px 0;
 }
 
 .patlinkc {
@@ -429,4 +463,8 @@ footer {
     text-decoration: none;
     cursor: pointer;
     color: #fff
+}
+
+.space {
+    height: 2px;
 }

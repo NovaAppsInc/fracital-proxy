@@ -27,15 +27,15 @@ function clig2() {
 document.addEventListener("keydown", ea => {
     if (ea.keyCode == "9") {
         ea.preventDefault();
-        parent.document.getElementById("urlbar").focus()
+        parent.document.getElementById("urlbar").focus();
     }
 });
 
 function patr() {
-    window.open('https://www.patreon.com/fracital?fan_landing=true')
+    window.open('https://www.patreon.com/fracital?fan_landing=true');
 }
 function tik() {
-    window.open('https://tiktok.com/@fracital')
+    window.open('https://tiktok.com/@fracital');
 }
 
 // if (localStorage.getItem("theme") === "lime") {

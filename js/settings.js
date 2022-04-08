@@ -15,7 +15,7 @@ let linkStSET = document.getElementById("relss")
 let site = document.getElementById("site");
 let sitei = document.getElementById("sitei");
 let sites = document.getElementById("sites");
-
+    
 function sitec() {
     parent.document.title = "Fracital";
     link.href = "./fractrial.png";

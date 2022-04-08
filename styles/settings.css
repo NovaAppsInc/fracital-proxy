@@ -1,6 +1,12 @@
 * {
-  user-select: none;
+    user-select: none;
 }
+
+button:focus-visible {
+    border: 2px solid #f28bff;
+    outline: none;
+}
+
 @font-face {
     font-family: segoeB;
     src: url(../resources/Segoe-UI-Bold.woff)
@@ -113,7 +119,7 @@ option {
 }
 
 .siteC {
-    margin-right: 2px
+    margin-right: 4px;
 }
 
 .faviC {
@@ -137,8 +143,10 @@ option {
     height: 21em
 }
 
-.customT {
-    display: grid
+.custom {
+    height: 5em;
+    width: max-content;
+    margin-bottom: 6px;
 }
 
 .subthr {
@@ -174,4 +182,24 @@ option {
 
 .themes {
     margin-top: 31px
+}
+
+.parts {
+    display: flex;
+    height: max-content;
+    width: max-content;
+}
+
+.partsinp {
+    margin-right: 4px;
+}
+
+.f {
+    margin-right: 4px;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }

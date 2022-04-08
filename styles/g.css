@@ -3,6 +3,11 @@
 }
 
 @font-face {
+    font-family: Metro;
+    src: url(../resources/metropolis-regular.otf);
+  }
+
+@font-face {
     font-family: Poppins;
     src: url(../resources/Poppins-Regular.ttf);
 }
