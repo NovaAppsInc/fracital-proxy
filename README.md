@@ -1,6 +1,6 @@
 # Fracital
 Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.js
-- https://fracital.dev
+https://fracital.dev
 
 [![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=69596646)
 
