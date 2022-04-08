@@ -3,23 +3,20 @@ Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.j
 - https://fracital.org
 - Become a pateon https://patreon.com/fracital
 
+[![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=69596646)
+
 # Supports
 - **Any static site**
 - **Discord**
 - **Youtube**
 - **Mobile browsing!**
+- **Spotify**
+- **CAPTCHA/hCAPTCHA**
+- **GeForce NOW (Partially Supported)**
+- **and many more**
 
 # Updates:
-- **New UI Update!**
-- **Games are back!**
-- **Drop down menu to make the website more compact**
-- **New games page UI**
-- **NOW USING THE NEW UltraViolet BACKEND**
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
-![image](https://i.imgur.com/Oe2IWhK.png)
-![image](https://i.imgur.com/rZpmikX.png)
+- **New UI updates**
 
 ## Setup Guide
 If you want to host your own version of **Fracital** follow these steps
