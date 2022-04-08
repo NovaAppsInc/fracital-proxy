@@ -27,3 +27,9 @@ $ npm install
 $ npm start 
 ```
 then go to ```static``` delete all files then move all of the ```proxy-main``` files in it
+
+# Replit Setup Guide
+```
+npm i
+```
+go to static ```static``` and then put the content of ```proxy-main``` in there then boom
