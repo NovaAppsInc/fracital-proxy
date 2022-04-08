@@ -18,7 +18,7 @@ Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.j
 # Updates:
 - **New UI updates**
 
-## Setup Guide
+# Setup Guide
 If you want to host your own version of **Fracital** follow these steps
 ```
 $ git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
