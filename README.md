@@ -20,3 +20,6 @@ Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.j
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 ![image](https://i.imgur.com/Oe2IWhK.png)
 ![image](https://i.imgur.com/rZpmikX.png)
+
+## Setup
+If you want to host your own version of **Fracital** follow these steps
