@@ -21,5 +21,12 @@ Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.j
 ![image](https://i.imgur.com/Oe2IWhK.png)
 ![image](https://i.imgur.com/rZpmikX.png)
 
-## Setup
+## Setup Guide
 If you want to host your own version of **Fracital** follow these steps
+```
+$ git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
+$ cd Ultraviolet-Node
+$ npm install
+$ npm start 
+```
+then go to ```static``` delete all files then move all of the ```proxy-main``` in it
