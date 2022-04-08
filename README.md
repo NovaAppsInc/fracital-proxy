@@ -29,3 +29,5 @@ $ cd fracital-proxy
 $ npm install
 $ npm start
 ```
+## Repl.it Setup Guide
+First, Click this button: [https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/replit.svg](https://gogle.com)
