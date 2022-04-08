@@ -1,29 +1,31 @@
 # Fracital
-Another website made with the Ultraviolet backend by TitaniumNetwork & caracal-js
-
-https://fracital.dev
-
-[![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=69596646)
+Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.js
+- https://fracital.org
+- Become a pateon https://patreon.com/fracital
 
 # Supports
 - **Any static site**
 - **Discord**
 - **Youtube**
 - **Mobile browsing!**
-- **Spotify**
-- **CAPTCHA/hCAPTCHA**
-- **GeForce NOW (Partially Supported)**
-- **and many more**
 
 # Updates:
-- **New UI updates**
+- **New UI Update!**
+- **Games are back!**
+- **Drop down menu to make the website more compact**
+- **New games page UI**
+- **NOW USING THE NEW UltraViolet BACKEND**
 
-# Setup Guide
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+![image](https://i.imgur.com/Oe2IWhK.png)
+![image](https://i.imgur.com/rZpmikX.png)
+
+## Setup
 If you want to host your own version of **Fracital** follow these steps
 ```
-$ git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
-$ cd Ultraviolet-Node
+$ git clone https://github.com/NovaAppsInc/fracital-proxy
+$ cd fracital-proxy
 $ npm install
-$ npm start 
+$ npm start
 ```
-then go to ```static``` delete all files then move all of the ```proxy-main``` files in it
