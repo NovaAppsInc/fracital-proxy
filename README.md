@@ -29,4 +29,4 @@ $ npm start
 then go to ```static``` delete all files then move all of the ```proxy-main``` files in it
 
 # Run On Replit
-[![Run on Repl.it](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/NovaAppsInc/fracital-static)
+[Click here to go to the Repl.it Setup Guide.](https://github.com/NovaAppsInc/fracital-static/blob/main/README.md)
