@@ -21,7 +21,9 @@ Another website made with the Ultraviolet backend by TitaniumNetwork & caracal.j
 ![image](https://i.imgur.com/Oe2IWhK.png)
 ![image](https://i.imgur.com/rZpmikX.png)
 
+
 ## Setup
+# Bare Server Setup Guide
 If you want to host your own version of **Fracital** follow these steps
 ```
 $ git clone https://github.com/NovaAppsInc/fracital-proxy
