@@ -18,7 +18,7 @@ https://fracital.dev
 # Updates:
 - **New UI updates**
 
-# Setup Guide
+# Bare Server Setup Guide
 If you want to host your own version of **Fracital** follow these steps
 ```
 $ git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
