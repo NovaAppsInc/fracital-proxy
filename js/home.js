@@ -20,10 +20,6 @@ document.getElementById('clig').addEventListener("click", () => {
     window.open("./g.html", "_self");
 });
 
-function clig2() {
-    go("discord.gg/vXVcNfqBzW");
-}
-
 document.addEventListener("keydown", ea => {
     if (ea.keyCode == "9") {
         ea.preventDefault();
