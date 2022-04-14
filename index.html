@@ -10,7 +10,16 @@
   <title>Fracital</title>
   <link rel="stylesheet" href="./styles/style.css" id="rels">
   <link rel="shortcut icon" href="./resources/favicon.ico" id="relt" type="image/x-icon">
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
   <script async src="https://arc.io/widget.min.js#9RNMA9a8"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', {
+          scope: '/sw/',
+      });
+    };
+  </script>
 </head>
   <body>
     <div class="toolbar" id="toolbar" role="banner">
@@ -107,13 +116,11 @@
       </div>
     </div>
     <iframe src="home.html" frameborder="0" class="frame nonec" id="frame"></iframe>
-    <div class="alertbtm" id="alert">
-      <p class="alert">You will now need to dm us to join the Fracital server because school IT's be goofy!</a></p>
-    </div>
+    <!-- <div class="alertbtm" id="alert">
+      <p class="alert">You can search lyrics from the drop down menu!</a></p>
+    </div> -->
   </body>
-  <script src="js/alerts.js"></script>
+  <script src="./js/alerts.js"></script>
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-  <script src="/js/index.js"></script>
-  <script src="/uv/uv.bundle.js"></script>
-  <script src="/uv/uv.config.js"></script>
+  <script src="./js/index.js"></script>
 </html>

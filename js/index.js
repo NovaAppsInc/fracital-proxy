@@ -1,32 +1,40 @@
+class xor {
+  static encode(str) {
+      return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
+  };
+  static decode(str) {
+      return decodeURIComponent(str.slice(0, -1)).split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join('');
+  };
+};
+
 function selectElement(selector) {
   return document.querySelector(selector);
 }
-const urlBar = document.getElementById('urlbar').value;
+
 const frame = document.getElementById("frame");
 const settb = document.getElementById("settb");
-const toolb = document.getElementById("toolbar");
+const toolb = document.getElementById("toolbar")
 
 settb.addEventListener("click", () => {
   frame.src = "settings.html"
-});
+})
 
 let tlds = [".com", ".net", ".org", ".co", ".lol", ".gg", ".fun", ".ga", ".xyz", ".to", ".cc", ".info", ".io", ".tv"];
 
 document.cookie="olds=sus";
 
 function go(link) {
-  window.navigator.serviceWorker.register('../sw.js', {
-  scope: __uv$config.prefix
-});
   if (link == '') {
     alert('Bruh you need to insert a url!');
-  } else if (!(link.startsWith('https://') || link.startsWith('http://'))) link = 'http://' + urlBar;
+  } else if (!link.includes("http://")) {
+      link = "http://" + link;
+  } 
   if(!link.includes(".")) {
-    alert(`alright bro come on "${urlBar}" ain't even a url!`)
+    alert(`alright bro come on "${document.getElementById('urlbar').value}" ain't even a url!`)
     return;
     // go("bing.com/search?q=" + document.getElementById('urlbar').value);
   }
-   frame.src = __uv$config.prefix + __uv$config.encodeUrl(link);
+  document.getElementById("frame").src="/sw/"+xor.encode(link);
 };
 
 document.getElementById("btnsrch").addEventListener("click", () => {
@@ -94,7 +102,7 @@ let observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
     if (mutation.type == "attributes") {
 	if(!document.getElementById("urlbar").src == "") {
-      document.getElementById("urlbar").src=__uv$config.decode(frame.contentWindow.location.href.split(__uv$config.prefix)[1]);
+      document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/sw/')[1]);
     }
    };
   });
