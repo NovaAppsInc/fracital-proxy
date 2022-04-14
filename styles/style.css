@@ -1,7 +1,3 @@
-* {
-  user-select: none;
-}
-
 @font-face {
   font-family: Metro;
   src: url(../resources/metropolis-regular.otf);
