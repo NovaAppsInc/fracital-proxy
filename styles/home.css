@@ -364,6 +364,10 @@ h1.name {
     color: #f971e4;
 }
 
+.link:hover .gml {
+    stroke: #f971e4;
+}
+
 .home {
     display: grid;
     justify-items: center;

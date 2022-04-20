@@ -38,19 +38,19 @@
 
 @keyframes heightGrowDrop {
   0% {
-    height: 19em;
+    height: 16em;
   }
   100% {
-    height: 32em;
+    height: 29em;
   }
 }
 
 @keyframes heightShrinkDrop {
   0% {
-    height: 32em;
+    height: 29em;
   }
   100% {
-    height: 19em;
+    height: 16em;
   }
 }
 
@@ -61,18 +61,46 @@
   }
   100% {
     opacity: 100%;
-    height: 19em;
+    height: 16em;
+  }
+}
+
+@keyframes opacDownql {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 
 @keyframes noppOpac {
   0% {
-    height: 19em;
+    height: 16em;
     opacity: 100%;
   }
   100% {
     height: 0em;
     opacity: 0%;
+  }
+}
+
+@keyframes fullh {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+ 
+@keyframes fulls {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -512,7 +540,7 @@ a.linky:hover {
 }
 
 .btnsrch:hover {
-  background: #ff3beae0
+  background: #ff83f2e0;
 }
 
 div.results {
@@ -662,9 +690,10 @@ a.qlbt {
   text-align: center;
   margin-bottom: 5px;
   padding: 5px 18px;
-  justify-content: center;
+  justify-content: start;
   font-size: 13px;
   width: 79%;
+  font-weight: lighter;
 }
 
 .qlbt:hover .rocket {
@@ -672,8 +701,17 @@ a.qlbt {
 }
 
 div.ql.hidden {
-  visibility: collapse;
-  position: absolute;
+  background: #333;
+  height: min-content;
+  width: 167px;
+  border-radius: 10px;
+  padding: 4px 12px 16px 12px;
+  display: grid;
+  justify-items: center;
+  z-index: 3;
+  animation: opacDownql ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .hiddenOpac {
@@ -722,7 +760,9 @@ div.btnsql {
 }
 
 .infql {
-  font-size: 18px
+  font-size: 18px;
+  font-family: segeoUI;
+  font-weight: lighter;
 }
 
 .last {
@@ -745,7 +785,7 @@ a.linkAl {
   background: #4a4a4a;
   border-radius: 25px;
   padding: 2px 18px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .bug:hover .icon {
@@ -802,6 +842,7 @@ a.linkAl {
 
 .icon:hover {
   stroke: #ff7aeb;
+  fill: #ff7aeb;
 }
 
 .iconfull {
@@ -826,7 +867,7 @@ a.linkAl {
   background: #4a4a4a;
   padding: 4px 1px 4px 9px;
   border-radius: 26px;
-  justify-content: center;
+  justify-content: start;
   width: 79%;
   padding: 3px 18px;
 }
@@ -872,7 +913,7 @@ div.gamedropthingy.open {
 .droppies {
   display: grid;
   float: right;
-  width: 196px;
+  width: 217px;
   height: min-content;
   justify-items: center;
   user-select: none;  border-radius: 10px;
@@ -883,6 +924,8 @@ div.gamedropthingy.open {
   position: relative;
   margin-right: 1px;
   overflow: hidden;
+  margin-top: calc(-2em - 7px);
+  transition: ease 0.5s;
 }
 
 .droppiebtn {
@@ -896,7 +939,10 @@ div.gamedropthingy.open {
 
 .droppiebtn:hover {
   cursor: pointer
-  
+}
+
+.droppiebtn:hover .droppieic {
+  stroke: #ff7aeb;
 }
 
 .droppieic {
@@ -924,7 +970,7 @@ div.gamedropthingy.open {
   background: #4a4a4a;
   border-radius: 25px;
   padding: 4px 16px;
-  justify-content: center;
+  justify-content: start;
   width: 79%;
   margin-bottom: 6px;
 }
@@ -997,7 +1043,7 @@ div.gamedropthingy.open {
   text-align: center;
   margin-bottom: 5px;
   padding: 5px 18px;
-  justify-content: center;
+  justify-content: start;
   font-size: 13px;
   width: 79%;
 }
@@ -1006,4 +1052,72 @@ div.gamedropthingy.open {
   cursor: pointer;
   color: #f28bff;
   background: #363636
+}
+.sectop {
+  display: flex;
+  width: min-content;
+  position: relative;
+  z-index: 999;
+  transition: ease 0.5s;
+  margin-left: 2em;
+}
+ 
+.full {
+  position: relative;
+  z-index: 99;
+  width: 40px;
+  height: 35px;
+  background: #3d3d3d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s;
+}
+ 
+.full:hover {
+  cursor: pointer;
+}
+ 
+.hiddi {
+  animation: fullh ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: none;
+  transition: 0.2s;
+}
+ 
+.showi {
+  animation: fulls ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: grid;
+  transition: 0.2s;
+  margin-top: -5px;
+}
+ 
+.tophide {
+  transform: translateY(-63px);
+}
+ 
+.fullup {
+  transform: translateY(-63px);
+}
+
+.drph {
+  transform: translateY(calc(-3em - 20px));
+}
+
+.fr {
+  height: calc(100%);
+}
+
+.btndrop:hover .icmusic {
+  stroke: #ff7aeb;
+  fill: transparent;
+}
+
+.lyric {
+  margin-left: 8px;
 }

@@ -11,6 +11,7 @@ function selectElement(selector) {
   return document.querySelector(selector);
 }
 
+const full = document.getElementById("full");
 const frame = document.getElementById("frame");
 const settb = document.getElementById("settb");
 const toolb = document.getElementById("toolbar")
@@ -39,6 +40,45 @@ function go(link) {
 
 document.getElementById("btnsrch").addEventListener("click", () => {
   go(document.getElementById('urlbar').value);
+});
+
+const sectop = document.getElementById("sect");
+const fullup = document.getElementById("iconup");
+const fulldown = document.getElementById("icondown");
+
+full.addEventListener("click", () => {
+  if(fullup.classList.contains("showi")) {
+    fullup.classList.add("hiddi");
+    fullup.classList.remove("showi");
+    fulldown.classList.add("showi");
+    fulldown.classList.remove("hiddi");
+    document.getElementById("frame").classList.add("fr")
+    if(droppies.classList.contains("showPP")) {
+      droppies.classList.remove("showPP");
+      droppies.classList.add("noOpac");
+      droppies.classList.add("drph");
+      
+      myTime = setTimeout(() =>{
+          droppies.classList.add("hide");
+          clearTimeout(myTime);
+      }, 500);
+    }
+    sectop.classList.add("fullup");
+    toolb.classList.add("tophide");
+  } else if(fullup.classList.contains("hiddi")) {
+    document.getElementById("frame").classList.remove("fr")
+    droppies.classList.remove("drph");
+    fullup.classList.add("showi");
+    fullup.classList.remove("hiddi");
+    fulldown.classList.add("hiddi");
+    fulldown.classList.remove("showi");
+    if(qld.classList.contains("open")) {
+      qld.classList.remove("open");
+      qld.classList.add("hidden");
+    }
+    sectop.classList.remove("fullup");
+    toolb.classList.remove("tophide");
+  }
 });
 
 // Quick Launch buttons //
@@ -157,6 +197,15 @@ urlbar.addEventListener("focus", () => {
       return;
     }
   });
+  if(toolb.classList.contains("tophide")) {
+    toolb.classList.remove("tophide");
+    sectop.classList.remove("fullup");
+    document.getElementById("frame").classList.remove("fr");
+    fulldown.classList.remove("showi");
+    fulldown.classList.add("hiddi");
+    fullup.classList.add("showi");
+    fullup.classList.remove("hiddi");
+  }
 });
 
 function re() {

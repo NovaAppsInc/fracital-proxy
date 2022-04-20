@@ -20,13 +20,6 @@ document.getElementById('clig').addEventListener("click", () => {
     window.open("./g.html", "_self");
 });
 
-document.addEventListener("keydown", ea => {
-    if (ea.keyCode == "9") {
-        ea.preventDefault();
-        parent.document.getElementById("urlbar").focus();
-    }
-});
-
 function patr() {
     window.open('https://www.patreon.com/fracital?fan_landing=true');
 }

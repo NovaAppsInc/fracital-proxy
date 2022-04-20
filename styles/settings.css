@@ -1,5 +1,6 @@
 * {
     user-select: none;
+    font-family: segeo;
 }
 
 button:focus-visible {
@@ -14,7 +15,7 @@ button:focus-visible {
 
 @font-face {
     font-family: segeo;
-    src: url(../resources/Segoe-UI.ttf)
+    src: url(../resources/SegoeUI.ttf)
 }
 
 #particles-js {
