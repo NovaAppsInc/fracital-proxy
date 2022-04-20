@@ -23,9 +23,15 @@ console.log(link);
 const database = [
     {
         name: "Retro Bowl",
-        type: "html",
+        type: "emulated",
         icon: "./game-imgs/retro-bowl.jpg",
         path: "./g/retro-bowl/index.html"
+    },
+    {
+        name: "Super Mario 64",
+        type: "emulated",
+        icon: "./g/sm/favicon.ico",
+        path: "./g/sm/index.html"
     },
     {
         name: "Clumsy Bird",
