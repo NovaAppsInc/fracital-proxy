@@ -165,6 +165,30 @@ const database = [
         icon: "./game-imgs/warfare1944.png",
         path: "/g/flash/index.html?swf=warfare1944.swf"
     },
+    {
+        name: "Hobo",
+        type: "flash",
+        icon: "./game-imgs/hobo.webp",
+        path: "/g/flash/index.html?swf=Hobo.swf"
+    },
+    {
+        name: "Zelda The Seeds Of Darkness",
+        type: "emulated",
+        icon: "./game-imgs/zeldtsod.png",
+        path: "/g/flash/index.html?swf=Hobo.swf"
+    },
+    {
+        name: "Doodle Jump",
+        type: "flash",
+        icon: "./game-imgs/doodle.png",
+        path: "/g/flash/index.html?swf=Doodle Jump.swf"
+    },
+    {
+        name: "Bullet Bill 2",
+        type: "flash",
+        icon: "./game-imgs/bulletbill2.png",
+        path: "/g/flash/index.html?swf=Bullet Bill 2.swf"
+    },
 ]
 
 function selectElement(selector) {

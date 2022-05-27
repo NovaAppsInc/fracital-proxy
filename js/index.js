@@ -7,6 +7,11 @@ class xor {
   };
 };
 
+function isUrl(val = '') {
+  if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+  return false;
+};
+
 function selectElement(selector) {
   return document.querySelector(selector);
 }
@@ -31,7 +36,7 @@ function go(link) {
       link = "http://" + link;
   } 
   if(!link.includes(".")) {
-    alert(`alright bro come on "${document.getElementById('urlbar').value}" ain't even a url!`)
+    alert(`engine redirecting still in progress lol`)
     return;
     // go("bing.com/search?q=" + document.getElementById('urlbar').value);
   }
