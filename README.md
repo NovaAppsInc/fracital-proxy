@@ -1,4 +1,4 @@
----
+[---
 state: stable
 backend: UltraViolet
 todo: themes?
@@ -34,4 +34,3 @@ $ cd Ultraviolet-Node
 $ npm install
 $ npm start 
 ```
-then go to ```static``` delete all files then move all of the ```proxy-main``` files in it
