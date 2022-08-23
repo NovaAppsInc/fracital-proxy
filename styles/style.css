@@ -413,6 +413,10 @@ a {
   color: #fff
 }
 
+a.link {
+  text-decoration: underline;
+}
+
 a.linky:hover {
   cursor: pointer;
   color: #f971e4

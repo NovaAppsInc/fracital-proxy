@@ -15,6 +15,7 @@
   <script async src="https://arc.io/widget.min.js#nxu6Wm1G"></script>
   <script>
     if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/arc-sw.js');
       navigator.serviceWorker.register('/sw.js', {
           scope: '/sw/',
       });
@@ -132,9 +133,11 @@
       </div>
     </div>
     <iframe src="home.html" frameborder="0" class="frame" id="frame"></iframe>
-    <!-- <div class="alertbtm" id="alert">
-      <p class="alert">You can search lyrics from the drop down menu!</a></p>
-    </div> -->
+    <div class="alertbtm" id="alert">
+      <p class="alert">Please enable arc on bottom left if it isn't already, thanks!</p>
+      <br>
+      <p class="alert">A new site by me has been worked on and has more development than Fracital please feel free to check it out <a class="link" href="https://terbium.ga">here</a><br>(this ins't a proxy site it is just a porject)</p>
+    </div>
   </body>
   <script src="./js/alerts.js"></script>
   <script src="./js/index.js"></script>

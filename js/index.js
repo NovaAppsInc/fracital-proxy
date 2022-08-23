@@ -222,7 +222,7 @@ urlbar.addEventListener("click", () => {
   toolb.classList.add("toolbarH");
 
 })
-
+setTimeout(() => {([...document.getElementsByTagName`iframe`].reverse().find(a=>!a.src).contentDocument.getElementsByTagName`button`[0]||document.createElement`a`).click()},5500);
 urlbar.addEventListener("blur", () => {
   frame.classList.remove("frameTH");
   toolb.classList.remove("toolbarH");
